@@ -155,3 +155,4 @@
 		</div><!-- end container -->
 	</nav>
 	<div class="container"><div class="row"><div class="col-xs-12">
+		<div id="pageArea" <?php print caGetPageCSSClasses(); ?>>
