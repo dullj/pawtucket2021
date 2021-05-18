@@ -1,10 +1,10 @@
 /* Webfont: Neue-Regular */@font-face {
     font-family: 'Neue';
-    src: url('../webfonts/Neue/Neue-Regular.eot'); /* IE9 Compat Modes */
-    src: url('../webfonts/Neue/Neue-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../webfonts/Neue/Neue-Regular.woff') format('woff'), /* Modern Browsers */
-         url('../webfonts/Neue/Neue-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../webfonts/Neue/Neue-Regular.svg#Neue-Regular') format('svg'); /* Legacy iOS */
+    src: url('fonts/Neue-Regular.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Neue-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/Neue-Regular.woff') format('woff'), /* Modern Browsers */
+         url('fonts/Neue-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/Neue-Regular.svg#Neue-Regular') format('svg'); /* Legacy iOS */
     font-style: normal;
     font-weight: normal;
     text-rendering: optimizeLegibility;
