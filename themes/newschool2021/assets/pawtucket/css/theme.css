@@ -1,6 +1,25 @@
-h1, h2, h3, h4, h5, h6{
+/* --------------------------------- */
+/* GENERAL */
+/* --------------------------------- */
+H1, h1, H2, h2, H3, h3, H4, h4, H5, h5, H6, h6{
 	font-family: Neue,"Arial",Helvetica,sans-serif; 
 }
+
+body {
+	font-family: Neue;
+}
+
+b, strong{
+	font-family: Neue;
+}
+
+label {
+    font-family:Neue;
+}
+
+/* ----------------------------------------- */
+/* navbar - styles override bootstrap styles */
+/* ----------------------------------------- */
 
 .nav > li > a, .nav > li > a:hover, .nav > li > a:focus {
 	color: #767676;
@@ -14,4 +33,89 @@ h1, h2, h3, h4, h5, h6{
     	letter-spacing: .05rem; 
 	font-size:.75em;
 }
+.navbar .form-control {
+	font-family:Neue;
+}
+
+.btn-default {
+	font-family:Neue;
+}
+
+/* ----------------------------------------- */
+/* navbar - browse menu */
+/* ----------------------------------------- */
+
+.filterMenuFacetList {
+	font-family:Neue;
+}
+
+.browseHeadernav a{
+	font-family:Neue;
+}
+	
+/* --------------------------------- */
+/* footer */
+/* --------------------------------- */
+#footer{
+	font-family:Neue;
+}
+	
+/* --------------------------------- */
+/* front page */
+/* --------------------------------- */
+@media (min-width: 768px) {
+	.front H1 {
+		font-family:Neue;
+	}
+}	
+
+/* --------------------------------- */
+/* details */
+/* --------------------------------- */
+.detail #detailTools{
+	font-family:Neue;
+}
+
+/* --------------------------------- */
+/* multi-search */
+/* --------------------------------- */
+.multisearch .pull-right {
+	font-family:Neue;
+}
+
+/*  TimelineJS	*/
+.tl-text-content-container h2.tl-headline, .tl-timeline h2.tl-headline-title{
+	font-family:Neue;
+}
+
+.tl-timemarker-text h2, .tl-slidenav-content-container .tl-slidenav-title, .tl-slidenav-content-container .tl-slidenav-description{
+	font-family:Neue !important;
+}
+.tl-text-content, .tl-timeline p, .tl-text p{
+	font-family:Neue !important;
+}
+.tl-timeline h1, .tl-timeline h2, .tl-timeline h3, .tl-timeline h4, .tl-timeline h5, .tl-timeline h6{
+	font-family:Neue !important;
+}
+
+.tl-timeline em{
+	font-family:Neue !important;
+}
+
+/* Advanced Search */
+
+.advancedSearchField .formLabel {
+	font-family:Neue;	
+}
+
+/* Finding Aid */
+
+.collHeader a{
+	font-family: Neue;
+}
+
+.collectionTile .title {
+	font-family:Neue;	
+}
+
 
