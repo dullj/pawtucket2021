@@ -4,6 +4,7 @@
 	$vn_comments_enabled = 	$this->getVar("commentsEnabled");
 	$vn_share_enabled = 	$this->getVar("shareEnabled");
 	$vn_pdf_enabled = 		$this->getVar("pdfEnabled");
+	$vn_id = $t_item->get('ca_collections.collection_id');
 	
 	# --- get collections configuration
 	$o_collections_config = caGetCollectionsConfig();
@@ -16,24 +17,24 @@
 
 ?>
 <div class="row">
-	<div class='col-xs-12 navTop'><!--- only shown at small screen size -->
-		{{{previousLink}}}{{{resultsLink}}}{{{nextLink}}}
-	</div><!-- end detailTop -->
-	<div class='navLeftRight col-xs-1 col-sm-1 col-md-1 col-lg-1'>
-		<div class="detailNavBgLeft">
-			{{{previousLink}}}{{{resultsLink}}}
-		</div><!-- end detailNavBgLeft -->
-	</div><!-- end col -->
-	<div class='col-xs-12 col-sm-10 col-md-10 col-lg-10'>
+	<div class='col-xs-12 '>
 		<div class="container">
 			<div class="row">
 				<div class='col-md-12 col-lg-12'>
+					<div class='detailNav'>{{{previousLink}}}{{{resultsLink}}}{{{nextLink}}}</div>
 					<H4>{{{^ca_collections.preferred_labels.name}}}</H4>
 					<H6>{{{^ca_collections.type_id}}}{{{<ifdef code="ca_collections.idno">, ^ca_collections.idno</ifdef>}}}</H6>
-					{{{<ifdef code="ca_collections.parent_id"><H6>Part of: <unit relativeTo="ca_collections.hierarchy" delimiter=" &gt; "><l>^ca_collections.preferred_labels.name</l></unit></H6></ifdef>}}}
 <?php					
-					if ($vn_pdf_enabled) {
-						print "<div class='exportCollection'><span class='glyphicon glyphicon-file'></span> ".caDetailLink($this->request, "Download as PDF", "", "ca_collections",  $vn_top_level_collection_id, array('view' => 'pdf', 'export_format' => '_pdf_ca_collections_summary'))."</div>";
+					if ($va_media = $t_item->get('ca_collections.finding_aid_upload', array('returnWithStructure' => true))) {
+						$va_media = array_pop($va_media);
+						foreach ($va_media as $vn_attribute_id => $va_media_info) {
+							$t_attribute_values = new ca_attribute_values(array("attribute_id" => $vn_attribute_id));
+							$vn_value_id = $t_attribute_values->get("value_id");
+							print "<div class='exportCollection'>".caNavLink($this->request, "<span class='glyphicon glyphicon-file'></span> Download PDF", '', 'Detail', 'DownloadAttributeMedia', '', array('value_id' => $vn_value_id, "collection_id" => $vn_id, "id" => $vn_id, "subject_id" => $vn_id, "download" => 1, "version" => "original"));
+							
+						}
+					} elseif ($vn_pdf_enabled) {
+						print "<div class='exportCollection'><span class='glyphicon glyphicon-file'></span> ".caDetailLink($this->request, "Download PDF", "", "ca_collections",  $vn_top_level_collection_id, array('view' => 'pdf', 'export_format' => '_pdf_ca_collections_summary'))."</div>";
 					}
 ?>
 				</div><!-- end col -->
@@ -50,15 +51,50 @@
 					})
 				</script>
 <?php				
-			}									
+			} 							
 ?>				
 				</div><!-- end col -->
 			</div><!-- end row -->
 			<div class="row">			
 				<div class='col-md-6 col-lg-6'>
-					{{{<ifdef code="ca_collections.description"><H6>About</H6>^ca_collections.description<br/></ifdef>}}}
-					{{{<ifcount code="ca_objects" min="1" max="1"><div class='unit'><unit relativeTo="ca_objects" delimiter=" "><l>^ca_object_representations.media.large</l><div class='caption'>Related Object: <l>^ca_objects.preferred_labels.name</l></div></unit></div></ifcount>}}}
-<?php
+				
+<?php				
+					if ($va_dates = $t_item->get('ca_collections.unitdate', array('convertCodesToDisplayText' => true, 'returnWithStructure' => true))) {
+						
+						$va_unit_dates = array();
+						foreach ($va_dates as $va_key => $va_dates_t) {
+							foreach ($va_dates_t as $va_key => $va_date) {
+								
+								$va_unit_dates[$va_date['dacs_dates_types']][] = $va_date['dacs_date_value'];
+							}
+						}	
+						foreach ($va_unit_dates as $va_date_type => $va_date_value){	
+							print "<div class='unit'>";
+							if ($va_date_type == " ") {
+								print "<h6>Date</h6>";
+							} else {
+								print "<h6>".$va_date_type."</h6>";
+							}
+							foreach ($va_date_value as $va_date_date) {
+								print $va_date_date;
+							}
+							print "</div>";
+						}			
+						
+					}
+					if ($vs_extent = $t_item->get('ca_collections.extentDACS')) {
+						print "<div class='unit'><h6>Extent</h6>".$vs_extent."</div>";
+					} 
+					if ($vs_access = $t_item->get('ca_collections.accessrestrict')) {
+						print "<div class='unit'><h6>Conditions Governing Access</h6>".$vs_access."</div>";
+					}
+					if ($vs_repro = $t_item->get('ca_collections.reproduction')) {
+						print "<div class='unit'><h6>Conditions Governing Reproduction</h6>".$vs_repro."</div>";
+					}
+					if ($vs_lang = $t_item->get('ca_collections.langmaterial')) {
+						print "<div class='unit'><h6>Languages and Scripts on the Material</h6>".$vs_lang."</div>";
+					}										
+																
 				# Comment and Share Tools
 				if ($vn_comments_enabled | $vn_share_enabled) {
 						
@@ -78,24 +114,21 @@
 					
 				</div><!-- end col -->
 				<div class='col-md-6 col-lg-6'>
-					{{{<ifcount code="ca_collections.related" min="1" max="1"><H6>Related collection</H6></ifcount>}}}
-					{{{<ifcount code="ca_collections.related" min="2"><H6>Related collections</H6></ifcount>}}}
-					{{{<unit relativeTo="ca_collections_x_collections"><unit relativeTo="ca_collections" delimiter="<br/>"><l>^ca_collections.related.preferred_labels.name</l></unit> (^relationship_typename)</unit>}}}
-					
-					{{{<ifcount code="ca_entities" min="1" max="1"><H6>Related person</H6></ifcount>}}}
-					{{{<ifcount code="ca_entities" min="2"><H6>Related people</H6></ifcount>}}}
-					{{{<unit relativeTo="ca_entities_x_collections"><unit relativeTo="ca_entities" delimiter="<br/>"><l>^ca_entities.preferred_labels.displayname</l></unit> (^relationship_typename)</unit>}}}
-					
-					{{{<ifcount code="ca_occurrences" min="1" max="1"><H6>Related occurrence</H6></ifcount>}}}
-					{{{<ifcount code="ca_occurrences" min="2"><H6>Related occurrences</H6></ifcount>}}}
-					{{{<unit relativeTo="ca_occurrences_x_collections"><unit relativeTo="ca_occurrences" delimiter="<br/>"><l>^ca_occurrences.preferred_labels.name</l></unit> (^relationship_typename)</unit>}}}
-					
-					{{{<ifcount code="ca_places" min="1" max="1"><H6>Related place</H6></ifcount>}}}
-					{{{<ifcount code="ca_places" min="2"><H6>Related places</H6></ifcount>}}}
-					{{{<unit relativeTo="ca_places_x_collections"><unit relativeTo="ca_places" delimiter="<br/>"><l>^ca_places.preferred_labels.name</l></unit> (^relationship_typename)</unit>}}}					
+<?php
+					if ($vs_scope = $t_item->get('ca_collections.scopecontent')) {
+						print "<div class='unit'><h6>Scope and Content</h6>".$vs_scope."</div>";
+					}
+					if ($vs_notes = $t_item->get('ca_collections.general_notes')) {
+						print "<div class='unit'><h6>Notes</h6>".$vs_notes."</div>";
+					}
+					if ($vs_storage_location = $t_item->get('ca_storage_locations.hierarchy.preferred_labels', array('delimiter' => ' > '))) {
+						print "<div class='unit'><h6>Location</h6>".$vs_storage_location."</div>";
+					}	 
+?>					
 				</div><!-- end col -->
 			</div><!-- end row -->
-{{{<ifcount code="ca_objects" min="2">
+			<hr>
+{{{<ifcount code="ca_objects" min="1">
 			<div class="row">
 				<div id="browseResultsContainer">
 					<?php print caBusyIndicatorIcon($this->request).' '.addslashes(_t('Loading...')); ?>
@@ -103,7 +136,7 @@
 			</div><!-- end row -->
 			<script type="text/javascript">
 				jQuery(document).ready(function() {
-					jQuery("#browseResultsContainer").load("<?php print caNavUrl($this->request, '', 'Search', 'objects', array('search' => 'collection_id:^ca_collections.collection_id'), array('dontURLEncodeParameters' => true)); ?>", function() {
+					jQuery("#browseResultsContainer").load("<?php print caNavUrl($this->request, '', 'Search', 'archival', array('search' => 'collection_id:^ca_collections.collection_id', 'sort' => 'Relevance'), array('dontURLEncodeParameters' => true)); ?>", function() {
 						jQuery('#browseResultsContainer').jscroll({
 							autoTrigger: true,
 							loadingHtml: '<?php print caBusyIndicatorIcon($this->request).' '.addslashes(_t('Loading...')); ?>',
@@ -117,10 +150,5 @@
 			</script>
 </ifcount>}}}
 		</div><!-- end container -->
-	</div><!-- end col -->
-	<div class='navLeftRight col-xs-1 col-sm-1 col-md-1 col-lg-1'>
-		<div class="detailNavBgRight">
-			{{{nextLink}}}
-		</div><!-- end detailNavBgLeft -->
 	</div><!-- end col -->
 </div><!-- end row -->
