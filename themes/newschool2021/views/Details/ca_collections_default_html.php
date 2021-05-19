@@ -1,35 +1,3 @@
-Skip to content
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@katiemartinez 
-dullj
-/
-pawtucket2021
-1
-0
-1
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-pawtucket2021/themes/default/views/Details/ca_collections_default_html.php /
-@mariamotorina
-mariamotorina configurable finding aid export
-Latest commit 5e26191 on May 19, 2017
- History
- 3 contributors
-@mariamotorina@collectiveaccess@SethKaufman
-Executable File  126 lines (117 sloc)  6.33 KB
-  
 <?php
 	$t_item = $this->getVar("item");
 	$va_comments = $this->getVar("comments");
@@ -156,16 +124,3 @@ Executable File  126 lines (117 sloc)  6.33 KB
 		</div><!-- end detailNavBgLeft -->
 	</div><!-- end col -->
 </div><!-- end row -->
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-Loading complete
