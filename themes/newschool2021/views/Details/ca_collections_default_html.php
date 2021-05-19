@@ -78,7 +78,7 @@
 					
 				</div><!-- end col -->
 				<div class='col-md-6 col-lg-6'>
-					{{{<ifdef code="ca_collections.findaid"><H3>Collection Guide</H3><a href="^ca_collections.findaid">Guide to the ^ca_collections.preferred_labels.name</a><br/></ifdef>}}}
+					{{{<ifdef code="ca_collections.findaid"><H6>Collection Guide</H6><a href="^ca_collections.findaid">Guide to the ^ca_collections.preferred_labels.name</a><br/></ifdef>}}}
 					{{{<ifcount code="ca_collections.related" min="1" max="1"><H6>Related collection</H6></ifcount>}}}
 					{{{<ifcount code="ca_collections.related" min="2"><H6>Related collections</H6></ifcount>}}}
 					{{{<unit relativeTo="ca_collections_x_collections"><unit relativeTo="ca_collections" delimiter="<br/>"><l>^ca_collections.related.preferred_labels.name</l></unit> (^relationship_typename)</unit>}}}
@@ -96,6 +96,11 @@
 					{{{<unit relativeTo="ca_places_x_collections"><unit relativeTo="ca_places" delimiter="<br/>"><l>^ca_places.preferred_labels.name</l></unit> (^relationship_typename)</unit>}}}					
 				</div><!-- end col -->
 			</div><!-- end row -->
+			<div id="detailRelatedObjects">
+					<H1> <?php print caNavLink($this->request, _t('Click to view all related objects'), '', '', 'Browse', 'objects', array('facet' => 'collection_facet', 'id' => "^ca_collections.collection_id"), null, array('dontURLEncodeParameters' => true)); ?></H1>
+
+
+			</div><!-- end detailRelatedObjects -->
 {{{<ifcount code="ca_objects" min="2">
 			<div class="row">
 				<div id="browseResultsContainer">
