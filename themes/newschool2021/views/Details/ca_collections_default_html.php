@@ -114,8 +114,10 @@
 					
 				</div><!-- end col -->
 				<div class='col-md-6 col-lg-6'>
+					{{{<ifdef code="ca_collections.CollectionNote.NoteContent%[NoteType=abstract]"><H3>About</H3>^ca_collections.CollectionNote.NoteContent%[NoteType=abstract]<br/></ifdef>}}}
+					{{{<ifdef code="ca_collections.CollectionNote.NoteContent%[NoteType=related_archival_materials]"><H3>Related Archival Materials Note</H3>^ca_collections.CollectionNote.NoteContent%[NoteType=related_archival_materials]<br/></ifdef>}}}
 <?php
-					if ($vs_scope = $t_item->get('ca_collections.CollectionNote.NoteContent%[NoteType=abstract]')) {
+					if ($vs_scope = $t_item->get('ca_collections.scopecontent')) {
 						print "<div class='unit'><h6>Scope and Content</h6>".$vs_scope."</div>";
 					}
 					if ($vs_notes = $t_item->get('ca_collections.general_notes')) {
