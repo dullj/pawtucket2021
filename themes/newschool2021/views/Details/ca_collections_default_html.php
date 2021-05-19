@@ -115,7 +115,7 @@
 				</div><!-- end col -->
 				<div class='col-md-6 col-lg-6'>
 <?php
-					if ($vs_scope = $t_item->get('ca_collections.scopecontent')) {
+					if ($vs_scope = $t_item->get('ca_collections.CollectionNote.NoteContent%[NoteType=abstract]')) {
 						print "<div class='unit'><h6>Scope and Content</h6>".$vs_scope."</div>";
 					}
 					if ($vs_notes = $t_item->get('ca_collections.general_notes')) {
