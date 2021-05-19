@@ -96,11 +96,6 @@
 					{{{<unit relativeTo="ca_places_x_collections"><unit relativeTo="ca_places" delimiter="<br/>"><l>^ca_places.preferred_labels.name</l></unit> (^relationship_typename)</unit>}}}					
 				</div><!-- end col -->
 			</div><!-- end row -->
-			<div id="detailRelatedObjects">
-					<H1> <?php print caNavLink($this->request, _t('Click to view all related objects'), '', '', 'Browse', 'objects', array('facet' => 'collection_facet', 'id' => "^ca_collections.collection_id"), null, array('dontURLEncodeParameters' => true)); ?></H1>
-
-
-			</div><!-- end detailRelatedObjects -->
 {{{<ifcount code="ca_objects" min="2">
 			<div class="row">
 				<div id="browseResultsContainer">
