@@ -32,10 +32,11 @@
 			<div>
 				<h3>Resources</h3>
 			</div>
-			<ul class="list-inline pull-right social">
-				<li><a href="#">Link 1</a></li>
-				<li><a href="#">Link 2</a></li>
-				<li><a href="#">Link 3</a></li>
+			<ul class="pull-right social">
+				<h3>Resources</h3>
+				<li><a href="https://archives.newschool.edu/home">Archives Home</a></li>
+				<li><a href="https://library.newschool.edu/">Library Home</a></li>
+				<li><a href="http://newschool.edu/">newschool.edu</a></li>
 			</ul>
 			<div>
 				<p>The New School Archives and Special Collections<br>
