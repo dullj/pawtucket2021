@@ -36,7 +36,7 @@
 				<li><a href="http://newschool.edu/">newschool.edu</a></li>
 			</ul>
 			<div>
-				<h4>The New School Archives and Special Collections</h4>>
+				<h4>The New School Archives and Special Collections</h4>
 				
 				<h4>66 5th Avenue, Lobby Level<br>
 				New York, New York 10011</h4>
