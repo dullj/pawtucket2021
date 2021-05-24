@@ -75,6 +75,7 @@ a, a:active, a:focus {
 
 .btn-default {
     background-color: #e42a1d;
+}
 
 .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
 	background-color: #e42a1d;
