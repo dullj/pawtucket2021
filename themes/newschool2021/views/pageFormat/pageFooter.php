@@ -28,15 +28,14 @@
 ?>
 		<div style="clear:both; height:1px;"><!-- empty --></div>
 		</div><!-- end pageArea --></div><!-- end col --></div><!-- end row --></div><!-- end container -->
-		<div class="footer">
 		<footer id="footer">
+			<div>
 			<ul class="pull-right">
 				<p id="footer-resources">Resources</p>
 				<li><a href="https://archives.newschool.edu/home">Archives Home</a></li>
 				<li><a href="https://library.newschool.edu/">Library Home</a></li>
 				<li><a href="http://newschool.edu/">newschool.edu</a></li>
 			</ul>
-			<div>
 				<p>The New School Archives and Special Collections<br>
 				66 5th Avenue, Lobby Level<br>
 				New York, New York 10011
@@ -47,11 +46,12 @@
 				<p>
 				212.229.5942
 				</p>
-			</div>
+			
 			<ul class="list-inline social">
 				<li><a href="https://twitter.com/TNSarchives"><i class="fa fa-twitter"></i></a></li>
 				<li><a href="https://www.instagram.com/newschoolarchives/"><i class="fa fa-instagram"></i></a></li>
 			</ul>
+			</div>
 		</footer>
 		</div>
 		<!-- end footer -->
