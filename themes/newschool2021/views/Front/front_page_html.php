@@ -32,7 +32,7 @@
 
 ?>
 	<div class="row" style="margin: auto;">
-		<div style="width:60%;">
+		<div style="width:60%; margin:auto;">
 			<H1>The New School Archives Digital Collections is home to born digital and digitized primary source materials.</H1>
 		</div>
 		<div>
