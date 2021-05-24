@@ -49,10 +49,8 @@
 				</p>
 			</div>
 			<ul class="list-inline">
-				<li><i class="fa fa-twitter"></i></li>
-				<li><i class="fa fa-facebook-square"></i></li>
-				<li><i class="fa fa-instagram-square"></i></li>
-				<li><i class="fa fa-youtube-play"></i></li>
+				<li><a href="https://twitter.com/TNSarchives"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="https://www.instagram.com/newschoolarchives/"><i class="fa fa-instagram"></i></a></li>
 			</ul>
 			<div><small>powered by <a href="http://www.collectiveaccess.org">CollectiveAccess 2018</a></small></div>
 		</footer><!-- end footer -->
