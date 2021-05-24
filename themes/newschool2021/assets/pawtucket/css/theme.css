@@ -31,8 +31,11 @@ label {
 }
 
 a:hover {
-	color: #e42a1d;
 	text-decoration: none;
+}
+
+a, a:hover {	
+	color: #e42a1d;
 }
 
 a, a:active, a:focus {
@@ -66,6 +69,26 @@ a, a:active, a:focus {
 	font-family:Neue;
 }
 
+.form-control:focus {
+    border-color: #e42a1d;
+}
+
+.btn-default {
+    background-color: #e42a1d;
+
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
+	background-color: #e42a1d;
+}
+	
+.filterMenuFacetList li.active{
+	background-color:#e42a1d;
+}
+	
+div.browseFacetItem a:hover {
+	color: #e42a1d;
+}
+
+
 /* ----------------------------------------- */
 /* navbar - browse menu */
 /* ----------------------------------------- */
@@ -77,7 +100,17 @@ a, a:active, a:focus {
 .browseHeadernav a{
 	font-family:Neue;
 }
+
+div.browseFacetItem a {
+	text-decoration: none;
+}
 	
+/* search/browse results: list mode */
+
+.browse .btn, .sets .btn {
+	background-color:#e42a1d;
+}
+
 /* --------------------------------- */
 /* footer */
 /* --------------------------------- */
@@ -132,6 +165,16 @@ a, a:active, a:focus {
 .detail #detailTools{
 	font-family:Neue;
 }
+	
+.detail H6 a{
+	color: #e42a1d;
+}
+	
+a.readmore-js-toggle{
+   color:#e42a1d;
+}
+
+
 
 /* --------------------------------- */
 /* multi-search */
