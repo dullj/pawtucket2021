@@ -31,8 +31,8 @@
  */
 
 ?>
-	<div class="row">
-		<div>
+	<div class="row" style="margin: auto;">
+		<div style="width:60%;">
 			<H1>The New School Archives <i>Digital Collections</i> is home to born digital and digitized primary source materials.</H1>
 		</div>
 		<div>
