@@ -29,11 +29,10 @@
 		<div style="clear:both; height:1px;"><!-- empty --></div>
 		</div><!-- end pageArea --></div><!-- end col --></div><!-- end row --></div><!-- end container -->
 		<footer id="footer">
-			<div>
+			<div class="pull-right">
 				<h3>Resources</h3>
 			</div>
-			<ul class="pull-right social">
-				<h3>Resources</h3>
+			<ul class="pull-right">
 				<li><a href="https://archives.newschool.edu/home">Archives Home</a></li>
 				<li><a href="https://library.newschool.edu/">Library Home</a></li>
 				<li><a href="http://newschool.edu/">newschool.edu</a></li>
@@ -50,7 +49,7 @@
 				212.229.5942
 				</p>
 			</div>
-			<ul class="list-inline">
+			<ul class="list-inline social">
 				<li><a href="https://twitter.com/TNSarchives"><i class="fa fa-twitter"></i></a></li>
 				<li><a href="https://www.instagram.com/newschoolarchives/"><i class="fa fa-instagram"></i></a></li>
 			</ul>
