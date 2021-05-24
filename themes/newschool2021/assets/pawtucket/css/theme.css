@@ -16,7 +16,6 @@ body {
 	font-feature-settings: "kern";
 	-webkit-font-kerning: normal;
 	font-kerning: normal;
-	position: relative;
 	text-rendering: optimizeLegibility;
 	font-variant-ligatures: common-ligatures;
 	-webkit-text-size-adjust: 100%;
