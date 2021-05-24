@@ -6,7 +6,22 @@ H1, h1, H2, h2, H3, h3, H4, h4, H5, h5, H6, h6{
 }
 
 body {
-	font-family: Neue;
+	font-family: neue,Helvetica Neue,Helvetica,Arial,sans-serif;
+	font-size: 17px;
+	line-height: 30px;
+	font-weight: 400;
+	font-style: normal;
+	letter-spacing: 0;
+	color: #191919;
+	font-feature-settings: "kern";
+	-webkit-font-kerning: normal;
+	font-kerning: normal;
+	position: relative;
+	text-rendering: optimizeLegibility;
+	font-variant-ligatures: common-ligatures;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	text-size-adjust: 100%;
 }
 
 b, strong{
