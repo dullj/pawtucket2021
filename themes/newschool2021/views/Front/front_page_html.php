@@ -30,6 +30,7 @@
  * ----------------------------------------------------------------------
  */
 
+?>
 	<div class="row">
 		<div class="col-sm-8">
 			<H1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate, orci quis vehicula eleifend, metus elit laoreet elit.</H1>
