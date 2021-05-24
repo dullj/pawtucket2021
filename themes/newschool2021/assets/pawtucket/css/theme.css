@@ -31,6 +31,17 @@ label {
     font-family:Neue;
 }
 
+a, a:hover {
+	color: #e42a1d;
+	text-decoration: underline;
+}
+
+a, a:active, a:focus {
+	color: #000000;
+	text-decoration: underline;
+}
+
+
 /* ----------------------------------------- */
 /* navbar - styles override bootstrap styles */
 /* ----------------------------------------- */
@@ -99,6 +110,12 @@ label {
 #footer ul a {
 	color: #ffffff;
 }
+
+#footer ul a: hover {
+	color: #e42a1d;
+	text-decoration: underline;
+}
+	
 	
 /* --------------------------------- */
 /* front page */
