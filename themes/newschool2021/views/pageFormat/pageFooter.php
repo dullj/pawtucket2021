@@ -29,7 +29,7 @@
 		<div style="clear:both; height:1px;"><!-- empty --></div>
 		</div><!-- end pageArea --></div><!-- end col --></div><!-- end row --></div><!-- end container -->
 		<footer id="footer">
-			<div>
+			<div style="padding:20px;">
 			<ul class="pull-right">
 				<p id="footer-resources">Resources</p>
 				<li><a href="https://archives.newschool.edu/home">Archives Home</a></li>
