@@ -29,10 +29,8 @@
 		<div style="clear:both; height:1px;"><!-- empty --></div>
 		</div><!-- end pageArea --></div><!-- end col --></div><!-- end row --></div><!-- end container -->
 		<footer id="footer">
-			<div class="pull-right">
-				<h3>Resources</h3>
-			</div>
 			<ul class="pull-right">
+				<p id="footer-resources">Resources</p>
 				<li><a href="https://archives.newschool.edu/home">Archives Home</a></li>
 				<li><a href="https://library.newschool.edu/">Library Home</a></li>
 				<li><a href="http://newschool.edu/">newschool.edu</a></li>
