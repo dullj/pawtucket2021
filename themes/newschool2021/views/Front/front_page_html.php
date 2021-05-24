@@ -40,5 +40,4 @@
 ?>
 		</div> <!--end col-sm-4-->	
 	</div><!-- end row -->
-		print $this->render("Front/featured_set_slideshow_html.php");
-?>
+
