@@ -28,6 +28,7 @@
 ?>
 		<div style="clear:both; height:1px;"><!-- empty --></div>
 		</div><!-- end pageArea --></div><!-- end col --></div><!-- end row --></div><!-- end container -->
+		<div class="footer">
 		<footer id="footer">
 			<ul class="pull-right">
 				<p id="footer-resources">Resources</p>
@@ -51,7 +52,9 @@
 				<li><a href="https://twitter.com/TNSarchives"><i class="fa fa-twitter"></i></a></li>
 				<li><a href="https://www.instagram.com/newschoolarchives/"><i class="fa fa-instagram"></i></a></li>
 			</ul>
-		</footer><!-- end footer -->
+		</footer>
+		</div>
+		<!-- end footer -->
 <?php
 	//
 	// Output HTML for debug bar
