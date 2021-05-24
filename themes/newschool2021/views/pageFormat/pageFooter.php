@@ -30,7 +30,7 @@
 		</div><!-- end pageArea --></div><!-- end col --></div><!-- end row --></div><!-- end container -->
 		<footer id="footer">
 			<ul class="pull-right">
-				<h4Resources</h4>
+				<h4>Resources</h4>
 				<li><a href="https://archives.newschool.edu/home">Archives Home</a></li>
 				<li><a href="https://library.newschool.edu/">Library Home</a></li>
 				<li><a href="http://newschool.edu/">newschool.edu</a></li>
