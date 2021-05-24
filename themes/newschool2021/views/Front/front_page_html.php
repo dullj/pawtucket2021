@@ -32,10 +32,13 @@
 
 ?>
 	<div class="row">
-		<div style="margin: auto; width:60%">
+		<div>
 			<H1>The New School Archives <i>Digital Collections</i> is home to born digital and digitized primary source materials.</H1>
 		</div>
-print $this->render("Front/featured_set_slideshow_html.php");
+		<div>
+<?php
+		print $this->render("Front/featured_set_slideshow_html.php");
 ?>
+		</div>
 	</div><!-- end row -->
 
