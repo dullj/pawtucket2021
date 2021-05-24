@@ -29,14 +29,15 @@
  *
  * ----------------------------------------------------------------------
  */
-
-?>
-	<div class="row" style="margin: auto;">
-		<div class="col-sm-12 col-md-10 col-md-offset-1">
-			<H1>The New School Archives Digital Collections is home to born digital and digitized primary source materials.</H1>
-<?php
 		print $this->render("Front/featured_set_slideshow_html.php");
 ?>
-		</div>
+	<div class="row">
+		<div class="col-sm-8">
+			<H1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate, orci quis vehicula eleifend, metus elit laoreet elit.</H1>
+		</div><!--end col-sm-8-->
+		<div class="col-sm-4">
+<?php
+		print $this->render("Front/gallery_set_links_html.php");
+?>
+		</div> <!--end col-sm-4-->	
 	</div><!-- end row -->
-
