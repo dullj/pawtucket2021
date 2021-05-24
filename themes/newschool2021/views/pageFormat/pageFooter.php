@@ -31,6 +31,7 @@
 		<footer id="footer">
 			<div>
 				<h3>Resources</h3>
+			</div>
 			<ul class="list-inline pull-right social">
 				<li><a href="#">Link 1</a></li>
 				<li><a href="#">Link 2</a></li>
@@ -52,7 +53,6 @@
 				<li><a href="https://twitter.com/TNSarchives"><i class="fa fa-twitter"></i></a></li>
 				<li><a href="https://www.instagram.com/newschoolarchives/"><i class="fa fa-instagram"></i></a></li>
 			</ul>
-			<div><small>powered by <a href="http://www.collectiveaccess.org">CollectiveAccess 2018</a></small></div>
 		</footer><!-- end footer -->
 <?php
 	//
