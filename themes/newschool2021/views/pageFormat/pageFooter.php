@@ -31,9 +31,9 @@
 		<footer id="footer">
 			<ul class="pull-right">
 				<h4 style="font-family:neuedisplayblack, neue display black; color: #e42a1d">Resources</h4>
-				<li><a href="https://archives.newschool.edu/home">Archives Home</a></li>
-				<li><a href="https://library.newschool.edu/">Library Home</a></li>
-				<li><a href="http://newschool.edu/">newschool.edu</a></li>
+				<li><h4><a href="https://archives.newschool.edu/home">Archives Home</a></h4></li>
+				<li><h4><a href="https://library.newschool.edu/">Library Home</a></h4></li>
+				<li><h4><a href="http://newschool.edu/">newschool.edu</a></h4></li>
 			</ul>
 			<div>
 				<h4>The New School Archives and Special Collections</h4>
