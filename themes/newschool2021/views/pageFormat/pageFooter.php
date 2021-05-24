@@ -30,22 +30,19 @@
 		</div><!-- end pageArea --></div><!-- end col --></div><!-- end row --></div><!-- end container -->
 		<footer id="footer">
 			<ul class="pull-right">
-				<p id="footer-resources">Resources</p>
+				Resources
 				<li><a href="https://archives.newschool.edu/home">Archives Home</a></li>
 				<li><a href="https://library.newschool.edu/">Library Home</a></li>
 				<li><a href="http://newschool.edu/">newschool.edu</a></li>
 			</ul>
 			<div>
-				<p>The New School Archives and Special Collections<br>
-				66 5th Avenue, Lobby Level<br>
+				The New School Archives and Special Collections
+				66 5th Avenue, Lobby Level
 				New York, New York 10011
-				</p>
-				<p>
+				
 				archivist@newschool.edu
-				</p>
-				<p>
+
 				212.229.5942
-				</p>
 			</div>
 			<ul class="list-inline social">
 				<li><a href="https://twitter.com/TNSarchives"><i class="fa fa-twitter"></i></a></li>
