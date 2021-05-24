@@ -31,7 +31,7 @@
 		<footer id="footer">
 			<div>
 				<h3>Resources</h3>
-			<ul class="list-inline">
+			<ul class="list-inline pull-right social">
 				<li><a href="#">Link 1</a></li>
 				<li><a href="#">Link 2</a></li>
 				<li><a href="#">Link 3</a></li>
@@ -48,10 +48,10 @@
 				212.229.5942
 				</p>
 			</div>
-			<ul class="list-inline pull-right social">
+			<ul class="list-inline">
 				<li><i class="fa fa-twitter"></i></li>
 				<li><i class="fa fa-facebook-square"></i></li>
-				<li><a href="https://www.instagram.com/newschoolarchives/"><i class="fa fa-instagram-square"></i></a></li>
+				<li><i class="fa fa-instagram-square"></i></li>
 				<li><i class="fa fa-youtube-play"></i></li>
 			</ul>
 			<div><small>powered by <a href="http://www.collectiveaccess.org">CollectiveAccess 2018</a></small></div>
