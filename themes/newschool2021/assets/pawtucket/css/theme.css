@@ -58,6 +58,22 @@ label {
 /* --------------------------------- */
 #footer{
 	font-family:Neue;
+	background-color: #000000;
+}
+.footer{
+	background-color: #000000;
+}
+
+#footer ul {
+	list-style: none;
+}
+
+.footer-resources {
+	font-family: 'NeueDisplayBlack';
+}
+
+#footer ul.social {
+	background-color: #000000;
 }
 	
 /* --------------------------------- */
