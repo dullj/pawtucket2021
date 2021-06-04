@@ -14,7 +14,7 @@
 			print "<div class='col-sm-6'><div class='collectionTile'>";
 			print $qr_collections->getWithTemplate("<ifcount code='ca_objects' restrictToRelationshipTypes='featured'><unit relativeTo='ca_objects' restrictToRelationshipTypes='featured'>^ca_object_representations.media.iconlarge</unit></ifcount>");
 			print "<div class='title'>".caDetailLink($this->request, $qr_collections->get("ca_collections.preferred_labels"), "", "ca_collections",  $qr_collections->get("ca_collections.collection_id"))."</div>";	
-			if (($o_collections_config->get("description_template")) && ($vs_scope = $qr_collections->getWithTemplate($o_collections_config->get("description_template")))) {
+			if (($o_collections_config->get("ca_collections.CollectionNote.NoteContent%[NoteType=abstract]")) && ($vs_scope = $qr_collections->getWithTemplate($o_collections_config->get("ca_collections.CollectionNote.NoteContent%[NoteType=abstract]")))) {
 				print "<div>".$vs_scope."</div>";
 			}
 			print "</div></div>";
