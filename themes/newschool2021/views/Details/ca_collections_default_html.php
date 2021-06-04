@@ -1,8 +1,8 @@
 <?php
-	$o_collections_config = $this->getVar("collections_config");
+$o_collections_config = $this->getVar("collections_config");
 	$qr_collections = $this->getVar("collection_results");
 ?>
-	<div class="row">
+<div class="row">
 		<div class='col-md-12 col-lg-12 collectionsList'>
 			<h1><?php print $this->getVar("section_name"); ?></h1>
 			<p><?php print $o_collections_config->get("collections_intro_text"); ?></p>
@@ -31,5 +31,5 @@
 		print _t('No collections available');
 	}
 ?>
-		</div>
+			</div>
 	</div>
