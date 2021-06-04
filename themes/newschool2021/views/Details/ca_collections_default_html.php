@@ -1,10 +1,43 @@
+Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@katiemartinez 
+dullj
+/
+pawtucket2021
+1
+0
+1
+Code
+Issues
+Pull requests
+1
+Actions
+Projects
+Wiki
+Security
+Insights
+pawtucket2021/themes/default/views/Details/ca_collections_default_html.php /
+@mariamotorina
+mariamotorina configurable finding aid export
+Latest commit 5e26191 on May 19, 2017
+ History
+ 3 contributors
+@mariamotorina@collectiveaccess@SethKaufman
+Executable File  126 lines (117 sloc)  6.33 KB
+  
 <?php
 	$t_item = $this->getVar("item");
 	$va_comments = $this->getVar("comments");
 	$vn_comments_enabled = 	$this->getVar("commentsEnabled");
 	$vn_share_enabled = 	$this->getVar("shareEnabled");
 	$vn_pdf_enabled = 		$this->getVar("pdfEnabled");
-
+	
 	# --- get collections configuration
 	$o_collections_config = caGetCollectionsConfig();
 	$vb_show_hierarchy_viewer = true;
@@ -41,7 +74,8 @@
 			<div class="row">
 				<div class='col-sm-12'>
 <?php
-			if ($vb_show_hierarchy_viewer) {
+			if ($vb_show_hierarchy_viewer) {	
+?>
 				<div id="collectionHierarchy"><?php print caBusyIndicatorIcon($this->request).' '.addslashes(_t('Loading...')); ?></div>
 				<script>
 					$(document).ready(function(){
@@ -55,12 +89,12 @@
 			</div><!-- end row -->
 			<div class="row">			
 				<div class='col-md-6 col-lg-6'>
-					{{{<ifdef code="ca_collections.CollectionNote.NoteContent%[NoteType=abstract]"><H6>About</H6>^ca_collections.CollectionNote.NoteContent%[NoteType=abstract]<br/></ifdef>}}}
+					{{{<ifdef code="ca_collections.description"><H6>About</H6>^ca_collections.description<br/></ifdef>}}}
 					{{{<ifcount code="ca_objects" min="1" max="1"><div class='unit'><unit relativeTo="ca_objects" delimiter=" "><l>^ca_object_representations.media.large</l><div class='caption'>Related Object: <l>^ca_objects.preferred_labels.name</l></div></unit></div></ifcount>}}}
 <?php
 				# Comment and Share Tools
 				if ($vn_comments_enabled | $vn_share_enabled) {
-
+						
 					print '<div id="detailTools">';
 					if ($vn_comments_enabled) {
 ?>				
@@ -72,30 +106,29 @@
 						print '<div class="detailTool"><span class="glyphicon glyphicon-share-alt"></span>'.$this->getVar("shareLink").'</div><!-- end detailTool -->';
 					}
 					print '</div><!-- end detailTools -->';
-				}
-					?>
-
+				}				
+?>
+					
 				</div><!-- end col -->
 				<div class='col-md-6 col-lg-6'>
-					{{{<ifdef code="ca_collections.findaid"><H6>Collection Guide</H6><a href="^ca_collections.findaid">Guide to the ^ca_collections.preferred_labels.name</a><br/></ifdef>}}}
 					{{{<ifcount code="ca_collections.related" min="1" max="1"><H6>Related collection</H6></ifcount>}}}
 					{{{<ifcount code="ca_collections.related" min="2"><H6>Related collections</H6></ifcount>}}}
 					{{{<unit relativeTo="ca_collections_x_collections"><unit relativeTo="ca_collections" delimiter="<br/>"><l>^ca_collections.related.preferred_labels.name</l></unit> (^relationship_typename)</unit>}}}
-
+					
 					{{{<ifcount code="ca_entities" min="1" max="1"><H6>Related person</H6></ifcount>}}}
 					{{{<ifcount code="ca_entities" min="2"><H6>Related people</H6></ifcount>}}}
 					{{{<unit relativeTo="ca_entities_x_collections"><unit relativeTo="ca_entities" delimiter="<br/>"><l>^ca_entities.preferred_labels.displayname</l></unit> (^relationship_typename)</unit>}}}
-
+					
 					{{{<ifcount code="ca_occurrences" min="1" max="1"><H6>Related occurrence</H6></ifcount>}}}
 					{{{<ifcount code="ca_occurrences" min="2"><H6>Related occurrences</H6></ifcount>}}}
 					{{{<unit relativeTo="ca_occurrences_x_collections"><unit relativeTo="ca_occurrences" delimiter="<br/>"><l>^ca_occurrences.preferred_labels.name</l></unit> (^relationship_typename)</unit>}}}
-
+					
 					{{{<ifcount code="ca_places" min="1" max="1"><H6>Related place</H6></ifcount>}}}
 					{{{<ifcount code="ca_places" min="2"><H6>Related places</H6></ifcount>}}}
 					{{{<unit relativeTo="ca_places_x_collections"><unit relativeTo="ca_places" delimiter="<br/>"><l>^ca_places.preferred_labels.name</l></unit> (^relationship_typename)</unit>}}}					
 				</div><!-- end col -->
 			</div><!-- end row -->
-{{{<ifcount code="ca_objects" min="1">
+{{{<ifcount code="ca_objects" min="2">
 			<div class="row">
 				<div id="browseResultsContainer">
 					<?php print caBusyIndicatorIcon($this->request).' '.addslashes(_t('Loading...')); ?>
@@ -111,8 +144,8 @@
 							nextSelector: 'a.jscroll-next'
 						});
 					});
-
-
+					
+					
 				});
 			</script>
 </ifcount>}}}
@@ -124,3 +157,16 @@
 		</div><!-- end detailNavBgLeft -->
 	</div><!-- end col -->
 </div><!-- end row -->
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+Loading complete
