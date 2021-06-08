@@ -175,7 +175,29 @@ a.readmore-js-toggle{
    color:#e42a1d;
 }
 
+/* --------------------------------- */
+/* collection index */
+/* --------------------------------- */
 
+.collectionTile img {
+    float: left;
+    height: 100px;
+    width: auto;
+    padding-bottom: 15px;
+    padding-right: 10px;
+}
+
+.collectionTile {
+    min-height: 115px;
+}
+
+/* --------------------------------- */
+/* COLLECTION DETAILS*/
+/* --------------------------------- */
+
+#collectionLoad {
+  height: 300px;
+}
 
 /* --------------------------------- */
 /* multi-search */
