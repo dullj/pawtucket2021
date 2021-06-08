@@ -191,6 +191,18 @@ a.readmore-js-toggle{
     min-height: 115px;
 }
 
+.collectionTile .title a {
+	font-family: neue display black, neuedisplayblack;	
+	color: #e42a1d;
+}
+
+.collectionTile .title a:hover {
+	font-family: neue display black, neuedisplayblack;	
+	color: #e42a1d;
+	text-decoration:underline;
+}
+
+
 /* --------------------------------- */
 /* COLLECTION DETAILS*/
 /* --------------------------------- */
