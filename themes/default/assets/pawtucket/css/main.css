@@ -826,6 +826,7 @@ a.browseRemoveFacet img {
 	padding: 0px 15px 0px 15px;
 	font-family:lato;
 	background-color:#FFF;
+	bottom:0;
 }
 @media (min-width: 768px) {
 	#footer {
