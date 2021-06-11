@@ -48,6 +48,8 @@ a, a:active, a:focus {
 /* navbar - styles override bootstrap styles */
 /* ----------------------------------------- */
 
+
+
 .nav > li > a, .nav > li > a:hover, .nav > li > a:focus {
 	color: #e42a1d;
     	font-family: neuedisplayblack, neue display black;
@@ -88,6 +90,15 @@ a, a:active, a:focus {
 div.browseFacetItem a:hover {
 	color: #e42a1d;
 }
+
+.navbar-nav > li > a {
+	line-height: 19px;
+}
+
+nav navbar-nav navbar-right menuItems {
+	margin-top:10px;
+}
+
 
 
 /* ----------------------------------------- */
