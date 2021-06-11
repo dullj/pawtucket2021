@@ -95,7 +95,7 @@ div.browseFacetItem a:hover {
 	line-height: 19px;
 }
 
-nav navbar-nav navbar-right menuItems {
+.navbar-nav {
 	margin-top:10px;
 }
 
