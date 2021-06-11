@@ -29,11 +29,7 @@
 		<div style="clear:both; height:1px;"><!-- empty --></div>
 		</div><!-- end pageArea --></div><!-- end col --></div><!-- end row --></div><!-- end container -->
 		<footer id="footer">
-			<ul class="list-inline pull-right social">
-				<li><a href="https://twitter.com/TNSarchives"><i class="fa fa-twitter"></i></a></li>
-				<li><a href="https://www.instagram.com/newschoolarchives/"><i class="fa fa-instagram"></i></a></li>
-			</ul>
-			<div>
+			<div class="col-lg-6>
 				<h4>The New School Archives and Special Collections<br>
 				66 5th Avenue, Lobby Level<br>
 				New York, New York 10011</h4>
@@ -41,14 +37,20 @@
 				<h4>archivist@newschool.edu</h4>
 
 				<h4>212.229.5942</h4>
-			</div>
 			<ul class="list-inline">
+				<li><a href="https://twitter.com/TNSarchives"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="https://www.instagram.com/newschoolarchives/"><i class="fa fa-instagram"></i></a></li>
+			</ul>
+			</div>
+			<div class="col-lg-6">
+			<ul>
 				<h4 style="font-family:neuedisplayblack, neue display black; color: #e42a1d">Resources</h4>
 				<li><h4><a href="https://archives.newschool.edu/home">Archives Home</a></h4></li>
 				<li><h4><a href="https://library.newschool.edu/">Library Home</a></h4></li>
 				<li><h4><a href="http://newschool.edu/">newschool.edu</a></h4></li>
 			</ul>
-			<div><small>powered by <a href="http://www.collectiveaccess.org">CollectiveAccess 2018</a></small></div>
+			</div>
+
 		</footer><!-- end footer -->
 <?php
 	//
