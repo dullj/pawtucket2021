@@ -41,9 +41,7 @@ a, a:hover {
 
 a, a:active, a:focus {
 	color: #000000;
-	text-decoration: underline;
 }
-
 
 /* ----------------------------------------- */
 /* navbar - styles override bootstrap styles */
