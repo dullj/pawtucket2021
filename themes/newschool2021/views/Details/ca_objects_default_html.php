@@ -129,7 +129,7 @@
 							{{{<ifdef code="ca_objects.pbcoreDescription.pBdescription_text"><H6>Description</H6>^ca_objects.pbcoreDescription.pBdescription_text<br/></ifdef>}}}
 							{{{<ifdef code="ca_objects.pbcoreDescription.pBdescription_text%[pbcore_description_types=abstract]"><H6>Abstract</H6>^ca_objects.pbcoreDescription.pBdescription_text%[pbcore_description_types=abstract]<br/></ifdef>}}}
 					
-							{{{<ifdef code="ca_objects.inscriptionSet.inscriptionText"><H6>Inscription</H6>^ca_objects.inscriptionSet.inscriptionText<br/></ifdef>}}}
+							{{{<ifdef code="ca_objects.inscriptionSet.inscriptionText"><H6>Inscription</H6>^ca_objects.inscriptionSet.inscriptionText<br></ifdef>}}}
 							
 							{{{<ifcount code="ca_list_items" min="1" max="1"><H6>Related Term</H6></ifcount>}}}
 							{{{<ifcount code="ca_list_items" min="2"><H6>Related Terms</H6></ifcount>}}}
@@ -141,7 +141,7 @@
 
 							{{{<ifdef code="ca_objects.idno"><H6>Identifier</H6>^ca_objects.idno<br/></ifdef>}}}
 					
-							{{{<h3>Use Restrictions</h3><ifcount code="ca_collections" min="1" max="1"><unit relativeTo="ca_collections">^ca_collections.CollectionNote.NoteContent%[NoteType=conditions_governing_use]</unit></ifcount>}}}
+							{{{<h6>Use Restrictions</h6><ifcount code="ca_collections" min="1" max="1"><unit relativeTo="ca_collections">^ca_collections.CollectionNote.NoteContent%[NoteType=conditions_governing_use]</unit></ifcount>}}}
 					
 							<br><br>
 							{{{<ifcount code="ca_objects.related" min="1">
