@@ -135,14 +135,24 @@
 							{{{<ifcount code="ca_list_items" min="2"><H6>Related Terms</H6></ifcount>}}}
 							{{{<unit relativeTo="ca_objects_x_vocabulary_terms" delimiter="<br/>"><unit relativeTo="ca_list_items"><l>^ca_list_items.preferred_labels.name_plural</l></unit> (^relationship_typename)</unit>}}}
 							
-							{{{<ifdef code="ca_objects.containerID"><H3>Location</H3>^ca_objects.containerID<br/></ifdef>}}}
+							{{{<ifdef code="ca_objects.containerID"><H6>Location</H6>^ca_objects.containerID<br/></ifdef>}}}
 					
-							{{{<ifdef code="ca_objects.pbcoreLanguage"><H3>Language</H3>^ca_objects.pbcoreLanguage<br/></ifdef>}}}
+							{{{<ifdef code="ca_objects.pbcoreLanguage"><H6>Language</H6>^ca_objects.pbcoreLanguage<br/></ifdef>}}}
 
-							{{{<ifdef code="ca_objects.idno"><H3>Identifier</H3>^ca_objects.idno<br/></ifdef>}}}
+							{{{<ifdef code="ca_objects.idno"><H6>Identifier</H6>^ca_objects.idno<br/></ifdef>}}}
 					
 							{{{<h3>Use Restrictions</h3><ifcount code="ca_collections" min="1" max="1"><unit relativeTo="ca_collections">^ca_collections.CollectionNote.NoteContent%[NoteType=conditions_governing_use]</unit></ifcount>}}}
 					
+							<br><br>
+							{{{<ifcount code="ca_objects.related" min="1">
+							<hr></hr><div class="row"><div class="col-sm-12"><H6>Related Objects</H6><div class="row rowSmallPadding"><unit relativeTo="ca_objects.related" delimiter=" "><div class="col-xs-4 col-md-2 smallpadding"><div class="detailRelObject"><l>^ca_object_representations.media.icon</l></div><!--end detailRelObject--></div><!--end col--></unit></div><!-- end row --></div><!-- end col --></div><!-- end row -->
+							</ifcount>}}}									
+							<hr></hr>
+							<div class="row">
+							<div class="col-sm-12">	
+								<p>There’s more! What you see on this site is only what is viewable online. Please visit <a href="https://archives.newschool.edu/">our website</a> to find out more about what’s in the archives. </p>
+							</div>
+					</div><!-- end row -->
 							
 						</div><!-- end col -->				
 						<div class="col-sm-6 colBorderLeft">
