@@ -185,6 +185,15 @@ a.readmore-js-toggle{
    color:#e42a1d;
 }
 
+.detail a {
+color: #e42a1d;
+}
+
+.detail a:hover {
+color: #e42a1d;
+text-decoration: underline;
+}
+
 /* --------------------------------- */
 /* collection index */
 /* --------------------------------- */
