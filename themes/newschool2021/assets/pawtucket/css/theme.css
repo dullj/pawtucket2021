@@ -44,10 +44,54 @@ a, a:active, a:focus {
 }
 
 /* ----------------------------------------- */
-/* navbar - styles override bootstrap styles */
+/* custom navbar - styles override bootstrap styles */
 /* ----------------------------------------- */
 
+.header-first li {
+  padding-right: 10px;
+}
 
+.header-second {
+  text-align: right;
+}
+
+.header-second li {
+  padding-left: 10px;
+}
+
+#header>.row {
+  border-bottom: 0;
+  height: auto;
+  padding-bottom: 10px;
+  padding-top: 15px;
+}
+
+.clearfix-menu {
+  list-style-type: none;
+  padding-left: 0px;
+  padding-top: 5px;
+  overflow: hidden;
+  font-family: neuedisplayblack, neue display black;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.menu-item {
+  display: inline; 
+}
+
+.menu-item a {
+  color: #ffffff;
+}
+
+.menu-item a: hover {
+  color: #e42a1d;
+  text-decoration: underline;
+}
+
+/* ----------------------------------------- */
+/* navbar - styles override bootstrap styles */
+/* ----------------------------------------- */
 
 .nav > li > a, .nav > li > a:hover, .nav > li > a:focus {
 	color: #e42a1d;
