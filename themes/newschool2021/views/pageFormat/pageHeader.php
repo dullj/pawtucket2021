@@ -77,7 +77,7 @@
 </head>
 <body>
 <div class="row" style="background-color:black;">
-<section id="header">
+<div id="header">
     <div class="col-xs-6">
       <div class="header-first">
         <ul class="clearfix-menu">
@@ -104,7 +104,7 @@
       </div>
     </div>
  </div>
-</section>
+</div>
 	<nav class="navbar navbar-default yamm" role="navigation">
 		<div class="container menuBar">
 			<!-- Brand and toggle get grouped for better mobile display -->
