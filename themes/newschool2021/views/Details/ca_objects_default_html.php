@@ -90,7 +90,7 @@
 							{{{<ifdef code="ca_objects.pbcoreDescription.pBdescription_text"><H6>Description</H6>^ca_objects.pbcoreDescription.pBdescription_text<br/></ifdef>}}}
 							{{{<ifdef code="ca_objects.pbcoreDescription.pBdescription_text%[pbcore_description_types=abstract]"><H6>Abstract</H6>^ca_objects.pbcoreDescription.pBdescription_text%[pbcore_description_types=abstract]<br/></ifdef>}}}
 							
-							{{{<ifdef code="ca_objects.dateSet.setDisplayValue"><H6>Date:</H6>^ca_objects.dateSet.setDisplayValue<br/></ifdef>}}}
+							{{{<ifdef code="ca_objects.dateSet.setDisplayValue"><H6>Date</H6>^ca_objects.dateSet.setDisplayValue<br/></ifdef>}}}
 
 							{{{<ifdef code="ca_objects.wtDrawings"><H6>Work Type</H6>^ca_objects.wtDrawings<br/></ifdef>}}}
 							{{{<ifdef code="ca_objects.wtPhotographic"><H6>Work Type</H6>^ca_objects.wtPhotographic<br/></ifdef>}}}
