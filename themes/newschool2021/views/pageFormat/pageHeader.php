@@ -82,7 +82,7 @@
       			<div class="header-first">
       				<ul class="clearfix-menu">
          				<li class="menu-item" style="border-right: solid 1px #8c8c8c;"><a href="https://www.newschool.edu/" rel="noopener" target="_blank">University Home</a></li>
-          				<li class="menu-item" style="padding-left: 10px;"><a href="https://www.archives.newschool.edu/" rel="noopener" target="_blank">Archives Home</a></li>
+          				<li class="menu-item" style="padding-left: 10px;"><a href="https://archives.newschool.edu/" rel="noopener" target="_blank">Archives Home</a></li>
 				</ul>
       			</div>  
     		</div>
@@ -90,7 +90,7 @@
     		<div class="col-xs-6">
       			<div class="header-second">
         			<ul class="clearfix-menu">
-          				<li class="menu-item"><a href="https://www.findingaids.archives.newschool.edu/" rel="noopener" target="_blank">Collection Guides</a></li>
+          				<li class="menu-item"><a href="https://findingaids.archives.newschool.edu/" rel="noopener" target="_blank">Collection Guides</a></li>
           				<li class="menu-item" style="color:#8c8c8c;">Digital Collections</li>
         			</ul>
       			</div>
