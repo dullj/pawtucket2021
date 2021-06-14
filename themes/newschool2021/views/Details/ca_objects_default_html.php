@@ -79,16 +79,16 @@
 			
 			<div class='col-sm-6 col-md-6 col-lg-5'>
 				<H4>{{{<unit relativeTo="ca_collections" delimiter="<br/>"><l>^ca_collections.preferred_labels.name</l></unit><ifcount min="1" code="ca_collections"> ➔ </ifcount>}}}{{{ca_objects.preferred_labels.name}}}</H4>
+				
 				<H6>{{{<unit>^ca_objects.type_id</unit>}}}</H6>
+				
+				{{{<ifdef code="ca_objects.idno"><H6>Identifier</H6>^ca_objects.idno<br/></ifdef>}}}
+
 				<hr></hr>
 					<div class="row">
 						<div class="col-sm-12">	
 							{{{<ifdef code="ca_objects.dateSet.setDisplayValue"><H6>Date:</H6>^ca_objects.dateSet.setDisplayValue<br/></ifdef>}}}
 
-							{{{<ifcount code="ca_entities" min="1" max="1"><H6>Related person</H6></ifcount>}}}
-							{{{<ifcount code="ca_entities" min="2"><H6>Related people</H6></ifcount>}}}
-							{{{<unit relativeTo="ca_objects_x_entities" delimiter="<br/>"><unit relativeTo="ca_entities"><l>^ca_entities.preferred_labels</l></unit> (^relationship_typename)</unit>}}}
-							
 							{{{<ifdef code="ca_objects.wtDrawings"><H6>Work Type</H6>^ca_objects.wtDrawings<br/></ifdef>}}}
 							{{{<ifdef code="ca_objects.wtPhotographic"><H6>Work Type</H6>^ca_objects.wtPhotographic<br/></ifdef>}}}
 							{{{<ifdef code="ca_objects.wtPosters"><H6>Work Type</H6>^ca_objects.wtPosters<br/></ifdef>}}}
@@ -110,25 +110,30 @@
 					
 							{{{<ifdef code="ca_objects.measurementSet.measurements"><H6>Measurements</H6>^ca_objects.measurementSet.measurements <ifdef code="ca_objects.measurementSet.measurementsType">(^ca_objects.measurementSet.measurementsType)</ifdef></ifdef><ifdef code="ca_objects.measurementSet.measurements"> x </ifdef><ifdef code="ca_objects.measurementSet.measurements2">^ca_objects.measurementSet.measurements2 <ifdef code="ca_objects.measurementSet.measurementsType2">(^ca_objects.measurementSet.measurementsType2)</ifdef></ifdef>}}}
 					
+							{{{<ifdef code="ca_objects.inscriptionSet.inscriptionText"><H6>Inscription</H6>^ca_objects.inscriptionSet.inscriptionText<br></ifdef>}}}
+							
+							{{{<ifdef code="ca_objects.containerID"><H6>Location</H6>^ca_objects.containerID<br/></ifdef>}}}
+					
+							{{{<ifdef code="ca_objects.pbcoreLanguage"><H6>Language</H6>^ca_objects.pbcoreLanguage<br/></ifdef>}}}
+							
 							{{{<ifdef code="ca_objects.descriptionSet.descriptionText"><H6>Description</H6>^ca_objects.descriptionSet.descriptionText<br/></ifdef>}}}
 							{{{<ifdef code="ca_objects.pbcoreDescription.pBdescription_text"><H6>Description</H6>^ca_objects.pbcoreDescription.pBdescription_text<br/></ifdef>}}}
 							{{{<ifdef code="ca_objects.pbcoreDescription.pBdescription_text%[pbcore_description_types=abstract]"><H6>Abstract</H6>^ca_objects.pbcoreDescription.pBdescription_text%[pbcore_description_types=abstract]<br/></ifdef>}}}
-					
-							{{{<ifdef code="ca_objects.inscriptionSet.inscriptionText"><H6>Inscription</H6>^ca_objects.inscriptionSet.inscriptionText<br></ifdef>}}}
 							
 							{{{<ifcount code="ca_list_items" min="1" max="1"><H6>Related Term</H6></ifcount>}}}
 							{{{<ifcount code="ca_list_items" min="2"><H6>Related Terms</H6></ifcount>}}}
 							{{{<unit relativeTo="ca_objects_x_vocabulary_terms" delimiter="<br/>"><unit relativeTo="ca_list_items"><l>^ca_list_items.preferred_labels.name_plural</l></unit> (^relationship_typename)</unit>}}}
 							
-							{{{<ifdef code="ca_objects.containerID"><H6>Location</H6>^ca_objects.containerID<br/></ifdef>}}}
-					
-							{{{<ifdef code="ca_objects.pbcoreLanguage"><H6>Language</H6>^ca_objects.pbcoreLanguage<br/></ifdef>}}}
-
-							{{{<ifdef code="ca_objects.idno"><H6>Identifier</H6>^ca_objects.idno<br/></ifdef>}}}
+							{{{<ifcount code="ca_entities" min="1" max="1"><H6>Related person</H6></ifcount>}}}
+							{{{<ifcount code="ca_entities" min="2"><H6>Related people</H6></ifcount>}}}
+							{{{<unit relativeTo="ca_objects_x_entities" delimiter="<br/>"><unit relativeTo="ca_entities"><l>^ca_entities.preferred_labels</l></unit> (^relationship_typename)</unit>}}}
+		
+							<hr></hr>
 					
 							{{{<h6>Use Restrictions</h6><ifcount code="ca_collections" min="1" max="1"><unit relativeTo="ca_collections">^ca_collections.CollectionNote.NoteContent%[NoteType=conditions_governing_use]</unit></ifcount>}}}
-					
-							<br><br>
+							
+							<hr></hr>
+							
 							{{{<ifcount code="ca_objects.related" min="1">
 							<hr></hr><div class="row"><div class="col-sm-12"><H6>Related Objects</H6><div class="row rowSmallPadding"><unit relativeTo="ca_objects.related" delimiter=" "><div class="col-xs-4 col-md-2 smallpadding"><div class="detailRelObject"><l>^ca_object_representations.media.icon</l></div><!--end detailRelObject--></div><!--end col--></unit></div><!-- end row --></div><!-- end col --></div><!-- end row -->
 							</ifcount>}}}									
