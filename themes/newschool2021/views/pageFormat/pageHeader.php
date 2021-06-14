@@ -76,6 +76,34 @@
 ?>
 </head>
 <body>
+<div class="row" style="background-color:black;">
+    <div class="col-xs-6">
+      <div class="header-first">
+        <ul class="clearfix-menu">
+          <li class="menu-item" style="border-right: solid 1px #8c8c8c;">
+            <a href="https://www.newschool.edu/" rel="noopener" target="_blank">University Home</a>
+          </li>
+          <li class="menu-item" style="padding-left: 10px;">
+            <a href="https://www.archives.newschool.edu/" rel="noopener" target="_blank">Archives Home</a>
+          </li>
+        </ul>
+      </div>  
+    </div>
+  
+    <div class="col-xs-6">
+      <div class="header-second">
+        <ul class="clearfix-menu">
+          <li class="menu-item" style="color:#8c8c8c;">
+                Collection Guides
+          </li>
+          <li class="menu-item">
+              <a href="https://www.digitalarchives.library.newschool.edu/" rel="noopener" target="_blank">Digital Collections</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+ </div>
+	
 	<nav class="navbar navbar-default yamm" role="navigation">
 		<div class="container menuBar">
 			<!-- Brand and toggle get grouped for better mobile display -->
