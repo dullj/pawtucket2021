@@ -95,10 +95,10 @@
       <div class="header-second">
         <ul class="clearfix-menu">
           <li class="menu-item" style="color:#8c8c8c;">
-                Collection Guides
+                <a href="https://www.findingaids.archives.newschool.edu/" rel="noopener" target="_blank">Collection Guides</a>
           </li>
           <li class="menu-item">
-              <a href="https://www.digitalarchives.library.newschool.edu/" rel="noopener" target="_blank">Digital Collections</a>
+              Digital Collections
           </li>
         </ul>
       </div>
