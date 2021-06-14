@@ -82,11 +82,15 @@
 				
 				<H6>{{{<unit>^ca_objects.type_id</unit>}}}</H6>
 				
-				{{{<ifdef code="ca_objects.idno"><H6>Identifier</H6>^ca_objects.idno<br/></ifdef>}}}
-
 				<hr></hr>
 					<div class="row">
 						<div class="col-sm-12">	
+							{{{<ifdef code="ca_objects.idno"><H6>Identifier</H6>^ca_objects.idno<br/></ifdef>}}}
+
+							{{{<ifdef code="ca_objects.descriptionSet.descriptionText"><H6>Description</H6>^ca_objects.descriptionSet.descriptionText<br/></ifdef>}}}
+							{{{<ifdef code="ca_objects.pbcoreDescription.pBdescription_text"><H6>Description</H6>^ca_objects.pbcoreDescription.pBdescription_text<br/></ifdef>}}}
+							{{{<ifdef code="ca_objects.pbcoreDescription.pBdescription_text%[pbcore_description_types=abstract]"><H6>Abstract</H6>^ca_objects.pbcoreDescription.pBdescription_text%[pbcore_description_types=abstract]<br/></ifdef>}}}
+							
 							{{{<ifdef code="ca_objects.dateSet.setDisplayValue"><H6>Date:</H6>^ca_objects.dateSet.setDisplayValue<br/></ifdef>}}}
 
 							{{{<ifdef code="ca_objects.wtDrawings"><H6>Work Type</H6>^ca_objects.wtDrawings<br/></ifdef>}}}
@@ -115,11 +119,7 @@
 							{{{<ifdef code="ca_objects.containerID"><H6>Location</H6>^ca_objects.containerID<br/></ifdef>}}}
 					
 							{{{<ifdef code="ca_objects.pbcoreLanguage"><H6>Language</H6>^ca_objects.pbcoreLanguage<br/></ifdef>}}}
-							
-							{{{<ifdef code="ca_objects.descriptionSet.descriptionText"><H6>Description</H6>^ca_objects.descriptionSet.descriptionText<br/></ifdef>}}}
-							{{{<ifdef code="ca_objects.pbcoreDescription.pBdescription_text"><H6>Description</H6>^ca_objects.pbcoreDescription.pBdescription_text<br/></ifdef>}}}
-							{{{<ifdef code="ca_objects.pbcoreDescription.pBdescription_text%[pbcore_description_types=abstract]"><H6>Abstract</H6>^ca_objects.pbcoreDescription.pBdescription_text%[pbcore_description_types=abstract]<br/></ifdef>}}}
-							
+
 							{{{<ifcount code="ca_list_items" min="1" max="1"><H6>Related Term</H6></ifcount>}}}
 							{{{<ifcount code="ca_list_items" min="2"><H6>Related Terms</H6></ifcount>}}}
 							{{{<unit relativeTo="ca_objects_x_vocabulary_terms" delimiter="<br/>"><unit relativeTo="ca_list_items"><l>^ca_list_items.preferred_labels.name_plural</l></unit> (^relationship_typename)</unit>}}}
@@ -127,8 +127,6 @@
 							{{{<ifcount code="ca_entities" min="1" max="1"><H6>Related person</H6></ifcount>}}}
 							{{{<ifcount code="ca_entities" min="2"><H6>Related people</H6></ifcount>}}}
 							{{{<unit relativeTo="ca_objects_x_entities" delimiter="<br/>"><unit relativeTo="ca_entities"><l>^ca_entities.preferred_labels</l></unit> (^relationship_typename)</unit>}}}
-		
-							<hr></hr>
 					
 							{{{<h6>Use Restrictions</h6><ifcount code="ca_collections" min="1" max="1"><unit relativeTo="ca_collections">^ca_collections.CollectionNote.NoteContent%[NoteType=conditions_governing_use]</unit></ifcount>}}}
 							
