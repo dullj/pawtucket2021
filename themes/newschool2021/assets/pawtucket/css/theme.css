@@ -64,6 +64,9 @@ a, a:active, a:focus {
   height: auto;
   padding-bottom: 10px;
   padding-top: 15px;
+}
+
+#header {
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
