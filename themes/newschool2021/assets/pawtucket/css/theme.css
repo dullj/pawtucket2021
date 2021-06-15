@@ -231,6 +231,10 @@ div.browseFacetItem a {
 .detail H6 a{
 	color: #e42a1d;
 }
+
+#object-headers h6 {
+	margin-top:20px;
+}
 	
 a.readmore-js-toggle{
    color:#e42a1d;
