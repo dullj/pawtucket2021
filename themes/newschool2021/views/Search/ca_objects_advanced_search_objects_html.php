@@ -41,7 +41,7 @@ print "<p>Enter your search terms in the fields below.</p>";
 	<div class='row'>
 		<div class="advancedSearchField col-sm-12">
 			<span class='formLabel' data-toggle="popover" data-trigger="hover" data-content="Search records within a particular collection.">Collection </span>
-			{{{ca_collections.preferred_labels%restrictToTypes=collection%width=200px&height=40px}}}
+			{{{ca_collections.preferred_labels%restrictToTypes=collection%width=200px&height=40px&select=1}}}
 		</div>
 	</div>
 	<br style="clear: both;"/>
