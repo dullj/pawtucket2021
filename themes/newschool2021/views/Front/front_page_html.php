@@ -33,7 +33,7 @@
 ?>
 	<div class="row" style="margin: auto;">
 		<div class="col-sm-12 col-md-10 col-md-offset-1">
-			<H1>The New School Archives Digital Collections is home to born digital and digitized primary source materials.</H1>
+			<H1>The New School Archives Digital Collections is home to born digital and digitized primary source materials. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</H1>
 <?php
 
 print $this->render("Front/featured_set_slideshow_html.php");
