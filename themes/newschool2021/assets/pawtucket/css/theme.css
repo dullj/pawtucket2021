@@ -281,6 +281,10 @@ text-decoration: underline;
   height: 300px;
 }
 
+#collection-headers h6 {
+  margin-top:25px;
+}
+
 /* --------------------------------- */
 /* multi-search */
 /* --------------------------------- */
