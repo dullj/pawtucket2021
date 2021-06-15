@@ -60,7 +60,7 @@
 					
 					{{{<ifcount code="ca_collections.related" min="1" max="1"><h6>Related collection</h6></ifcount>}}}
 					{{{<ifcount code="ca_collections.related" min="2"><h6>Related collections</h6></ifcount>}}}
-					{{{<unit relativeTo="ca_collections.related" delimiter="<br/>"><l>^ca_collections.preferred_labels.name</l></unit><br/><br/>}}}
+					{{{<unit relativeTo="ca_collections.related" delimiter="<br/>"><l>^ca_collections.preferred_labels.name</l></unit>}}}
 					
 					{{{<ifcount code="ca_objects" min="1" max="1"><div class='unit'><unit relativeTo="ca_objects" delimiter=" "><l>^ca_object_representations.media.large</l><div class='caption'>Related Object: <l>^ca_objects.preferred_labels.name</l></div></unit></div></ifcount>}}}
 <?php
