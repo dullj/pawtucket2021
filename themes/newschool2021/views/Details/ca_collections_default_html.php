@@ -54,7 +54,7 @@
 ?>				
 				</div><!-- end col -->
 			</div><!-- end row -->
-			<div class="row">			
+			<div class="row" id="collection-headers">			
 				<div class='col-md-6 col-lg-6'>
 					{{{<ifdef code="ca_collections.CollectionNote.NoteContent%[NoteType=abstract]"><H6>About</H6>^ca_collections.CollectionNote.NoteContent%[NoteType=abstract]<br/></ifdef>}}}
 					
