@@ -171,6 +171,8 @@
 					<li <?php print ($this->request->getController() == "Gallery") ? 'class="active"' : ''; ?>><?php print caNavLink($this->request, _t("Gallery"), "", "", "Gallery", "Index"); ?></li>
 					<li <?php print ($this->request->getController() == "Collections") ? 'class="active"' : ''; ?>><?php print caNavLink($this->request, _t("Collections"), "", "", "Collections", "index"); ?></li>					
 					<li <?php print ($this->request->getController() == "Contact") ? 'class="active"' : ''; ?>><?php print caNavLink($this->request, _t("Contact"), "", "", "Contact", "Form"); ?></li>
+					<li><a href="https://archives.newschool.edu/contactthearchives/" rel="noopener" target="_blank">Contact Us Form</a></li>
+
 				</ul>
 			</div><!-- /.navbar-collapse -->
 		</div><!-- end container -->
