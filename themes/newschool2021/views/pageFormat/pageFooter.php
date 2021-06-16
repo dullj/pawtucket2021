@@ -28,27 +28,29 @@
 ?>
 		<div style="clear:both; height:1px;"><!-- empty --></div>
 		</div><!-- end pageArea --></div><!-- end col --></div><!-- end row --></div><!-- end container -->
-		<footer id="footer">
-			<ul class="pull-right">
-				<h4 style="font-family:neuedisplayblack, neue display black; color: #e42a1d">Resources</h4>
-				<li><h4><a href="https://archives.newschool.edu/home">Archives Home</a></h4></li>
-				<li><h4><a href="https://library.newschool.edu/">Library Home</a></h4></li>
-				<li><h4><a href="http://newschool.edu/">newschool.edu</a></h4></li>
-			</ul>
-			<div>
-				<h4>The New School Archives and Special Collections<br>
-				66 5th Avenue, Lobby Level<br>
-				New York, New York 10011</h4>
-				
-				<h4>archivist@newschool.edu</h4>
-
-				<h4>212.229.5942</h4>
-			</div>
-			<ul class="list-inline social">
-				<li><a href="https://twitter.com/TNSarchives"><i class="fa fa-twitter"></i></a></li>
-				<li><a href="https://www.instagram.com/newschoolarchives/"><i class="fa fa-instagram"></i></a></li>
-			</ul>
-		</footer><!-- end footer -->
+		<footer id="footer">  
+    <div class="row-tns-footer">
+      <div class="row-fluid footer-inner">
+          <div class="col-md-6 footer-links">
+            <ul class="footer-links-list">
+              <h5>The New School Archives and Special Collections</h5>
+              <p>66 5th Avenue, Lobby Level<br>
+              New York, New York 10011</p>
+              <p>archivist@newschool.edu</p>
+              <p>212.229.5942</p>
+            </ul>
+          </div>
+          <div class="col-md-6 footer-links">
+            <ul class="footer-links-list">
+              <h5 style="color: #e42a1d;">RESOURCES</h5>     
+              <p><a href="https://newschool.edu" rel="noopener" target="_blank">University Home</a><br>
+              <a href="https://library.newschool.edu" rel="noopener" target="_blank">Library Home</a><br>
+              <a href="https://archives.newschool.edu" rel="noopener" target="_blank">Archives Home</a></p>
+            </ul>
+          </div>
+      </div>
+    </div>
+  </footer><!-- end footer -->
 <?php
 	//
 	// Output HTML for debug bar
