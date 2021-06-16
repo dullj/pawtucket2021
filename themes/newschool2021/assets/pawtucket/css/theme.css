@@ -249,6 +249,30 @@ div.browseFacetItem a {
 	color: #e42a1d;
 	text-decoration: underline;
 }
+
+.footer-links-list {
+  list-style: none;
+  font-family: neue;
+  font-weight: 800;
+  padding-bottom: 20px;
+  padding-top: 30px;
+  padding-left: 0;
+  color: #ffffff;
+}
+
+.footer-links-list a {
+  color: #ffffff;
+}
+
+.footer-links-list a:hover {
+  color: #e42a1d;
+  text-decoration:underline;
+}
+
+.container-fluid.footer {
+  background-color: #000000;
+  margin-top: 20px;
+}
 	
 	
 /* --------------------------------- */
