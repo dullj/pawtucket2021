@@ -120,9 +120,6 @@ padding-left: 15px;">
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-<?php
-				print caNavLink($this->request, caGetThemeGraphic($this->request, 'Archives_Logo_RGB.png'), "navbar-brand", "", "","");
-?>
 				
 			</div>
 
