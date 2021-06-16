@@ -5,6 +5,11 @@ H1, h1, H2, h2, H3, h3, H4, h4, H5, h5, H6, h6{
 	font-family: Neue,"Arial",Helvetica,sans-serif; 
 }
 
+#pageArea {
+	padding-right:15px;
+	padding-left:15px;
+}
+
 body {
 	font-family: neue,Helvetica Neue,Helvetica,Arial,sans-serif;
 	line-height: 30px;
