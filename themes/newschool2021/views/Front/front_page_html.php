@@ -32,7 +32,7 @@
 		print $this->render("Front/featured_set_slideshow_html.php");
 ?>
 	<div class="row" style="margin: auto;">
-		<div class="col-sm-12 col-md-10 col-md-offset-1">
+		<div class="col-sm-12 col-md-10 col-md-offset-1" id="welcome-text">
     
     <h3>Welcome</h3>
     <p>On this site you can search collection guides (also called finding aids) that describe archival collections held by The New School Archives. When a new collection becomes available for research, the guide for the collection is added to this site.</p>
