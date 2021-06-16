@@ -28,7 +28,8 @@
 ?>
 		<div style="clear:both; height:1px;"><!-- empty --></div>
 		</div><!-- end pageArea --></div><!-- end col --></div><!-- end row --></div><!-- end container -->
-		<footer id="footer">  
+<div class="container-fluid footer">		
+<footer id="footer">  
     <div class="row-tns-footer">
       <div class="row-fluid footer-inner">
           <div class="col-md-6 footer-links">
@@ -50,7 +51,7 @@
           </div>
       </div>
     </div>
-  </footer><!-- end footer -->
+</footer></div><!-- end footer -->
 <?php
 	//
 	// Output HTML for debug bar
