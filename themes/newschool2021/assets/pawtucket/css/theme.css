@@ -48,12 +48,14 @@ a, a:active, a:focus {
 /* ----------------------------------------- */
 
 .parallelogram {
-  width: 100px;
-  height: 25px;
+  width: 80px;
+  height: 30px;
   transform: skew(-20deg);
-  background: #e42a1d;
+  background: #ff9933;
   float:left;
-  margin-right:5px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  margin-top: 10px;
 }
 
 #site-title {
