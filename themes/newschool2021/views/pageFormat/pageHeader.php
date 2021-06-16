@@ -135,7 +135,7 @@
 ?>
 			<div class="col-md-12">
       				<h1 id="fullsitetitle">The New School Archives And Special Collections</h1>
-      				<div class="parallelogram"></div><i class="fas fa-folder"></i><h2 id="site-title"><a href="/pawtucket/index.php">Digital Collections</a></h2>
+      				<div class="parallelogram"></div><h2 id="site-title"><a href="/pawtucket/index.php">Digital Collections</a></h2>
     			</div>
 			
 			<div class="collapse navbar-collapse" id="bs-main-navbar-collapse-1">
