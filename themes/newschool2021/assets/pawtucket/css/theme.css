@@ -47,6 +47,15 @@ a, a:active, a:focus {
 /* custom navbar - styles override bootstrap styles */
 /* ----------------------------------------- */
 
+.parallelogram {
+  width: 100px;
+  height: 25px;
+  transform: skew(-20deg);
+  background: #e42a1d;
+  float:left;
+  margin-right:5px;
+}
+
 #site-title {
   font-size: 30px;
   font-family: neue bold, neuebold;
