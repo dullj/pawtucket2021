@@ -28,30 +28,63 @@
 ?>
 		<div style="clear:both; height:1px;"><!-- empty --></div>
 		</div><!-- end pageArea --></div><!-- end col --></div><!-- end row --></div><!-- end container -->
-		<div class="container-fluid footer">
-  <footer>
-    <div class="row-tns-footer">
-      <div class="row-fluid footer-inner">
-          <div class="col-md-6 footer-links">
-            <ul class="footer-links-list">
-              <h5>The New School Archives and Special Collections</h5>
-              <p>66 5th Avenue, Lobby Level<br>
-              New York, New York 10011</p>
-              <p>archivist@newschool.edu</p>
-              <p>212.229.5942</p>
-            </ul>
-          </div>
-          <div class="col-md-6 footer-links">
-            <ul class="footer-links-list">
-              <h5 style="color: #e42a1d;">RESOURCES</h5>     
-              <p><a href="https://newschool.edu" rel="noopener" target="_blank">University Home</a><br>
-              <a href="https://library.newschool.edu" rel="noopener" target="_blank">Library Home</a><br>
-              <a href="https://archives.newschool.edu" rel="noopener" target="_blank">Archives Home</a></p>
-            </ul>
-          </div>
-      </div>
-    </div>
-  </footer>
-</div>
+		<footer id="footer">
+			<ul class="pull-right">
+				<h4 style="font-family:neuedisplayblack, neue display black; color: #e42a1d">Resources</h4>
+				<li><h4><a href="https://archives.newschool.edu/home">Archives Home</a></h4></li>
+				<li><h4><a href="https://library.newschool.edu/">Library Home</a></h4></li>
+				<li><h4><a href="http://newschool.edu/">newschool.edu</a></h4></li>
+			</ul>
+			<div>
+				<h4>The New School Archives and Special Collections<br>
+				66 5th Avenue, Lobby Level<br>
+				New York, New York 10011</h4>
+				
+				<h4>archivist@newschool.edu</h4>
 
-<!-- end footer -->
+				<h4>212.229.5942</h4>
+			</div>
+			<ul class="list-inline social">
+				<li><a href="https://twitter.com/TNSarchives"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="https://www.instagram.com/newschoolarchives/"><i class="fa fa-instagram"></i></a></li>
+			</ul>
+		</footer><!-- end footer -->
+<?php
+	//
+	// Output HTML for debug bar
+	//
+	if(Debug::isEnabled()) {
+		print Debug::$bar->getJavascriptRenderer()->render();
+	}
+?>
+	
+		<?php print TooltipManager::getLoadHTML(); ?>
+		<div id="caMediaPanel"> 
+			<div id="caMediaPanelContentArea">
+			
+			</div>
+		</div>
+		<script type="text/javascript">
+			/*
+				Set up the "caMediaPanel" panel that will be triggered by links in object detail
+				Note that the actual <div>'s implementing the panel are located here in views/pageFormat/pageFooter.php
+			*/
+			var caMediaPanel;
+			jQuery(document).ready(function() {
+				if (caUI.initPanel) {
+					caMediaPanel = caUI.initPanel({ 
+						panelID: 'caMediaPanel',										/* DOM ID of the <div> enclosing the panel */
+						panelContentID: 'caMediaPanelContentArea',		/* DOM ID of the content area <div> in the panel */
+						exposeBackgroundColor: '#FFFFFF',						/* color (in hex notation) of background masking out page content; include the leading '#' in the color spec */
+						exposeBackgroundOpacity: 0.7,							/* opacity of background color masking out page content; 1.0 is opaque */
+						panelTransitionSpeed: 400, 									/* time it takes the panel to fade in/out in milliseconds */
+						allowMobileSafariZooming: true,
+						mobileSafariViewportTagID: '_msafari_viewport',
+						closeButtonSelector: '.close'					/* anything with the CSS classname "close" will trigger the panel to close */
+					});
+				}
+			});
+			/*(function(e,d,b){var a=0;var f=null;var c={x:0,y:0};e("[data-toggle]").closest("li").on("mouseenter",function(g){if(f){f.removeClass("open")}d.clearTimeout(a);f=e(this);a=d.setTimeout(function(){f.addClass("open")},b)}).on("mousemove",function(g){if(Math.abs(c.x-g.ScreenX)>4||Math.abs(c.y-g.ScreenY)>4){c.x=g.ScreenX;c.y=g.ScreenY;return}if(f.hasClass("open")){return}d.clearTimeout(a);a=d.setTimeout(function(){f.addClass("open")},b)}).on("mouseleave",function(g){d.clearTimeout(a);f=e(this);a=d.setTimeout(function(){f.removeClass("open")},b)})})(jQuery,window,200);*/
+		</script>
+	</body>
+</html>
