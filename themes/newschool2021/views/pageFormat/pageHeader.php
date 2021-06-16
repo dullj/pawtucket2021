@@ -164,7 +164,13 @@
 						})
 					});
 				</script>
-				<ul class="nav navbar-nav navbar-right menuItems">
+				
+				<div class="col-md-12">
+      					<h1 id="fullsitetitle">The New School Archives And Special Collections</h1>
+      					<h2 id="site-title"><a href="https://dev-findingaids.archives.newschool.edu/">Collection Guides</a></h2>
+    				</div> 
+				
+				<ul class="nav navbar-nav menuItems">
 					<li <?php print ($this->request->getController() == "About") ? 'class="active"' : ''; ?>><?php print caNavLink($this->request, _t("About"), "", "", "About", "Index"); ?></li>
 					<?php print $this->render("pageFormat/browseMenu.php"); ?>	
 					<li <?php print (($this->request->getController() == "Search") && ($this->request->getAction() == "advanced")) ? 'class="active"' : ''; ?>><?php print caNavLink($this->request, _t("Advanced Search"), "", "", "Search", "advanced/objects"); ?></li>
