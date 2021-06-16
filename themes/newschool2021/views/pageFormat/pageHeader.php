@@ -117,9 +117,6 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-<?php
-				print caNavLink($this->request, caGetThemeGraphic($this->request, 'Archives_Logo_RGB.png'), "navbar-brand", "", "","");
-?>
 			</div>
 
 		<!-- Collect the nav links, forms, and other content for toggling -->
@@ -167,7 +164,7 @@
 				
 				<div class="col-md-12">
       					<h1 id="fullsitetitle">The New School Archives And Special Collections</h1>
-      					<h2 id="site-title"><a href="https://dev-findingaids.archives.newschool.edu/">Collection Guides</a></h2>
+      					<h2 id="site-title"><a href="https://dev-findingaids.archives.newschool.edu/">Digital Collections</a></h2>
     				</div> 
 				
 				<ul class="nav navbar-nav menuItems">
