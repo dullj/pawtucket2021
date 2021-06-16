@@ -117,9 +117,6 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-<?php
-				print caNavLink($this->request, caGetThemeGraphic($this->request, 'Archives_Logo_RGB.png'), "navbar-brand", "", "","");
-?>
 				
 			</div>
 
@@ -136,6 +133,11 @@
 <?php
 	}
 ?>
+			<div class="col-md-12">
+      				<h1 id="fullsitetitle">The New School Archives And Special Collections</h1>
+      				<div class="parallelogram"></div><h2 id="site-title"><a href="/pawtucket/index.php">Digital Collections</a></h2>
+    			</div>
+			
 			<div class="collapse navbar-collapse" id="bs-main-navbar-collapse-1">
 <?php
 	if ($vb_has_user_links) {
@@ -165,11 +167,7 @@
 						})
 					});
 				</script>
-				
-				<div class="col-md-12">
-      					<h1 id="fullsitetitle">The New School Archives And Special Collections</h1>
-      					<h2 id="site-title"><a href="https://dev-findingaids.archives.newschool.edu/">Digital Collections</a></h2>
-    				</div> 
+				 
 				
 				<ul class="nav navbar-nav menuItems">
 					<li <?php print ($this->request->getController() == "About") ? 'class="active"' : ''; ?>><?php print caNavLink($this->request, _t("About"), "", "", "About", "Index"); ?></li>
