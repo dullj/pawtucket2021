@@ -29,13 +29,15 @@
 		<div style="clear:both; height:1px;"><!-- empty --></div>
 		</div><!-- end pageArea --></div><!-- end col --></div><!-- end row --></div><!-- end container -->
 		<footer id="footer">
+			<div class="col-md-6">
 			<ul class="pull-right">
 				<h4 style="font-family:neuedisplayblack, neue display black; color: #e42a1d">Resources</h4>
 				<li><h4><a href="https://archives.newschool.edu/home">Archives Home</a></h4></li>
 				<li><h4><a href="https://library.newschool.edu/">Library Home</a></h4></li>
 				<li><h4><a href="http://newschool.edu/">newschool.edu</a></h4></li>
 			</ul>
-			<div>
+			</div>
+			<div class="col-md-6">
 				<h4>The New School Archives and Special Collections<br>
 				66 5th Avenue, Lobby Level<br>
 				New York, New York 10011</h4>
@@ -43,11 +45,12 @@
 				<h4>archivist@newschool.edu</h4>
 
 				<h4>212.229.5942</h4>
-			</div>
+			
 			<ul class="list-inline social">
 				<li><a href="https://twitter.com/TNSarchives"><i class="fa fa-twitter"></i></a></li>
 				<li><a href="https://www.instagram.com/newschoolarchives/"><i class="fa fa-instagram"></i></a></li>
 			</ul>
+			</div>
 		</footer><!-- end footer -->
 <?php
 	//
