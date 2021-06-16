@@ -1,8 +1,14 @@
 /* --------------------------------- */
 /* GENERAL */
 /* --------------------------------- */
-H1, h1, H2, h2, H3, h3, H4, h4, H5, h5, H6, h6{
+H1, h1, H2, h2, H3, h3, H4, h4, H6, h6{
 	font-family: Neue,"Arial",Helvetica,sans-serif; 
+}
+
+H5, h5 {
+font-family: neueblack, neue black, neue;
+font-weight: bold;
+font-size: 18px;
 }
 
 #pageArea {
@@ -215,6 +221,11 @@ div.browseFacetItem a {
 /* --------------------------------- */
 /* footer */
 /* --------------------------------- */
+
+.row-tns-footer h5, H5 {
+	color:#ffffff;
+}
+
 #footer{
 	font-family:Neue;
 	background-color: #000000;
