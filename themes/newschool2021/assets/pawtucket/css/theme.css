@@ -47,6 +47,30 @@ a, a:active, a:focus {
 /* custom navbar - styles override bootstrap styles */
 /* ----------------------------------------- */
 
+#site-title {
+  font-size: 30px;
+  font-family: neue bold, neuebold;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+#site-title a {
+  color: #e42a1d; 
+  text-decoration: none;
+}
+
+#site-title a:hover {
+  color: #e42a1d; 
+  text-decoration: underline;
+}
+
+#fullsitetitle {
+  font-family: neuedisplayblack, neue display black;
+  margin-bottom: 0;
+  margin-top: 30px;
+  font-size: 1.5rem;
+}
+
 .header-first li {
   padding-right: 10px;
 }
