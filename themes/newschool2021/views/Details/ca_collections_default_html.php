@@ -58,10 +58,6 @@
 				<div class='col-md-6 col-lg-6'>
 					{{{<ifdef code="ca_collections.CollectionNote.NoteContent%[NoteType=abstract]"><H6>About</H6>^ca_collections.CollectionNote.NoteContent%[NoteType=abstract]<br/></ifdef>}}}
 					
-					{{{<ifcount code="ca_collections.related" min="1" max="1"><h6>Related collection</h6></ifcount>}}}
-					{{{<ifcount code="ca_collections.related" min="2"><h6>Related collections</h6></ifcount>}}}
-					{{{<unit relativeTo="ca_collections.related" delimiter="<br/>"><l>^ca_collections.preferred_labels.name</l></unit>}}}
-					
 					{{{<ifcount code="ca_objects" min="1" max="1"><div class='unit'><unit relativeTo="ca_objects" delimiter=" "><l>^ca_object_representations.media.large</l><div class='caption'>Related Object: <l>^ca_objects.preferred_labels.name</l></div></unit></div></ifcount>}}}
 <?php
 				# Comment and Share Tools
@@ -88,7 +84,11 @@
 					{{{<ifcount code="ca_entities" min="1" max="1"><H6>Related person/organization</H6></ifcount>}}}
 					{{{<ifcount code="ca_entities" min="2"><H6>Related people/organizations</H6></ifcount>}}}
 					{{{<ifcount code="ca_entities" min="1"><unit relativeTo="ca_entities" delimiter="<br/>" sort="ca_entity_labels.surname;ca_entity_labels.forename"><l>^ca_entities.preferred_labels</l></unit></ifcount>}}}
-									
+					
+					{{{<ifcount code="ca_collections.related" min="1" max="1"><h6>Related collection</h6></ifcount>}}}
+					{{{<ifcount code="ca_collections.related" min="2"><h6>Related collections</h6></ifcount>}}}
+					{{{<unit relativeTo="ca_collections.related" delimiter="<br/>"><l>^ca_collections.preferred_labels.name</l></unit>}}}
+					
 				</div><!-- end col -->
 			</div><!-- end row -->
 {{{<ifcount code="ca_objects" min="2">
