@@ -179,12 +179,15 @@ padding-left: 15px;">
 					
 					<?php print $this->render("pageFormat/browseMenu.php"); ?>
 					
-					<li class="dropdown<?php print ((strToLower($this->request->getController()) == "browse") && in_array(strToLower($this->request->getAction()), array("collections", "objects", "entities"))) ? ' active' : ''; ?>" style="position:relative;"><a href="#" class="dropdown-toggle mainhead top" data-toggle="dropdown"><?php print _t("Filter By"); ?> <span class="caret"></span></a>
+					<li class="dropdown<?php print ((strToLower($this->request->getController()) == "browse") && in_array(strToLower($this->request->getAction()), array("collections", "objects", "people", "organizations"))) ? ' active' : ''; ?>" style="position:relative;"><a href="#" class="dropdown-toggle mainhead top" data-toggle="dropdown"><?php print _t("Filter By"); ?> <span class="caret"></span></a>
 						<ul class="dropdown-menu">
 <?php
 							print "<li>".caNavLink($this->request, _t("Collections"), '', '', 'Browse', 'collections', '')."</li>";
 							print "<li>".caNavLink($this->request, _t("Objects"), '', '', 'Browse', 'objects', '')."</li>";
 							print "<li>".caNavLink($this->request, _t("All Names"), '', '', 'Browse', 'entities', '')."</li>";
+							print "<li>".caNavLink($this->request, _t("People"), '', '', 'Browse', 'People', '')."</li>";
+							print "<li>".caNavLink($this->request, _t("Organizations"), '', '', 'Browse', 'Organizations', '')."</li>";
+
 ?>
 						</ul>	
 					</li>
