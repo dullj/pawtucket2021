@@ -138,7 +138,7 @@ padding-left: 15px;">
 ?>
 			<div class="col-md-12">
       				<h1 id="fullsitetitle">The New School Archives And Special Collections</h1>
-      				<h2 id="site-title"><a href="/pawtucket/index.php">Digital Collections</a> <a ref="https://findingaids.archives.newschool.edu/" rel="noopener" target="_blank" style="color:#8c8c8c"> / Collection Guides</a></h2>
+      				<h2 id="site-title"><a href="/pawtucket/index.php">Digital Collections</a> <a href="https://findingaids.archives.newschool.edu/" rel="noopener" target="_blank" style="color:#8c8c8c"> / Collection Guides</a></h2>
     			</div>
 			
 			<div class="collapse navbar-collapse" id="bs-main-navbar-collapse-1">
