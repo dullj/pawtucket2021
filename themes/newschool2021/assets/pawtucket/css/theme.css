@@ -64,6 +64,14 @@ a, a:active, a:focus {
   margin-top: 10px;
 }
 
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
 #site-title {
   font-size: 30px;
   font-family: neue bold, neuebold;
