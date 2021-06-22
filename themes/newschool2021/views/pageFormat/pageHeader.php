@@ -189,7 +189,7 @@ padding-left: 15px;">
 						</ul>	
 					</li>
 					
-					<li <?php print ($this->request->getController() == "Topics") ? 'class="active"' : ''; ?>><?php print caNavLink($this->request, _t("Gallery"), "", "", "Gallery", "Index"); ?></li>
+					<li <?php print ($this->request->getController() == "Gallery") ? 'class="active"' : ''; ?>><?php print caNavLink($this->request, _t("Topics"), "", "", "Gallery", "Index"); ?></li>
 										
 					<li><a href="https://archives.newschool.edu/contactthearchives/" rel="noopener" target="_blank">Contact Us</a></li>
 					<li <?php print (($this->request->getController() == "Search") && ($this->request->getAction() == "advanced")) ? 'class="active"' : ''; ?>><?php print caNavLink($this->request, _t("Advanced Search"), "", "", "Search", "advanced/objects"); ?></li>
