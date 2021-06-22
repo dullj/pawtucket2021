@@ -67,8 +67,8 @@ a, a:active, a:focus {
 #site-title {
   font-size: 30px;
   font-family: neue bold, neuebold;
-  margin-bottom: 5px;
-  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-top: 15px;
 }
 
 #site-title a {
@@ -84,7 +84,8 @@ a, a:active, a:focus {
 #fullsitetitle {
   font-family: neuedisplayblack, neue display black;
   margin-bottom: 0;
-  margin-top: 30px;
+  margin-top: 45px;
+  font-size: 24px;
 }
 
 .header-first li {
