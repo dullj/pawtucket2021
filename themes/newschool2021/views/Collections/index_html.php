@@ -3,7 +3,7 @@
 	$qr_collections = $this->getVar("collection_results");
 ?>
 	<div class="row">
-		<div class='col-md-12 col-lg-12 collectionsList'>
+		<div class='col-sm-8 col-md-8 col-lg-8 collectionsList'>
 			<h1><?php print $this->getVar("section_name"); ?></h1>
 			<p><?php print $o_collections_config->get("collections_intro_text"); ?></p>
 <?php	
@@ -32,4 +32,22 @@
 	}
 ?>
 		</div>
+		<div class="<?php print ($vs_refine_col_class) ? $vs_refine_col_class : "col-sm-4 col-md-3 col-md-offset-1 col-lg-3 col-lg-offset-1"; ?>">
+		<div id="bViewButtons">
+<?php
+		if(is_array($va_views) && (sizeof($va_views) > 1)){
+			foreach($va_views as $vs_view => $va_view_info) {
+				if ($vs_current_view === $vs_view) {
+					print '<a href="#" class="active"><span class="glyphicon  '.$va_view_icons[$vs_view]['icon'].'" aria-label="'.$vs_view.'"></span></a> ';
+				} else {
+					print caNavLink($this->request, '<span class="glyphicon '.$va_view_icons[$vs_view]['icon'].'" aria-label="'.$vs_view.'"></span>', 'disabled', '*', '*', '*', array('view' => $vs_view, 'key' => $vs_browse_key)).' ';
+				}
+			}
+		}
+?>
+		</div>
+<?php
+		print $this->render("Browse/browse_refine_subview_html.php");
+?>			
+	</div><!-- end col-2 -->
 	</div>
