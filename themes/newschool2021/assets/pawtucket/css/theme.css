@@ -206,6 +206,10 @@ div.browseFacetItem a:hover {
 div.browseFacetItem a {
 	text-decoration: none;
 }
+
+.navbar {
+	box-shadow: none;
+}
 	
 /* search/browse results: list mode */
 
