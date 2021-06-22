@@ -372,15 +372,9 @@ div.browseFacetItem a {
 
 .front .heroSearch {
     position: relative;
-    text-align: center;
-    color: #FFF;
-    padding-top: 250px;
-    padding-bottom: 450px;
-    font-size: 28px;
-    text-shadow: 0px 0px 3px #000000;
-    font-family: LatoLight;
-    font-weight: 400;
-    text-transform: uppercase;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 18px;
 }
 
 .front .heroSearch .form-control, .front .heroSearch .form-control:focus {
