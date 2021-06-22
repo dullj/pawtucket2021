@@ -1,4 +1,4 @@
-div class="row" style="margin: auto;">
+<div class="row" style="margin: auto;">
   <div class="col-sm-12 col-md-10 col-md-offset-1" id="welcome-text">
     <div class="heroSearch">
       <h3>Welcome</h3>
