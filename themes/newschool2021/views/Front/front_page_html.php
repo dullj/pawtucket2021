@@ -8,19 +8,7 @@
 </div>
 <div class="row" style="margin: auto;">
   <div class="col-sm-12 col-md-10 col-md-offset-1">
-    <form class="navbar-form navbar-right" role="search" action="<?php print caNavUrl($this->request, '', 'MultiSearch', 'Index'); ?>">
-      <div class="formOutline">
-        <div class="form-group">
-          <input type="text" class="form-control" id="headerSearchInput" placeholder="Search the Archives" name="search" autocomplete="off" />
-        </div>
-        <button type="submit" class="btn-search" id="headerSearchButton"><span class="glyphicon glyphicon-search"></span></button>
-      </div>
-    </form>
-  </div>
-</div>
-<div class="row" style="margin: auto;">
-  <div class="col-sm-12 col-md-10 col-md-offset-1">
-    <h2>Highlights from the Archives</h2>
+    <h2 style="text-align:center; padding-bottom:20px;">Highlights from the Archives</h2>
     <?php
             print $this->render("Front/featured_set_slideshow_html.php");
     ?>
