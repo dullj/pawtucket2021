@@ -213,6 +213,49 @@ div.browseFacetItem a {
 	background-color:#e42a1d;
 }
 
+/* ----------------------------------------- */
+/* filter by - search within */
+/* ----------------------------------------- */
+
+.results .bSearchWithinContainer {
+    clear: both;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.results .btn-search-refine {
+    float: left;
+    font-size: 18px;
+    padding-top: 0px 0px 0px 0px;
+    width: 26px;
+    text-align: left;
+    background-color: transparent;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    outline: 0;
+    border: 0px;
+}
+
+.bSearchWithin, .bSearchWithin:focus {
+    float: left;
+    width: 80%;
+    box-shadow: none;
+    border: 0px;
+    border-bottom: 1px solid #989697;
+    border-radius: 0px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    padding-left: 0px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 26px;
+    background-color: transparent;
+    margin: 0px 0px 0px 10px;
+    font-size: 15px;
+}
+
 /* --------------------------------- */
 /* footer */
 /* --------------------------------- */
