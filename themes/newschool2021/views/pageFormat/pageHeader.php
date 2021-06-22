@@ -8,7 +8,7 @@
  *
  * Software by Whirl-i-Gig (http://www.whirl-i-gig.com)
  * Copyright 2014-2017 Whirl-i-Gig
- *
+ *<div class="parallelogram"></div>
  * For more information visit http://www.CollectiveAccess.org
  *
  * This program is free software; you may redistribute it and/or modify it under
@@ -138,7 +138,7 @@ padding-left: 15px;">
 ?>
 			<div class="col-md-12">
       				<h1 id="fullsitetitle">The New School Archives And Special Collections</h1>
-      				<h2 id="site-title">Digital Collections </a><div class="parallelogram"></div><a href="https://findingaids.archives.newschool.edu/" rel="noopener" target="_blank" style="color:#8c8c8c"> Collection Guides</a></h2>
+      				<h2 id="site-title">Digital Collections </a> /<a href="https://findingaids.archives.newschool.edu/" rel="noopener" target="_blank" style="color:#8c8c8c"> Collection Guides</a></h2>
     			</div>
 			
 			<div class="collapse navbar-collapse" id="bs-main-navbar-collapse-1">
