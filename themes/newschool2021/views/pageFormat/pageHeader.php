@@ -173,7 +173,7 @@ padding-left: 15px;">
 				 
 				
 				<ul class="nav navbar-nav menuItems">
-					<li <?php print ($this->request->getController() == "Collections List") ? 'class="active"' : ''; ?>><?php print caNavLink($this->request, _t("Collections"), "", "", "Collections", "index"); ?></li>
+					<li <?php print ($this->request->getController() == "Collections") ? 'class="active"' : ''; ?>><?php print caNavLink($this->request, _t("Collections List"), "", "", "Collections", "index"); ?></li>
 										
 					<?php print $this->render("pageFormat/browseMenu.php"); ?>
 					
