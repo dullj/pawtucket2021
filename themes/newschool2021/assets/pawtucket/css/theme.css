@@ -72,6 +72,25 @@ a, a:active, a:focus {
   display: inline-block;
 }
 
+.m-diagonalCarousel__cta {
+	float: none;
+	border-bottom: 2px solid #fff;
+	line-height: 15px;
+	transform: translate3D(0,0,0);
+	transition: border-bottom .18s ease-in-out;
+}
+
+.m-diagonalCarousel__cta::after {
+    background: #e42a1d;
+    bottom: -6px;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
 #site-title {
   font-size: 30px;
   font-family: neue bold, neuebold;
