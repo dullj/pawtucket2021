@@ -367,6 +367,10 @@ color: #e42a1d;
 text-decoration: underline;
 }
 
+.frontSlide img {
+    padding: 10px;
+}
+
 /* --------------------------------- */
 /* collection index */
 /* --------------------------------- */
