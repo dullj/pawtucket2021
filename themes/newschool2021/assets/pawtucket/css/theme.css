@@ -54,29 +54,14 @@ a, a:active, a:focus {
 /* ----------------------------------------- */
 
 .parallelogram {
-  width: 80px;
+  width: 40px;
   height: 30px;
   transform: skew(-20deg);
-  background: #ff9933;
+  background: #8c8c8c;
   float:left;
   margin-right: 10px;
   margin-bottom: 5px;
   margin-top: 10px;
-}
-
-.dot {
-  height: 25px;
-  width: 25px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-}
-
-.double {
-  background-image: linear-gradient(to bottom, red 33%, transparent 33%, transparent 66%, red 66%, red);
-  background-position: 0 1.03em;
-  background-repeat: repeat-x;
-  background-size: 2px 6px;
 }
 
 #site-title {
