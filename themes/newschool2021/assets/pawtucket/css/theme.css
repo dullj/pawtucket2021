@@ -72,23 +72,28 @@ a, a:active, a:focus {
   display: inline-block;
 }
 
-.m-diagonalCarousel__cta {
-	float: none;
-	border-bottom: 2px solid #fff;
-	line-height: 15px;
-	transform: translate3D(0,0,0);
-	transition: border-bottom .18s ease-in-out;
+.text-shadow {
+  text-shadow:
+    -2px -2px white,
+    -2px 2px white,
+    2px -2px white,
+    2px 2px white;
 }
 
-.m-diagonalCarousel__cta::after {
-    background: #e42a1d;
-    bottom: -6px;
-    content: "";
-    display: inline-block;
-    height: 2px;
-    left: 0;
-    position: absolute;
-    width: 100%;
+.underline {
+  background-size: 1px 1em;
+  box-shadow:
+    inset 0 -0.175em white,
+    inset 0 -0.2em #000;
+  display: inline;
+}
+
+.underline--double {
+  box-shadow:
+    inset 0 -0.075em white,
+    inset 0 -0.1em red,
+    inset 0 -0.15em white,
+    inset 0 -0.175em red;
 }
 
 #site-title {
