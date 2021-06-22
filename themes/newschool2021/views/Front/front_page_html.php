@@ -1,39 +1,7 @@
-
-/** ---------------------------------------------------------------------
- * themes/default/Front/front_page_html : Front page of site 
- * ----------------------------------------------------------------------
- * CollectiveAccess
- * Open-source collections management software
- * ----------------------------------------------------------------------
- *
- * Software by Whirl-i-Gig (http://www.whirl-i-gig.com)
- * Copyright 2013 Whirl-i-Gig
- *
- * For more information visit http://www.CollectiveAccess.org
- *
- * This program is free software; you may redistribute it and/or modify it under
- * the terms of the provided license as published by Whirl-i-Gig
- *
- * CollectiveAccess is distributed in the hope that it will be useful, but
- * WITHOUT ANY WARRANTIES whatsoever, including any implied warranty of 
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  
- *
- * This source code is free and modifiable under the terms of 
- * GNU General Public License. (http://www.gnu.org/copyleft/gpl.html). See
- * the "license.txt" file for details, or visit the CollectiveAccess web site at
- * http://www.CollectiveAccess.org
- *
- * @package CollectiveAccess
- * @subpackage Core
- * @license http://www.gnu.org/copyleft/gpl.html GNU Public License version 3
- *
- * ----------------------------------------------------------------------
- */
-
 <div class="row" style="margin: auto;">
 	<div class="col-sm-12 col-md-10 col-md-offset-1" id="welcome-text">
     <h3>Welcome</h3>
-    <p>On this site you can search collection guides (also called finding aids) that describe archival collections held by The New School Archives. When a new collection becomes available for research, the guide for the collection is added to this site.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   </div>
     <hr>
   <div>
