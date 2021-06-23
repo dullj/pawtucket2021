@@ -425,6 +425,10 @@ text-decoration: underline;
     padding: 10px;
 }
 
+.mejs-container svg .mejs-audio {
+	height: 30px;
+}
+	
 /* --------------------------------- */
 /* collection index */
 /* --------------------------------- */
