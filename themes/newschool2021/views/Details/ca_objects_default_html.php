@@ -117,10 +117,10 @@
 												
 							{{{<ifdef code="ca_objects.pbcoreLanguage"><H6>Language</H6>^ca_objects.pbcoreLanguage<br/></ifdef>}}}
 							
-							{{{<ifcount code="ca_list_items" min="1" max="30"><h6>Related Terms</h6></ifcount>}}}
+							{{{<ifcount code="ca_list_items" min="1" max="30"><h3>Related Terms</h3></ifcount>}}}
 							
-							{{{<ifcount code="ca_objects.repositories" min="1" max="30"><h6>Collection Groups</h6></ifcount>}}}
-							
+							{{{<ifdef code="ca_objects.repositories"><H6>Language</H6>^ca_objects.repositories<br/></ifdef>}}}
+														
 							{{{<ifcount code="ca_entities" min="1" max="1"><H6>Related person</H6></ifcount>}}}
 							{{{<ifcount code="ca_entities" min="2"><H6>Related people</H6></ifcount>}}}
 							{{{<unit relativeTo="ca_objects_x_entities" delimiter="<br/>"><unit relativeTo="ca_entities"><l>^ca_entities.preferred_labels</l></unit> (^relationship_typename)</unit>}}}
