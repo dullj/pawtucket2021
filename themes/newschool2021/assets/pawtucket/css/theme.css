@@ -425,7 +425,7 @@ text-decoration: underline;
     padding: 10px;
 }
 
-.mejs-container svg .mejs-audio {
+.mejs-container .svg .mejs-audio {
 	height: 30px;
 }
 	
