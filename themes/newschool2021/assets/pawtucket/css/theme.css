@@ -81,7 +81,7 @@ a, a:active, a:focus {
   text-decoration: none;
 }
 
-#collectionguides {
+span#collectionguides a{
 	color:#8c8c8c;
 }
 
