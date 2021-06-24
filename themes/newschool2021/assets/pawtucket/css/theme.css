@@ -78,7 +78,7 @@ a, a:active, a:focus {
 
 #site-title a:hover {
   color: #e42a1d; 
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 #fullsitetitle {
