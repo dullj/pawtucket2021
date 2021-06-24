@@ -1,7 +1,7 @@
 <div class="row" style="margin: auto;">
 	<div class="col-sm-12 col-md-10 col-md-offset-1" id="welcome-text">
     <div class="heroSearch">
-      <p>The New School Archives Digital Collections presents <a href="https://dictionary.archivists.org/entry/born-digital.html">born-digital</a> and digitized images, text, audio and video from <a href="https://archives.newschool.edu/">The New School Archives & Special Collections</a>, home to primary source materials documenting the history of all divisions of The New School. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>The New School Archives Digital Collections presents <a href="https://dictionary.archivists.org/entry/born-digital.html" rel="noopener" target="_blank">born-digital</a> and digitized images, text, audio and video from <a href="https://archives.newschool.edu/" rel="noopener" target="_blank">The New School Archives & Special Collections</a>, home to primary source materials documenting the history of all divisions of The New School. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       <hr>
     </div>
   </div>
