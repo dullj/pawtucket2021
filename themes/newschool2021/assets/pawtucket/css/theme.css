@@ -81,6 +81,14 @@ a, a:active, a:focus {
   text-decoration: none;
 }
 
+#collectionguide {
+	color:#8c8c8c;
+}
+
+#collectionguide a:hover {
+	color: #d9d9d9;
+}
+
 #fullsitetitle {
   font-family: neuedisplayblack, neue display black;
   margin-bottom: 0;
