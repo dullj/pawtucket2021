@@ -441,6 +441,10 @@ text-decoration: underline;
 /* collection index */
 /* --------------------------------- */
 
+.collectionsList a {
+	color: #e42a1d;
+}
+
 .collectionTile img {
     float: left;
     height: 100px;
