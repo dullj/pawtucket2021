@@ -445,6 +445,14 @@ text-decoration: underline;
 	color: #e42a1d;
 }
 
+.collectionsList h1 {
+	text-align: center;
+}
+
+.collectionsList p {
+	text-align: center;
+}
+
 .collectionTile img {
     float: left;
     height: 100px;
