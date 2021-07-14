@@ -482,15 +482,16 @@ text-decoration: underline;
 }
 
 .collectionTile img {
-    float: left;
-    height: 100px;
-    width: auto;
-    padding-bottom: 15px;
-    padding-right: 10px;
+	float: left;
+	height: 100px;
+	width: auto;
+	padding-right: 10px;
+	border-radius: 50%;
 }
 
 .collectionTile {
-    min-height: 115px;
+ 	min-height: 115px;
+	box-shadow: none;
 }
 
 .collectionTile .title a {
