@@ -173,9 +173,7 @@ padding-left: 15px;">
 				 
 				
 				<ul class="nav navbar-nav menuItems">
-					<li <?php print ($this->request->getController() == "Collections") ? 'class="active"' : ''; ?>><?php print caNavLink($this->request, _t("Collections List"), "", "", "Collections", "index"); ?></li>
-										
-					<?php print $this->render("pageFormat/browseMenu.php"); ?>
+					<li <?php print ($this->request->getController() == "Collections") ? 'class="active"' : ''; ?>><?php print caNavLink($this->request, _t("Collections Overview"), "", "", "Collections", "index"); ?></li>
 					
 					<li class="dropdown<?php print ((strToLower($this->request->getController()) == "browse") && in_array(strToLower($this->request->getAction()), array("collections", "objects", "people", "organizations"))) ? ' active' : ''; ?>" style="position:relative;"><a href="#" class="dropdown-toggle mainhead top" data-toggle="dropdown"><?php print _t("Filter By"); ?> <span class="caret"></span></a>
 						<ul class="dropdown-menu">
@@ -189,9 +187,9 @@ padding-left: 15px;">
 						</ul>	
 					</li>
 					
-					<li <?php print ($this->request->getController() == "Gallery") ? 'class="active"' : ''; ?>><?php print caNavLink($this->request, _t("Topics"), "", "", "Gallery", "Index"); ?></li>
+					<li <?php print ($this->request->getController() == "Gallery") ? 'class="active"' : ''; ?>><?php print caNavLink($this->request, _t("Special Projects"), "", "", "Gallery", "Index"); ?></li>
 										
-					<li <?php print ($this->request->getController() == "About") ? 'class="active"' : ''; ?>><?php print caNavLink($this->request, _t("About"), "", "", "About", "Index"); ?></li>
+					<li <?php print ($this->request->getController() == "About") ? 'class="active"' : ''; ?>><?php print caNavLink($this->request, _t("Help"), "", "", "About", "Index"); ?></li>
 					
 					<li <?php print (($this->request->getController() == "Search") && ($this->request->getAction() == "advanced")) ? 'class="active"' : ''; ?>><?php print caNavLink($this->request, _t("Advanced Search"), "", "", "Search", "advanced/objects"); ?></li>
 
