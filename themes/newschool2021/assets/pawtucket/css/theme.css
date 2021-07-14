@@ -226,6 +226,10 @@ div.browseFacetItem a {
 	background-color:#e42a1d;
 }
 
+#pagearea {
+	padding-left:15px;
+}
+
 /* ----------------------------------------- */
 /* filter by - search within */
 /* ----------------------------------------- */
