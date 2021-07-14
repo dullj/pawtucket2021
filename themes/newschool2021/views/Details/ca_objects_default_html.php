@@ -79,7 +79,7 @@
 			
 			<div class='col-sm-6 col-md-6 col-lg-5'>
 				<H4>{{{<unit relativeTo="ca_collections" delimiter="<br/>"><l>^ca_collections.preferred_labels.name</l></unit><ifcount min="1" code="ca_collections"> ➔ </ifcount>}}}{{{ca_objects.preferred_labels.name}}}</H4>
-				<H6>{{{<unit>^ca_objects.type_id</unit>}}}, {{{<unit>^ca_objects.idno</unit>}}}</H6>
+				<H6>{{{<unit>^ca_objects.type_id</unit>}}}</H6>
 				
 				<hr></hr>
 					<div class="row" id="object-headers">
@@ -115,21 +115,9 @@
 							{{{<ifdef code="ca_objects.inscriptionSet.inscriptionText"><H6>Inscription</H6>^ca_objects.inscriptionSet.inscriptionText%delimiter=;_ <ifdef code="ca_objects.inscriptionSet.inscription_type1">(^ca_objects.inscriptionSet.inscription_type1%delimiter=;_)</ifdef></ifdef>}}}
 							
 							{{{<ifdef code="ca_objects.inscriptionSet.inscriptionText"><H6>Inscription</H6></ifdef>}}}
-							{{{<unit relativeTo="ca_objects.inscriptionSet.inscriptionText" delimiter="<br/>"><unit relativeTo="ca_objects.inscriptionSet.inscriptionText"><l>^ca_objects.inscriptionSet.inscriptionText</l></unit> (^ca_objects.inscriptionSet.inscription_type1)</unit>}}}
-							
-							{{{<ifdef code="ca_objects.inscriptionSet.inscriptionText"><H6>Inscription</H6></ifdef>}}}
 							{{{<unit relativeTo="ca_objects" delimiter="<br/>">^ca_objects.inscriptionSet.inscriptionText (^ca_objects.inscriptionSet.inscription_type1)</unit>}}}
-							
-							{{{<ifdef code="ca_objects.inscriptionSet.inscriptionText"><H6>Inscription</H6></ifdef>}}}
-							{{{<unit relativeTo="ca_objects" delimiter="<br/>">^ca_objects.inscriptionSet.inscriptionText (^ca_objects.inscriptionSet.inscription_type1)</unit>}}}
-							
-							{{{<ifdef code="ca_objects.inscriptionSet.inscriptionText"><H6>Inscription</H6></ifdef>}}}
-							{{{<unit relativeTo="ca_objects" delimiter="<br/>">^ca_objects.inscriptionSet.inscriptionText (^ca_objects.inscriptionSet.inscription_line3.inscriptiontype)</unit>}}}
-							
-							{{{<ifdef code="ca_objects.inscriptionSet.inscriptionText"><H6>Inscription</H6></ifdef>}}}
-							{{{<unit relativeTo="ca_objects" delimiter="<br/>">^ca_objects.inscriptionSet.inscriptionText (^ca_objects.inscriptionSet.inscription_line3)</unit>}}}
-							
-												
+					
+					
 							{{{<ifdef code="ca_objects.pbcoreLanguage"><H6>Language</H6>^ca_objects.pbcoreLanguage<br/></ifdef>}}}
 							
 							{{{<ifcount code="ca_list_items" min="1" max="1"><H6>Related Term</H6></ifcount>}}}
