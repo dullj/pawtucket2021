@@ -114,8 +114,10 @@
 							
 							{{{<ifdef code="ca_objects.inscriptionSet.inscriptionText"><H6>Inscription</H6>^ca_objects.inscriptionSet.inscriptionText%delimiter=;_ <ifdef code="ca_objects.inscriptionSet.inscription_type1">(^ca_objects.inscriptionSet.inscription_type1%delimiter=;_)</ifdef></ifdef>}}}
 							
-							{{{<ifcount code="ca_list_items" min="1" max="1"><H6>Inscription</H6>
-							{{{<unit relativeTo="ca_objects.inscriptionSet.inscriptionText" delimiter="<br/>"><unit relativeTo="ca_objects.inscriptionSet.inscriptionText"><l>^ca_objects.inscriptionSet.inscriptionText</l></unit> (^ca_objects.inscriptionSet.inscription_type1)</unit>}}}</ifcount>}}}
+							{{{<ifdef code="ca_objects.inscriptionSet.inscriptionText"><H6>Inscription</H6></ifdef>}}}
+							{{{<unit relativeTo="ca_objects.inscriptionSet.inscriptionText" delimiter="<br/>"><unit relativeTo="ca_objects.inscriptionSet.inscriptionText"><l>^ca_objects.inscriptionSet.inscriptionText</l></unit> (^ca_objects.inscriptionSet.inscription_type1)</unit>}}}
+							
+							
 							
 												
 							{{{<ifdef code="ca_objects.pbcoreLanguage"><H6>Language</H6>^ca_objects.pbcoreLanguage<br/></ifdef>}}}
