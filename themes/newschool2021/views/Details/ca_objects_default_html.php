@@ -111,8 +111,6 @@
 							{{{<ifdef code="ca_objects.wtAudiovisual"><H6>Work Type</H6>^ca_objects.wtAudiovisual<br/></ifdef>}}}
 					
 							{{{<ifdef code="ca_objects.measurementSet.measurements"><H6>Measurements</H6>^ca_objects.measurementSet.measurements <ifdef code="ca_objects.measurementSet.measurementsType">(^ca_objects.measurementSet.measurementsType)</ifdef></ifdef><ifdef code="ca_objects.measurementSet.measurements"> x </ifdef><ifdef code="ca_objects.measurementSet.measurements2">^ca_objects.measurementSet.measurements2 <ifdef code="ca_objects.measurementSet.measurementsType2">(^ca_objects.measurementSet.measurementsType2)</ifdef></ifdef>}}}
-					
-							{{{<ifdef code="ca_objects.inscriptionSet.inscriptionText" delimiter="<br/>"><H6>Inscription</H6>^ca_objects.inscriptionSet.inscriptionText%delimiter=;_ <ifdef code="ca_objects.inscriptionSet.inscriptionText.inscription_line3.inscriptionType">(^ca_objects.inscriptionSet.inscriptionText.inscription_line3.inscriptionType%delimiter=;_)<br/></ifdef></ifdef>}}}
 							
 							{{{<ifdef code="ca_objects.inscriptionSet.inscriptionText"><H6>Inscription</H6>^ca_objects.inscriptionSet.inscriptionText%delimiter=;_ <ifdef code="ca_objects.inscriptionSet.inscription_type1">(^ca_objects.inscriptionSet.inscription_type1%delimiter=;_)</ifdef></ifdef>}}}
 												
