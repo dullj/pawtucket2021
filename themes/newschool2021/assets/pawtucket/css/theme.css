@@ -226,17 +226,22 @@ div.browseFacetItem a {
 	background-color:#e42a1d;
 }
 
-#pagearea.ca_objects {
+.ca_objects.objects.browse.results {
 	padding-left:15px;
 }
 
-.collections.landing {
+.collections.landing .ca_entities.people.browse.results .ca_entities.organizations.browse.results {
 	padding-left:15px;
 }
 
 /* ----------------------------------------- */
 /* filter by - search within */
 /* ----------------------------------------- */
+
+
+.results h1 {
+	padding-top: 15px;	
+}
 
 .results .bSearchWithinContainer {
     clear: both;
