@@ -230,7 +230,15 @@ div.browseFacetItem a {
 	padding-left:15px;
 }
 
-.collections.landing .ca_entities.people.browse.results .ca_entities.organizations.browse.results {
+.collections.landing {
+	padding-left:15px;
+}
+
+.ca_entities.people.browse.results {
+	padding-left:15px;
+}
+
+.ca_entities.organizations.browse.results {
 	padding-left:15px;
 }
 
