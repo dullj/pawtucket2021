@@ -226,11 +226,11 @@ div.browseFacetItem a {
 	background-color:#e42a1d;
 }
 
-div#pagearea.ca_objects.objects.browse.results {
+#pagearea.ca_objects {
 	padding-left:15px;
 }
 
-div#pagearea.collections.landing {
+.collections.landing {
 	padding-left:15px;
 }
 
