@@ -173,7 +173,6 @@ padding-left: 15px;">
 				 
 				
 				<ul class="nav navbar-nav menuItems">
-					<li <?php print ($this->request->getController() == "Collections") ? 'class="active"' : ''; ?>><?php print caNavLink($this->request, _t("Collections Overview"), "", "", "Collections", "index"); ?></li>
 					
 					<li class="dropdown<?php print ((strToLower($this->request->getController()) == "browse") && in_array(strToLower($this->request->getAction()), array("collections", "objects", "people", "organizations"))) ? ' active' : ''; ?>" style="position:relative;"><a href="#" class="dropdown-toggle mainhead top" data-toggle="dropdown"><?php print _t("Browse By"); ?> <span class="caret"></span></a>
 						<ul class="dropdown-menu">
