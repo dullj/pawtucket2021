@@ -29,7 +29,7 @@
 			<div class="row">
 				<div class='col-md-12 col-lg-12'>
 					<H4>{{{^ca_collections.preferred_labels.name}}}</H4>
-					<H6>{{{^ca_collections.type_id}}}{{{<ifdef code="ca_collections.idno">, ^ca_collections.idno</ifdef>}}}</H6>
+					<H6>{{{^ca_collections.type_id}}}</H6>
 					{{{<ifdef code="ca_collections.parent_id"><H6>Part of: <unit relativeTo="ca_collections.hierarchy" delimiter=" &gt; "><l>^ca_collections.preferred_labels.name</l></unit></H6></ifdef>}}}
 <?php					
 					if ($vn_pdf_enabled) {
@@ -88,6 +88,8 @@
 					{{{<ifcount code="ca_collections.related" min="1" max="1"><h6>Related collection</h6></ifcount>}}}
 					{{{<ifcount code="ca_collections.related" min="2"><h6>Related collections</h6></ifcount>}}}
 					{{{<unit relativeTo="ca_collections.related" delimiter="<br/>"><l>^ca_collections.preferred_labels.name</l></unit>}}}
+					
+					{{{<ifdef code="ca_collections.idno"><H6>Collection Identifier</H6>^ca_collections.idno</ifdef>}}}
 					
 				</div><!-- end col -->
 			</div><!-- end row -->
