@@ -112,16 +112,8 @@
 					
 							{{{<ifdef code="ca_objects.measurementSet.measurements"><H6>Measurements</H6>^ca_objects.measurementSet.measurements <ifdef code="ca_objects.measurementSet.measurementsType">(^ca_objects.measurementSet.measurementsType)</ifdef></ifdef><ifdef code="ca_objects.measurementSet.measurements"> x </ifdef><ifdef code="ca_objects.measurementSet.measurements2">^ca_objects.measurementSet.measurements2 <ifdef code="ca_objects.measurementSet.measurementsType2">(^ca_objects.measurementSet.measurementsType2)</ifdef></ifdef>}}}
 					
-							{{{<ifdef code="ca_objects.inscriptionSet.inscriptionText"><H6>Inscription</H6>^ca_objects.inscriptionSet.inscriptionText <ifdef code="ca_objects.inscriptionSet.inscriptionTypes">(^ca_objects.inscriptionSet.inscriptiontypes)<br/></ifdef></ifdef>}}}
+							{{{<ifdef code="ca_objects.inscriptionSet.inscriptionText" delimiter="<br/>"><H6>Inscription</H6>^ca_objects.inscriptionSet.inscriptionText <ifdef code="ca_objects.inscriptionSet.inscriptionTypes">(^ca_objects.inscriptiontypes)<br/></ifdef></ifdef>}}}
 							
-							{{{<ifdef code="ca_objects.inscriptionSet.inscriptionText.inscriptiontypes.text">^ca_objects.inscriptionSet.inscriptionText.inscriptiontypes.text </ifdef>}}}
-							
-							<ifdef code="ca_objects.dimensions.width">^ca_objects.dimensions.width W x</ifdef>
-
-							
-							{{{<ifcount code="ca_list_items" min="1" max="1"><H6>Inscription</H6></ifcount>}}}
-							{{{<ifcount code="ca_list_items" min="2"><H6>Inscriptions</H6></ifcount>}}}
-							{{{<unit relativeTo="ca_objects.inscriptionSet.inscriptionText" delimiter="<br/>"><unit relativeTo="ca_objects"><l>^ca_objects.inscriptionSet.inscriptionText (^relationship_typename)</l></unit>}}}
 												
 							{{{<ifdef code="ca_objects.pbcoreLanguage"><H6>Language</H6>^ca_objects.pbcoreLanguage<br/></ifdef>}}}
 							
