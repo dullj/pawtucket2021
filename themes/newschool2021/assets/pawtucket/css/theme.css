@@ -242,6 +242,10 @@ div.browseFacetItem a {
 	padding-left:15px;
 }
 
+.search.results.advancedSearch {
+	padding-left:15px;
+}
+
 /* ----------------------------------------- */
 /* filter by - search within */
 /* ----------------------------------------- */
