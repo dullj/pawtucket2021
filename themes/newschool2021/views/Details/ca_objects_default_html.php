@@ -114,8 +114,7 @@
 							
 							{{{<ifdef code="ca_objects.inscriptionSet.inscriptionText"><H6>Inscription</H6>^ca_objects.inscriptionSet.inscriptionText%delimiter=;_ <ifdef code="ca_objects.inscriptionSet.inscription_type1">(^ca_objects.inscriptionSet.inscription_type1%delimiter=;_)</ifdef></ifdef>}}}
 							
-							{{{<ifcount code="ca_objects.inscriptionSet" min="1" max="1"><H6>Inscription</H6></ifcount>}}}
-							{{{<ifcount code="ca_objects.inscriptionSet" min="2"><H6>Inscriptions</H6></ifcount>}}}
+							
 							{{{<unit relativeTo="ca_objects.inscriptionSet.inscriptionText" delimiter="<br/>"><unit relativeTo="ca_objects.inscriptionSet.inscriptionText"><l>^ca_objects.inscriptionSet.inscriptionText</l></unit> (^ca_objects.inscriptionSet.inscription_type1)</unit>}}}
 							
 												
