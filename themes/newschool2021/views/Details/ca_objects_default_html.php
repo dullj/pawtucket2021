@@ -114,6 +114,11 @@
 					
 							{{{<ifdef code="ca_objects.inscriptionSet.inscriptionText"><H6>Inscription</H6>^ca_objects.inscriptionSet.inscriptionText <ifdef code="ca_objects.inscriptionSet.inscriptionTypes">(^ca_objects.inscriptionSet.inscriptiontypes)<br/></ifdef></ifdef>}}}
 							
+							{{{<ifdef code="ca_objects.inscriptionSet.inscriptionText.inscriptiontypes.text">^ca_objects.inscriptionSet.inscriptionText.inscriptiontypes.text </ifdef>}}}
+							
+							<ifdef code="ca_objects.dimensions.width">^ca_objects.dimensions.width W x</ifdef>
+
+							
 							{{{<ifcount code="ca_list_items" min="1" max="1"><H6>Inscription</H6></ifcount>}}}
 							{{{<ifcount code="ca_list_items" min="2"><H6>Inscriptions</H6></ifcount>}}}
 							{{{<unit relativeTo="ca_objects.inscriptionSet.inscriptionText" delimiter="<br/>"><unit relativeTo="ca_objects"><l>^ca_objects.inscriptionSet.inscriptionText (^relationship_typename)</l></unit>}}}
