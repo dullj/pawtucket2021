@@ -290,6 +290,16 @@ div.browseFacetItem a {
     font-size: 15px;
 }
 
+
+/* --------------------------------- */
+/* gallery/special projects */
+/* --------------------------------- */
+
+.gallery h1 {
+	padding-top: 15px; 
+	padding-left: 15px;
+}
+
 /* --------------------------------- */
 /* footer */
 /* --------------------------------- */
