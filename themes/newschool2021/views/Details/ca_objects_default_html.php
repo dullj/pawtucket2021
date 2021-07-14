@@ -79,7 +79,7 @@
 			
 			<div class='col-sm-6 col-md-6 col-lg-5'>
 				<H4>{{{<unit relativeTo="ca_collections" delimiter="<br/>"><l>^ca_collections.preferred_labels.name</l></unit><ifcount min="1" code="ca_collections"> ➔ </ifcount>}}}{{{ca_objects.preferred_labels.name}}}</H4>
-				<H6>{{{<unit>^ca_objects.type_id</unit>}}}, ({{{<unit>^ca_objects.idno</unit>}}})</H6>
+				<H6>{{{<unit>^ca_objects.type_id</unit>}}}, {{{<unit>^ca_objects.idno</unit>}}}</H6>
 				
 				<hr></hr>
 					<div class="row" id="object-headers">
