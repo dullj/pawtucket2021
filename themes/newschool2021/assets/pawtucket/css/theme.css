@@ -446,11 +446,8 @@ text-decoration: underline;
 }
 
 .collectionsList h1 {
-	text-align: center;
-}
-
-.collectionsList p {
-	text-align: center;
+	padding-top:15px;
+	padding-bottom:15px;
 }
 
 .collectionTile img {
