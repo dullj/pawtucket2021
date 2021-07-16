@@ -10,7 +10,7 @@
 <div class="row" style="margin: auto;" id="research-assistance">
 	<div class="col-sm-4">
     		<div class="heroSearch">
-			<img src="20190315_Archives_033.jpg" alt="Researcher holding archival drawing.">
+			<img src="/themes/default/graphics/logos/logo.svg" alt="CollectiveAccess logo" class="logo" width="195px" height="45px">
 		</div>
 	</div>
 	<div class="row" style="margin: auto;">
