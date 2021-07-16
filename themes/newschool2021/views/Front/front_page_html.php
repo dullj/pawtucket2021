@@ -7,10 +7,10 @@
   </div>
 </div>
 
-<div class="row" style="margin: auto;">
+<div class="row" style="margin: auto;" id="research-assistance">
 	<div class="col-sm-4">
     		<div class="heroSearch">
-			<img src="/graphics/20190315_Archives_033.jpg" alt="Researcher holding archival drawing.">
+			<img src="/assets/pawtucket/graphics/20190315_Archives_033.jpg" alt="Researcher holding archival drawing.">
 		</div>
 	</div>
 	<div class="row" style="margin: auto;">
