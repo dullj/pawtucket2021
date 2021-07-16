@@ -8,6 +8,26 @@
 </div>
 
 <div class="row" style="margin: auto;">
+	<div class="col-sm-4">
+    		<div class="heroSearch">
+			<img src="/graphics/20190315_Archives_033.jpg" alt="Researcher holding archival drawing.">
+		</div>
+	</div>
+	<div class="row" style="margin: auto;">
+	<div class="col-sm-8">
+    		<div class="heroSearch">
+			<h2 style="padding-bottom:20px;">Need Research Assistance?</h2>
+			<p>View our <a href="index.php/About/Index">User Guide</a> to learn tips for searching on this site and other resources to aid your research inquiry. </p>
+		</div>
+	</div>
+	<hr>
+</div>
+	
+</div>
+
+
+
+<div class="row" style="margin: auto;">
   <div class="col-sm-12 col-md-10 col-md-offset-1">
     <h2 style="text-align:center; padding-bottom:20px;">Highlights from the Archives</h2>
     <?php
@@ -17,12 +37,4 @@
   </div>
 </div><!-- end row -->
 
-<div class="row" style="margin: auto;">
-	<div class="col-sm-12 col-md-10 col-md-offset-1">
-    <div class="heroSearch">
-			    <h2 style="text-align:center; padding-bottom:20px;">Need Research Assistance?</h2>
-			<p>View our <a href="index.php/About/Index">User Guide</a> to learn tips for searching on this site and other resources to aid your research inquiry. </p>
-      <hr>
-    </div>
-  </div>
-</div>
+
