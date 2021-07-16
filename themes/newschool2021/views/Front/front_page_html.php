@@ -10,7 +10,7 @@
 <div class="row" style="margin: auto;" id="research-assistance">
 	<div class="col-sm-12 col-md-10 col-md-offset-1">
 		<div class="col-sm-4">
-			<img src="/newschool2021/assets/pawtucket/graphics/20190315_Archives_033.jpg">
+			<img src="themes/newschool2021/assets/pawtucket/graphics/NS030109_000414.jpg">
 		</div>
 		<div class="col-sm-8">
 			<h2 style="padding-bottom:20px;">Need Research Assistance?</h2>
