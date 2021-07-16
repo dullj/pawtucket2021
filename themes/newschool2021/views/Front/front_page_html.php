@@ -8,22 +8,17 @@
 </div>
 
 <div class="row" style="margin: auto;" id="research-assistance">
-	<div class="col-sm-4">
-    		<div class="heroSearch">
-			<img src="/themes/default/graphics/logos/logo.svg" alt="CollectiveAccess logo" class="logo" width="195px" height="45px">
+	<div class="col-sm-12 col-md-10 col-md-offset-1">
+		<div class="col-sm-4">
+			<img src="/newschool2021/assets/pawtucket/graphics/20190315_Archives_033.jpg">
 		</div>
-	</div>
-	<div class="row" style="margin: auto;">
-	<div class="col-sm-8">
-    		<div class="heroSearch">
+		<div class="col-sm-8">
 			<h2 style="padding-bottom:20px;">Need Research Assistance?</h2>
 			<p>View our <a href="index.php/About/Index">User Guide</a> to learn tips for searching on this site and other resources to aid your research inquiry. </p>
 		</div>
 	</div>
+</div>
 	<hr>
-</div>
-	
-</div>
 
 
 
