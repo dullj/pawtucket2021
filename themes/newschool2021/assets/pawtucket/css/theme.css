@@ -518,7 +518,7 @@ text-decoration: underline;
   height: 300px;
 }
 
-.collection-headers p {
+#collection-headers p {
   margin-bottom:25px;
 }
 
