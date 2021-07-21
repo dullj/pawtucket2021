@@ -518,8 +518,8 @@ text-decoration: underline;
   height: 300px;
 }
 
-.collection-headers h6 {
-  margin-top:25px;
+.collection-headers p {
+  margin-bottom:25px;
 }
 
 /* --------------------------------- */
