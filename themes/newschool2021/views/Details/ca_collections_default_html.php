@@ -54,7 +54,7 @@
 ?>				
 				</div><!-- end col -->
 			</div><!-- end row -->
-			<div class="row">			
+			<div class="row" id="collection-headers">			
 				<div class='col-md-6 col-lg-6'>
 					{{{<ifdef code="ca_collections.CollectionNote.NoteContent%[NoteType=abstract]"><H6>About</H6>^ca_collections.CollectionNote.NoteContent%[NoteType=abstract]<br/></ifdef>}}}
 					
@@ -81,15 +81,15 @@
 				<div class='col-md-6 col-lg-6'>
 					{{{<ifdef code="ca_collections.findaid"><H6>Collection Guide</H6><a href="^ca_collections.findaid">Guide to the ^ca_collections.preferred_labels.name</a><p>There’s more! What you see here is only what is viewable online; in most cases it is only a small portion of what is available. Please visit the collection guide to find out more.</p></ifdef>}}}
 					
-					{{{<ifcount code="ca_entities" min="1" max="1"><H6 class="collection-headers">Related person/organization</H6></ifcount>}}}
-					{{{<ifcount code="ca_entities" min="2"><H6 class="collection-headers">Related people/organizations</H6></ifcount>}}}
+					{{{<ifcount code="ca_entities" min="1" max="1"><H6>Related person/organization</H6></ifcount>}}}
+					{{{<ifcount code="ca_entities" min="2"><H6>Related people/organizations</H6></ifcount>}}}
 					{{{<ifcount code="ca_entities" min="1"><unit relativeTo="ca_entities" delimiter="<br/>" sort="ca_entity_labels.surname;ca_entity_labels.forename"><l>^ca_entities.preferred_labels</l></unit></ifcount>}}}
 					
-					{{{<ifcount code="ca_collections.related" min="1" max="1"><h6 class="collection-headers">Related collection</h6></ifcount>}}}
-					{{{<ifcount code="ca_collections.related" min="2"><h6 class="collection-headers">Related collections</h6></ifcount>}}}
+					{{{<ifcount code="ca_collections.related" min="1" max="1"><h6>Related collection</h6></ifcount>}}}
+					{{{<ifcount code="ca_collections.related" min="2"><h6>Related collections</h6></ifcount>}}}
 					{{{<unit relativeTo="ca_collections.related" delimiter="<br/>"><l>^ca_collections.preferred_labels.name</l></unit>}}}
 					
-					{{{<ifdef code="ca_collections.idno"><H6 class="collection-headers">Collection Identifier</H6>^ca_collections.idno</ifdef>}}}
+					{{{<ifdef code="ca_collections.idno"><H6>Collection Identifier</H6>^ca_collections.idno</ifdef>}}}
 					
 				</div><!-- end col -->
 			</div><!-- end row -->
