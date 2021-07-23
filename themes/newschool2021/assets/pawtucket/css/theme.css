@@ -109,10 +109,6 @@ span#collectionguides a:hover {
   text-align: right;
 }
 
-.header-second li {
-  padding-left: 10px;
-}
-
 #header>.row {
   border-bottom: 0;
   height: auto;
