@@ -207,6 +207,9 @@ ul.menuItems {
     border-color: none;
 }
 
+.dropdown-menu {
+	box-shadow: none;
+}
 
 /* ----------------------------------------- */
 /* navbar - browse menu */
