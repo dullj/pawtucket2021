@@ -94,7 +94,7 @@ padding-left: 15px;">
       			<div class="header-second">
         			<ul class="clearfix-menu">
           				<li class="menu-item" style="color:#8c8c8c;">Digital Collections</li>
-					<li class="menu-item"><a href="https://findingaids.archives.newschool.edu/" rel="noopener" target="_blank">Collection Guides</a></li>
+					<li class="menu-item" style="padding-left:10px;"><a href="https://findingaids.archives.newschool.edu/" rel="noopener" target="_blank">Collection Guides</a></li>
         			</ul>
       			</div>
     		</div>
