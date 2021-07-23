@@ -181,12 +181,13 @@ padding-left: 15px;">
 							print "<li>".caNavLink($this->request, _t("Objects"), '', '', 'Browse', 'objects', '')."</li>";
 							print "<li>".caNavLink($this->request, _t("People"), '', '', 'Browse', 'People', '')."</li>";
 							print "<li>".caNavLink($this->request, _t("Organizations"), '', '', 'Browse', 'Organizations', '')."</li>";
+							<li <?php print ($this->request->getController() == "Gallery") ? 'class="active"' : ''; ?>><?php print caNavLink($this->request, _t("Collection Strengths"), "", "", "Gallery", "Index"); ?></li>
 
 ?>
 						</ul>	
 					</li>
 					
-					<li <?php print ($this->request->getController() == "Gallery") ? 'class="active"' : ''; ?>><?php print caNavLink($this->request, _t("Special Projects"), "", "", "Gallery", "Index"); ?></li>
+					
 										
 					<li <?php print ($this->request->getController() == "About") ? 'class="active"' : ''; ?>><?php print caNavLink($this->request, _t("User Guide"), "", "", "About", "Index"); ?></li>
 					
