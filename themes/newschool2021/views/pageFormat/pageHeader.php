@@ -181,6 +181,7 @@ padding-left: 15px;">
 							print "<li>".caNavLink($this->request, _t("Objects"), '', '', 'Browse', 'objects', '')."</li>";
 							print "<li>".caNavLink($this->request, _t("People"), '', '', 'Browse', 'People', '')."</li>";
 							print "<li>".caNavLink($this->request, _t("Organizations"), '', '', 'Browse', 'Organizations', '')."</li>";
+							print "<li>".caNavLink($this->request, _t("Collection Strengths"), "", "", "Gallery", "Index")."</li>";
 
 ?>
 						</ul>	
