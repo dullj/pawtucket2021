@@ -452,6 +452,8 @@ div.browseFacetItem a {
 /* --------------------------------- */
 .detail #detailTools{
 	font-family:Neue;
+	margin-top:0px;
+	padding-top:0px;
 }
 	
 .detail H6 a{
@@ -485,6 +487,10 @@ text-decoration: underline;
 
 .detail {
 	font-size: 14px;
+}
+
+.detail #detailAnnotations { 
+	margin-top:0;
 }
 	
 /* --------------------------------- */
