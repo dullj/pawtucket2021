@@ -13,10 +13,10 @@ font-size: 18px;
 
 body {
 	font-family: neue,Helvetica Neue,Helvetica,Arial,sans-serif;
-	line-height: 20px;
+	line-height: 24px;
 	font-weight: 400;
 	font-style: normal;padding-right: 15px;
-padding-left: 15px;
+	padding-left: 15px;
 	letter-spacing: 0;
 	color: #191919;
 	margin-bottom:240px;
@@ -471,6 +471,10 @@ text-decoration: underline;
 
 .mejs-container .svg .mejs-audio {
 	height: 30px;
+}
+
+.detail {
+	font-size: 14px;
 }
 	
 /* --------------------------------- */
