@@ -96,6 +96,7 @@
 {{{<ifcount code="ca_objects" min="2">
 			<div class="row">
 				<hr></hr>
+				<h3>View Related Objects</h3>
 				<div id="browseResultsContainer">
 					<?php print caBusyIndicatorIcon($this->request).' '.addslashes(_t('Loading...')); ?>
 				</div><!-- end browseResultsContainer -->
