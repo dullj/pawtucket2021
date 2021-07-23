@@ -203,6 +203,13 @@ div.browseFacetItem a:hover {
 	margin-top:10px;
 }
 
+ul.menuItems {
+	border-top: none;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: none;
+}
 
 
 /* ----------------------------------------- */
