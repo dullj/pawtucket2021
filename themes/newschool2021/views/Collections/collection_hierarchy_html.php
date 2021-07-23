@@ -107,7 +107,7 @@
 ?>
 						</div><!--end row -->	
 						<div class='unit row'>
-							<div class='col-sm-12 col-md-12 col-lg-12'><hr class='divide' style='margin-top:0px; margin-bottom:25px;'></hr></div>
+							<div class='col-sm-12 col-md-12 col-lg-12'><hr class='divide' style='margin-top:0px;'></hr></div>
 						</div><!-- end row -->
 				
 					</div><!-- end col -->
