@@ -12,15 +12,15 @@
 		<p>Begin Your Research</p>
 	</div>
 	<div class="col-sm-4">
-		<img src="themes/newschool2021/assets/pawtucket/graphics/NS030109_000414.jpg" class="responsive">
+		<img src="themes/newschool2021/assets/pawtucket/graphics/collections.png" class="responsive">
 		<p>Collections</p>
 	</div>
 	<div class="col-sm-4">
-		<img src="themes/newschool2021/assets/pawtucket/graphics/NS030109_000414.jpg" class="responsive">
+		<img src="themes/newschool2021/assets/pawtucket/graphics/objects.png" class="responsive">
 		<p>Objects</p>
 	</div>
 	<div class="col-sm-4">
-		<img src="themes/newschool2021/assets/pawtucket/graphics/NS030109_000414.jpg" class="responsive">
+		<img src="themes/newschool2021/assets/pawtucket/graphics/people.png" class="responsive">
 		<p>Objects</p>
 	</div>
 </div>
