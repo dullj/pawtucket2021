@@ -403,6 +403,7 @@ div.browseFacetItem a {
 
 .front-imagelabels a:hover {
 	text-decoration: underline;
+	color:#e42a1d;
 }
 
 /* If the screen size is 600px wide or less, set the font-size to 13px */
