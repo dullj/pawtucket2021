@@ -403,6 +403,11 @@ div.browseFacetItem a {
 	margin-left: auto;
 	margin-right: auto;
 }
+
+#research-assistance p {
+	font-size: 20px;
+	line-height: 30px;
+}
 	
 
 .front .heroSearch .formOutline {
@@ -452,6 +457,11 @@ div.browseFacetItem a {
 #heroSearchButton {
     color: #000;
     font-size: 20px;
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
 }
 
 /* --------------------------------- */
