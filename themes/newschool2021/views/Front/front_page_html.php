@@ -7,7 +7,7 @@
   </div>
 </div>
 
-<div class="row" style="margin: auto;" id="research-assistance">
+<div class="row" style="margin: auto;" id="welcome-text">
 	<div class="col-sm-4" id="front-container">
 		<img src="themes/newschool2021/assets/pawtucket/graphics/collections.png" class="responsive">
 		<div class="centered">
@@ -17,13 +17,17 @@
 	</div>
 	<div class="col-sm-4" id="front-container">
 		<img src="themes/newschool2021/assets/pawtucket/graphics/objects.png" class="responsive">
-		<h3 class="centered">Objects</h3>
-		<p>Filter and search across all digital objects.</p>
+		<div class="centered">
+			<h3>Objects</h3>
+			<p>Filter and search across all digital objects.</p>
+		</div>
 	</div>
 	<div class="col-sm-4" id="front-container">
 		<img src="themes/newschool2021/assets/pawtucket/graphics/people.png" class="responsive">
-		<h3 class="centered">People</h3>
-		<p>View a directory of people in the collections.</p>		
+		<div class="centered">
+			<h3>People</h3>
+			<p>View a directory of people in the collections.</p>	
+		</div>
 	</div>
 </div>
 	<hr>
