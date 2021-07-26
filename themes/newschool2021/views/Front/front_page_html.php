@@ -10,9 +10,10 @@
 <div class="row" style="margin: auto;" id="research-assistance">
 	<div class="col-sm-4" id="front-container">
 		<img src="themes/newschool2021/assets/pawtucket/graphics/collections.png" class="responsive">
-		<h3 class="centered">Collections</h3>
-		<p>Read an overview of all archival collections.</p>
-		
+		<div class="centered">
+			<h3>Collections</h3>
+			<p>Read an overview of all archival collections.</p>
+		</div>
 	</div>
 	<div class="col-sm-4" id="front-container">
 		<img src="themes/newschool2021/assets/pawtucket/graphics/objects.png" class="responsive">
