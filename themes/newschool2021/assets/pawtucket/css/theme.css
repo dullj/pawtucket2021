@@ -392,11 +392,18 @@ div.browseFacetItem a {
 	}
 }	
 
-#welcome-text h3 {
-	font-family: neuedisplayblack, neue display black;
-	font-size: 16px;
-	font-weight: bold;
+#welcome-text p {
+	font-size: 18px;
+	line-height: 24px;
 }
+
+#welcome-text {
+	width: 65vw;
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+	
 
 .front .heroSearch .formOutline {
     display: inline-block;
