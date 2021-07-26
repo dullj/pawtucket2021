@@ -11,25 +11,25 @@
 	<div class="col-sm-3 col-xs-6" id="front-container">
 		<img src="themes/newschool2021/assets/pawtucket/graphics/collections.png" class="responsive">
 		<div class="centered">
-			<h3 class="front-imagelabels"><a href="/Collections/index">Collections</a></h3>
+			<h3 class="front-imagelabels"><a href="/pawtucket/index.php/Collections/index">Collections</a></h3>
 		</div>
 	</div>
 	<div class="col-sm-3 col-xs-6" id="front-container">
 		<img src="themes/newschool2021/assets/pawtucket/graphics/objects.png" class="responsive">
 		<div class="centered">
-			<h3 class="front-imagelabels"><a href="/Browse/objects">Objects</a></h3>
+			<h3 class="front-imagelabels"><a href="/pawtucket/index.php//Browse/objects">Objects</a></h3>
 		</div>
 	</div>
 	<div class="col-sm-3 col-xs-6" id="front-container">
 		<img src="themes/newschool2021/assets/pawtucket/graphics/people.png" class="responsive">
 		<div class="centered">
-			<h3 class="front-imagelabels"><a href="/Browse/People">People</a></h3>
+			<h3 class="front-imagelabels"><a href="/pawtucket/index.php//Browse/People">People</a></h3>
 		</div>
 	</div>
 	<div class="col-sm-3 col-xs-6" id="front-container">
 		<img src="themes/newschool2021/assets/pawtucket/graphics/organizations.png" class="responsive">
 		<div class="centered">
-			<h3 class="front-imagelabels"><a href="/Browse/Organizations">Organizations</a></h3>
+			<h3 class="front-imagelabels"><a href="/pawtucket/index.php/Browse/Organizations">Organizations</a></h3>
 		</div>
 	</div>
 </div>
