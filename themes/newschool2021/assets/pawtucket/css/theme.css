@@ -464,7 +464,7 @@ div.browseFacetItem a {
   height: auto;
 }
 
-.container {
+#front-container {
   position: relative;
   text-align: center;
 }
