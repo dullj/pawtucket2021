@@ -118,6 +118,9 @@
 							
 							{{{<ifdef code="ca_objects.inscriptionSet.inscriptionText"><H6>Inscription</H6></ifdef>}}}
 							{{{<unit relativeTo="ca_objects" delimiter="<br/>">^ca_objects.inscriptionSet.inscriptionText (^ca_objects.inscriptionSet.inscriptionType)</unit>}}}
+							
+							{{{<ifdef code="ca_objects.inscriptionSet.inscriptionText"><H6>Inscription</H6>
+^ca_objects.inscriptionSet.inscriptionText (^ca_objects.inscriptionSet.inscriptionType)</ifdef delimiter="<br/>">}}}
 					
 							{{{<ifdef code="ca_objects.pbcoreLanguage"><H6>Language</H6>^ca_objects.pbcoreLanguage<br/></ifdef>}}}
 							
