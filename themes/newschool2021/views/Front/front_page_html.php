@@ -13,7 +13,7 @@
 		<p>View our <a href="index.php/About/Index">User Guide</a> to learn tips for searching on this site and other resources to aid your research inquiry. </p>
 	</div>
 	<div class="col-sm-4">
-		<img src="themes/newschool2021/assets/pawtucket/graphics/NS030109_000414.jpg">
+		<img src="themes/newschool2021/assets/pawtucket/graphics/NS030109_000414.jpg" class="responsive">
 	</div>
 </div>
 	<hr>
