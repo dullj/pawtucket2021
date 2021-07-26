@@ -401,8 +401,8 @@ div.browseFacetItem a {
 	text-decoration: underline;
 }
 
-/* If the screen size is 400px wide or less, set the font-size to 13px */
-@media screen and (max-width: 400px) {
+/* If the screen size is 600px wide or less, set the font-size to 13px */
+@media screen and (max-width: 600px) {
   .front-imagelabels {
     font-size: 13px;
   }
