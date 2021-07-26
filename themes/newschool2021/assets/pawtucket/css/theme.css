@@ -401,13 +401,19 @@ div.browseFacetItem a {
 	text-decoration: underline;
 }
 
+/* If the screen size is 400px wide or less, set the font-size to 13px */
+@media screen and (max-width: 400px) {
+  .front-imagelabels {
+    font-size: 13px;
+  }
+}
+
 #welcome-text p {
 	font-size: 20px;
 	line-height: 30px;
 }
 
 #welcome-text {
-	width: 65vw;
 	max-width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
