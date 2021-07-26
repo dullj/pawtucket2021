@@ -417,6 +417,14 @@ div.browseFacetItem a {
 	max-width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
+	width:65vw;
+}
+
+/* If the screen size is 600px wide or less, set the max-width to 75vw */
+@media screen and (max-width: 600px) {
+#welcome-text {
+    width:75vw;
+  }
 }
 
 #research-assistance p {
