@@ -8,22 +8,28 @@
 </div>
 
 <div class="row" style="margin: auto;" id="welcome-text">
-	<div class="col-sm-4" id="front-container">
+	<div class="col-sm-3" id="front-container" style="padding-left:0;">
 		<img src="themes/newschool2021/assets/pawtucket/graphics/collections.png" class="responsive">
 		<div class="centered">
 			<h3 class="front-imagelabels">Collections</h3>
 		</div>
 	</div>
-	<div class="col-sm-4" id="front-container">
+	<div class="col-sm-3" id="front-container">
 		<img src="themes/newschool2021/assets/pawtucket/graphics/objects.png" class="responsive">
 		<div class="centered">
 			<h3 class="front-imagelabels">Objects</h3>
 		</div>
 	</div>
-	<div class="col-sm-4" id="front-container">
+	<div class="col-sm-3" id="front-container">
 		<img src="themes/newschool2021/assets/pawtucket/graphics/people.png" class="responsive">
 		<div class="centered">
 			<h3 class="front-imagelabels">People</h3>
+		</div>
+	</div>
+	<div class="col-sm-3" id="front-container" style="padding-right:0;">
+		<img src="themes/newschool2021/assets/pawtucket/graphics/organizations.png" class="responsive">
+		<div class="centered">
+			<h3 class="front-imagelabels">Organizations</h3>
 		</div>
 	</div>
 </div>
