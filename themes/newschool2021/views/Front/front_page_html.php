@@ -8,17 +8,21 @@
 </div>
 
 <div class="row" style="margin: auto;" id="research-assistance">
-	<div class="col-sm-4" class="container">
+	<div class="col-sm-4" id="front-container">
 		<img src="themes/newschool2021/assets/pawtucket/graphics/collections.png" class="responsive">
-		<p class="centered">Collections</p>
+		<h3 class="centered">Collections</h3>
+		<p>Read an overview of all archival collections.</p>
+		
 	</div>
-	<div class="col-sm-4">
+	<div class="col-sm-4" id="front-container">
 		<img src="themes/newschool2021/assets/pawtucket/graphics/objects.png" class="responsive">
-		<p>Objects</p>
+		<h3 class="centered">Objects</h3>
+		<p>Filter and search across all digital objects.</p>
 	</div>
-	<div class="col-sm-4">
+	<div class="col-sm-4" id="front-container">
 		<img src="themes/newschool2021/assets/pawtucket/graphics/people.png" class="responsive">
-		<p>Objects</p>
+		<h3 class="centered">People</h3>
+		<p>View a directory of people in the collections.</p>		
 	</div>
 </div>
 	<hr>
