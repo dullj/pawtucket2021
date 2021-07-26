@@ -8,12 +8,9 @@
 </div>
 
 <div class="row" style="margin: auto;" id="research-assistance">
-	<div class="col-sm-12">
-		<p>Begin Your Research</p>
-	</div>
-	<div class="col-sm-4">
+	<div class="col-sm-4" class="container">
 		<img src="themes/newschool2021/assets/pawtucket/graphics/collections.png" class="responsive">
-		<p>Collections</p>
+		<p class="centered">Collections</p>
 	</div>
 	<div class="col-sm-4">
 		<img src="themes/newschool2021/assets/pawtucket/graphics/objects.png" class="responsive">
