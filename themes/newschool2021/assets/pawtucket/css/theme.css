@@ -397,6 +397,10 @@ div.browseFacetItem a {
 	font-size: 18px;
 }
 
+.front-imagelabels a:hover {
+	text-decoration: underline;
+}
+
 #welcome-text p {
 	font-size: 20px;
 	line-height: 30px;
@@ -470,8 +474,9 @@ div.browseFacetItem a {
 }
 
 #front-container {
-  position: relative;
-  text-align: center;
+	position: relative;
+	text-align: center;
+	padding-bottom: 5px;
 }
 
 .centered {
