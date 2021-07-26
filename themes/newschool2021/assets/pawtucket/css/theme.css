@@ -395,6 +395,7 @@ div.browseFacetItem a {
 .front-imagelabels {
 	font-family: neue display wide, neuedisplaywide;
 	font-size: 18px;
+	color:#000000;
 }
 
 .front-imagelabels a:hover {
