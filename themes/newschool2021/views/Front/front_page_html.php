@@ -9,25 +9,25 @@
 
 <div class="row" style="margin: auto;">
 	<div class="col-sm-3 col-xs-6" id="front-container">
-		<img src="themes/newschool2021/assets/pawtucket/graphics/collections.png" class="responsive">
+		<a href="/pawtucket/index.php/Collections/index"><img src="themes/newschool2021/assets/pawtucket/graphics/collections.png" class="responsive"></a>
 		<div class="centered">
 			<h3 class="front-imagelabels"><a href="/pawtucket/index.php/Collections/index">Collections</a></h3>
 		</div>
 	</div>
 	<div class="col-sm-3 col-xs-6" id="front-container">
-		<img src="themes/newschool2021/assets/pawtucket/graphics/objects.png" class="responsive">
+		<a href="/pawtucket/index.php/Browse/objects"><img src="themes/newschool2021/assets/pawtucket/graphics/objects.png" class="responsive"></a>
 		<div class="centered">
-			<h3 class="front-imagelabels"><a href="/pawtucket/index.php//Browse/objects">Objects</a></h3>
+			<h3 class="front-imagelabels"><a href="/pawtucket/index.php/Browse/objects">Objects</a></h3>
 		</div>
 	</div>
 	<div class="col-sm-3 col-xs-6" id="front-container">
-		<img src="themes/newschool2021/assets/pawtucket/graphics/people.png" class="responsive">
+		<a href="/pawtucket/index.php//Browse/People"><img src="themes/newschool2021/assets/pawtucket/graphics/people.png" class="responsive"></a>
 		<div class="centered">
 			<h3 class="front-imagelabels"><a href="/pawtucket/index.php//Browse/People">People</a></h3>
 		</div>
 	</div>
 	<div class="col-sm-3 col-xs-6" id="front-container">
-		<img src="themes/newschool2021/assets/pawtucket/graphics/organizations.png" class="responsive">
+		<a href="/pawtucket/index.php/Browse/Organizations"><img src="themes/newschool2021/assets/pawtucket/graphics/organizations.png" class="responsive"></a>
 		<div class="centered">
 			<h3 class="front-imagelabels"><a href="/pawtucket/index.php/Browse/Organizations">Organizations</a></h3>
 		</div>
