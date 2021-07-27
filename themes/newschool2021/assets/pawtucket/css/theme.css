@@ -488,14 +488,21 @@ div.browseFacetItem a {
 }
 
 .responsive {
-  width: 100%;
-  height: auto;
+	width: 100%;
+	height: auto;
+	opacity: 1;
+	transition: .5s ease;
+	backface-visibility: hidden;
 }
 
 #front-container {
 	position: relative;
 	text-align: center;
 	padding-bottom: 5px;
+}
+
+#front-container:hover {
+	  opacity: 1;
 }
 
 .centered {
