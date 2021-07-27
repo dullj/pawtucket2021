@@ -33,7 +33,18 @@
 		</div>
 	</div>
 </div>
-	<hr>
+
+<div class="row" style="margin: auto;">
+	<div id="welcome-text">
+		<hr>
+		<div class="col-sm-3">
+			<h3 class="front-imagelabels">Collection Strengths</h3>
+		</div>
+		<div class="col-sm-9">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+		</div>
+	</div>
+</div>
 
 <div class="row" style="margin: auto;">
   <div class="col-sm-12 col-md-10 col-md-offset-1">
