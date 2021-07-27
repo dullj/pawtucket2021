@@ -43,7 +43,7 @@
 		</div>
 		<div class="col-sm-6">
 			<h3 class="front-imagelabels" style="text-align:center;"><a href="/pawtucket/index.php/About/Index>User Handbook</a></h3>
-			<p>For assistance with searching the Digital Collections, please refer to our <a href="/pawtucket/index.php/About/Index>User Handbook.</a></p>
+			<p>For assistance with searching the Digital Collections, please refer to our <a href="/pawtucket/index.php/About/Index">User Handbook.</a></p>
 		</div>
 	</div>
 </div>
