@@ -413,12 +413,12 @@ div.browseFacetItem a {
   }
 }
 
-#welcome-text p {
+.welcome-text p {
 	font-size: 18px;
 	line-height: 30px;
 }
 
-#welcome-text {
+.welcome-text {
 	max-width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
@@ -427,7 +427,7 @@ div.browseFacetItem a {
 
 /* If the screen size is 600px wide or less, set the max-width to 75vw */
 @media screen and (max-width: 600px) {
-#welcome-text {
+.welcome-text {
     width:75vw;
   }
 }
