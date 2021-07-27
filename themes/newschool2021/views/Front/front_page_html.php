@@ -1,5 +1,5 @@
 <div class="row" style="margin: auto;">
-	<div id="welcome-text">
+	<div class="welcome-text">
     <div class="heroSearch">
       <p>The New School Archives Digital Collections presents <a href="https://dictionary.archivists.org/entry/born-digital.html" rel="noopener" target="_blank">born-digital</a> and digitized images, text, audio and video from <a href="https://archives.newschool.edu/" rel="noopener" target="_blank">The New School Archives & Special Collections</a>, home to primary source materials documenting the history of all divisions of The New School.</p>
       <hr>
@@ -35,7 +35,21 @@
 </div>
 
 <div class="row" style="margin: auto;">
-	<div id="welcome-text">
+	<div class="welcome-text">
+		<hr>
+		<div class="col-sm-6">
+			<h3 class="front-imagelabels" style="text-align:center;">Collection Guides</h3>
+			<p>The Digital Collections feature a small portion of the archival holdings. Please visit the <a href="https://findingaids.archives.newschool.edu/">Collection Guides</a> for a deeper search.
+		</div>
+		<div class="col-sm-6">
+			<h3 class="front-imagelabels" style="text-align:center;"><a href="/pawtucket/index.php/About/Index>User Handbook</a></h3>
+			<p>For assistance with searching the Digital Collections, please refer to our <a href="/pawtucket/index.php/About/Index>User Handbook.</a></p>
+		</div>
+	</div>
+</div>
+
+<div class="row" style="margin: auto;">
+	<div class="welcome-text">
 		<hr>
 		<div class="col-sm-3">
 			<h3 class="front-imagelabels">Collection Strengths</h3>
