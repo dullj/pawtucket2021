@@ -60,6 +60,7 @@
 	</div>
 </div>
 
+<div class="welcome-text">
 <button class="accordion">Research Resources</button>
 	<div class="panel">
 		<div class="col-sm-3">
@@ -84,6 +85,7 @@
 <button class="accordion">Past Exhibitions</button>
 <div class="panel">
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
 </div>
 
 <div class="row" style="margin: auto;">
