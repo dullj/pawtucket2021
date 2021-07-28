@@ -328,6 +328,9 @@ div.browseFacetItem a {
 	background-color: #000000;
 	height:210px;
 	padding:0px;
+	line-height: 25px;
+	font-weight: 400;
+	font-size:14px;
 }
 .footer{
 	background-color: #000000;
