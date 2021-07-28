@@ -1,10 +1,10 @@
 <div class="row" style="margin: auto;">
 	<div class="welcome-text">
-    <div class="heroSearch">
-      <p>The New School Archives Digital Collections presents <a href="https://dictionary.archivists.org/entry/born-digital.html" rel="noopener" target="_blank">born-digital</a> and digitized images, text, audio and video from <a href="https://archives.newschool.edu/" rel="noopener" target="_blank">The New School Archives & Special Collections</a>, home to primary source materials documenting the history of all divisions of The New School.</p>
-      <hr>
-    </div>
-  </div>
+    		<div class="heroSearch">
+      			<p>The New School Archives Digital Collections presents <a href="https://dictionary.archivists.org/entry/born-digital.html" rel="noopener" target="_blank">born-digital</a> and digitized images, text, audio and video from <a href="https://archives.newschool.edu/" rel="noopener" target="_blank">The New School Archives & Special Collections</a>, home to primary source materials documenting the history of all divisions of The New School.</p>
+      			<hr>
+    		</div>
+  	</div>
 </div>
 
 <div class="row" style="margin: auto;">
@@ -48,12 +48,17 @@
 		<div class="panel">
 			<h3><a href="/pawtucket/index.php/Gallery/169">Course Catalog collections</a></h3>
 			<p>10 collections</p>
-			
 		</div>
 
 	<button class="accordion">Past Exhibitions</button>
 		<div class="panel">
- 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<a href="/pawtucket/index.php/Gallery/288"><h3>Exhibition 2011: Radical Shifts</h3>
+			<p>60 items</p></a>
+			<p>Catalog and selected materials from Radical Shifts: Reshaping the Interior at Parsons, a 2011 exhibition curated by Parsons School of Design graduate students. The exhibition explored the forces behind the changes in the 1950s and '60s that led Parsons to revamp its storied, long-running Interior Design program--with its focus on imparting "taste" and the ability to make impeccable reproductions of historical rooms for a high-end clientele--into a broader Environmental Design program that encouraged experimentation and socially-engaged design practice.</p>
+			
+			<a href="/pawtucket/index.php/Gallery/570"><h3>Exhibition 2010: Inspiring Women</h3>
+			<p>11 items</p></a>
+			<p>Catalog and selected portraits featured in Inspiring Women: Designers from Parsons' Archives, an  exhibition celebrating a group of multi-talented women who made their way in the world as working designers, educators, mentors. Curated by Alexandra Anderson and PJ Carlino, Parsons graduate students. Rachael Stollar, MFA Photography at Parsons created a video preview for the exhibition.</p>
 		</div>
 </div>
 
