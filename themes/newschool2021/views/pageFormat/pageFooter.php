@@ -30,7 +30,7 @@
 		</div><!-- end pageArea --></div><!-- end col --></div><!-- end row --></div><!-- end container -->
 <div class="container-fluid footer">		
 <footer id="footer">  
-    <div class="row-tns-footer">
+    <div class="row" style="background-color:#000000;">
       <div class="row-fluid footer-inner">
           <div class="col-md-6 footer-links">
             <ul class="footer-links-list">
