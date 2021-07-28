@@ -35,17 +35,19 @@
 </div>
 
 
-<div class="welcome-text">
+<div class="welcome-text" style="margin-top:20px;">
 	<button class="accordion">Research Resources</button>
 		<div class="panel">
-			<p><a href="https://findingaids.archives.newschool.edu/">Collection Guides</a></p><p> The Digital Collections feature a small portion of the archival holdings. Please visit the Collection Guides for a deeper search.</p>
-			<p><a href="/pawtucket/index.php/About/Index">User Handbook</a></p><p> For assistance with searching the Digital Collections, please refer to our User Handbook.</p>
+			<h3><a href="https://findingaids.archives.newschool.edu/">Collection Guides</a></h3>
+			<p>The Digital Collections feature a small portion of the archival holdings. Please visit the Collection Guides for a deeper search.</p>
+			<h3><a href="/pawtucket/index.php/About/Index">User Handbook</a></h3>
+			<p>For assistance with searching the Digital Collections, please refer to our User Handbook.</p>
 		</div>
 
 	<button class="accordion">Collection Strengths</button>
 		<div class="panel">
-			<p><a href="/pawtucket/index.php/Gallery/169">Course Catalog collections</a></p>
-			<h3>10 Collections</h3>
+			<h3><a href="/pawtucket/index.php/Gallery/169">Course Catalog collections</a></h3>
+			<p>10 collections</p>
 			
 		</div>
 
