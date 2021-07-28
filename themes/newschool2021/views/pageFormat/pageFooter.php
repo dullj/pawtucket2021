@@ -48,6 +48,8 @@
               <a href="https://library.newschool.edu" rel="noopener" target="_blank">Library Home</a><br>
               <a href="https://archives.newschool.edu" rel="noopener" target="_blank">Archives Home</a></p>
             </ul>
+		<span id="footer-cp"><p>Copyright © 2020 The New School<br>
+              <a href="https://ispo.newschool.edu/notices/website/" rel="noopener" target="_blank">Privacy Notice</a><br></p></span>
           </div>
       </div>
     </div>
