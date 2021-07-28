@@ -551,6 +551,7 @@ div.browseFacetItem a {
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   margin-bottom:0px;
+  border:0;
 }
 
 /* --------------------------------- */
