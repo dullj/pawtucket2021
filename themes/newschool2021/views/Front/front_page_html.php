@@ -60,6 +60,32 @@
 	</div>
 </div>
 
+<button class="accordion">Research Resources</button>
+	<div class="panel">
+		<div class="col-sm-3">
+			<p>COLLECTION GUIDES</p>
+        </div>
+        <div class="col-sm-9">
+			<p>The Digital Collections feature a small portion of the archival holdings. Please visit the Collection Guides for a deeper search.</p>
+       </div>
+       <div class="col-sm-3">
+    		<p>USER HANDBOOK</p>
+       </div>
+       <div class="col-sm-9">
+    		<p>For assistance with searching the Digital Collections, please refer to our User Handbook.</p>
+		</div>
+</div>
+
+<button class="accordion">Collection Strengths</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">Past Exhibitions</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
 <div class="row" style="margin: auto;">
   <div class="col-sm-12 col-md-10 col-md-offset-1">
     <h2 style="text-align:center; padding-bottom:20px;">Highlights from the Archives</h2>
@@ -70,4 +96,19 @@
   </div>
 </div><!-- end row -->
 
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
 
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
