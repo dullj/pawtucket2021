@@ -70,13 +70,27 @@
 
 	<button class="accordion">Past Exhibitions</button>
 		<div class="panel">
-			<a href="/pawtucket/index.php/Gallery/288"><h3>Exhibition 2011: Radical Shifts</h3>
-			<p>60 items</p></a>
-			<p>Catalog and selected materials from Radical Shifts: Reshaping the Interior at Parsons, a 2011 exhibition curated by Parsons School of Design graduate students. The exhibition explored the forces behind the changes in the 1950s and '60s that led Parsons to revamp its storied, long-running Interior Design program--with its focus on imparting "taste" and the ability to make impeccable reproductions of historical rooms for a high-end clientele--into a broader Environmental Design program that encouraged experimentation and socially-engaged design practice.</p>
+			<h3><a href="/pawtucket/index.php/Gallery/960">2020: We Demand: Artifacts of Activism</a></h3>
+			<p>10 items</p>
+			<p>Student petitions, fliers, and letters that document activism at The New School throughout its history. The archival objects featured here document over sixty years of protest on campus, from the student campaigns against the Vietnam War to those urging greater diversity in the university.</p>
+	
+			<h3><a href="/pawtucket/index.php/Gallery/235">2014: VOICES OF CRISIS</a></h3>
+			<p>23 items</p>
+			<p>Selected materials from VOICES OF CRISIS: American Race Crisis Lectures at The New School, a 2014 exhibition held at The New School. Curated by Miles Kohrman, a Eugene Lang College alumnus, VOICES OF CRISIS explored the American Race Crisis lecture series held at The New School in 1964. The original series sought to...</p>
 			
-			<a href="/pawtucket/index.php/Gallery/570"><h3>Exhibition 2010: Inspiring Women</h3>
-			<p>11 items</p></a>
-			<p>Catalog and selected portraits featured in Inspiring Women: Designers from Parsons' Archives, an  exhibition celebrating a group of multi-talented women who made their way in the world as working designers, educators, mentors. Curated by Alexandra Anderson and PJ Carlino, Parsons graduate students. Rachael Stollar, MFA Photography at Parsons created a video preview for the exhibition.</p>
+			<h3><a href="/pawtucket/index.php/Gallery/143">2014: OFFENSE + DISSENT</a></h3>
+			<p>54 items</p>
+			<p>Offense + Dissent: Image, Conflict, Belonging, a 2014 exhibition, explored the ways in which offense has been given (and taken) and dissent expressed (and managed) through three incidents in the history of The New School: the 1951 and ’53 curtaining of the Orozco murals during the red scare years; the 1970 anti-war exhibition put...</p>
+			
+			<h3><a href="/pawtucket/index.php/Gallery/288">2011: Radical Shifts</a></h3>
+			<p>60 items</p>
+			<p>Catalog and selected materials from Radical Shifts: Reshaping the Interior at Parsons, a 2011 exhibition curated by Parsons School of Design graduate students. The exhibition explored the forces behind the changes in the 1950s and '60s that led Parsons to revamp its storied, long-running Interior Design program--with its focus on...</p>
+			
+			<h3><a href="/pawtucket/index.php/Gallery/570">2010: Inspiring Women</a></h3>
+			<p>11 items</p>
+			<p>Catalog and selected portraits featured in Inspiring Women: Designers from Parsons' Archives, an  exhibition celebrating a group of multi-talented women who made their way in the world as working designers, educators, mentors. Curated by Alexandra Anderson and PJ Carlino, Parsons graduate students. Rachael Stollar,...</p>
+			
+			
 		</div>
 </div>
 
