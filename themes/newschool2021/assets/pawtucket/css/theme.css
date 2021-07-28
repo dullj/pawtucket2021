@@ -468,6 +468,7 @@ div.browseFacetItem a {
     position: relative;
     padding-top: 40px;
     font-size: 18px;
+    padding-bottom:20px;
 }
 
 .front .heroSearch .form-control, .front .heroSearch .form-control:focus {
