@@ -34,45 +34,22 @@
 	</div>
 </div>
 
-<div class="row" style="margin: auto;">
-	<div class="welcome-text">
-		<hr>
-		<div class="col-sm-6">
-			<h3 class="front-imagelabels" style="text-align:center;">Collection Guides</h3>
-			<p>The Digital Collections feature a small portion of the archival holdings. Please visit the <a href="https://findingaids.archives.newschool.edu/">Collection Guides</a> for a deeper search.</p>
-		</div>
-		<div class="col-sm-6">
-			<h3 class="front-imagelabels" style="text-align:center;"><a href="/pawtucket/index.php/About/Index">User Handbook</a></h3>
-			<p>For assistance with searching the Digital Collections, please refer to our <a href="/pawtucket/index.php/About/Index">User Handbook.</a></p>
-		</div>
-	</div>
-</div>
-
-<div class="row" style="margin: auto;">
-	<div class="welcome-text">
-		<hr>
-		<div class="col-sm-3">
-			<h3 class="front-imagelabels">Collection Strengths</h3>
-		</div>
-		<div class="col-sm-9">
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-		</div>
-	</div>
-</div>
 
 <div class="welcome-text">
-	<button class="accordion"><h3 class="front-imagelabels">Research Resources</h3></button>
+	<button class="accordion">Research Resources</button>
 		<div class="panel">
-			<p><a href="https://findingaids.archives.newschool.edu/">Collection Guides</a> The Digital Collections feature a small portion of the archival holdings. Please visit the Collection Guides for a deeper search.</p>
-			<p><a href="/pawtucket/index.php/About/Index">User Handbook</a> For assistance with searching the Digital Collections, please refer to our User Handbook.</p>
+			<p><a href="https://findingaids.archives.newschool.edu/">Collection Guides</a></p><p> The Digital Collections feature a small portion of the archival holdings. Please visit the Collection Guides for a deeper search.</p>
+			<p><a href="/pawtucket/index.php/About/Index">User Handbook</a></p><p> For assistance with searching the Digital Collections, please refer to our User Handbook.</p>
 		</div>
 
-	<button class="accordion"><h3 class="front-imagelabels">Collection Strengths</button>
+	<button class="accordion">Collection Strengths</button>
 		<div class="panel">
-  			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<p><a href="/pawtucket/index.php/Gallery/169>Course Catalog collections</a></p>
+			<h3>10 Collections</h3>
+			
 		</div>
 
-	<button class="accordion"><h3 class="front-imagelabels">Past Exhibitions</button>
+	<button class="accordion">Past Exhibitions</button>
 		<div class="panel">
  			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 		</div>
