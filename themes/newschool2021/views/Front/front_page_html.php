@@ -3,6 +3,7 @@
     		<div class="heroSearch">
       			<p>The New School Archives Digital Collections presents <a href="https://dictionary.archivists.org/entry/born-digital.html" rel="noopener" target="_blank">born-digital</a> and digitized images, text, audio and video from <a href="https://archives.newschool.edu/" rel="noopener" target="_blank">The New School Archives & Special Collections</a>, home to primary source materials documenting the history of all divisions of The New School.</p>
     		</div>
+		<hr>
   	</div>
 </div>
 
@@ -45,15 +46,26 @@
 
 	<button class="accordion">Collection Strengths</button>
 		<div class="panel">
-			<h3><a href="/pawtucket/index.php/Gallery/169">Course Catalog collections</a></h3>
-			<p><a href="/pawtucket/index.php/Gallery/169">10 collections</a></p>
-			<p>Collections featuring course catalogs from across New School divisions, programs and schools. Includes catalogs from Parsons and Mannes before they joined The New School.</p>
+			<h3><a href="/pawtucket/index.php/Gallery/169">Course Catalog Collections</a></h3>
+			<p>10 collections</p>
 			
-			<a href="/pawtucket/index.php/Gallery/79"><h3>Fashion Design Collections</h3>
-			<p>18 collections</p></a>
-			<p>Highlights from the New School Archives and Special Collections relating to fashion design, education, illustration and marketing.</p>
+			<h3><a href="/pawtucket/index.php/Gallery/79">Fashion Design Collections</a></h3>
+			<p>18 collections</p>
 			
+			<h3><a href="/pawtucket/index.php/Gallery/73">INTERIOR DESIGN COLLECTIONS</a></h3>
+			<p>14 collections</p>
 			
+			<h3><a href="/pawtucket/index.php/Gallery/80">New School History Collections</a></h3>
+			<p>14 collections</p>
+
+			<h3><a href="/pawtucket/index.php/Gallery/578">New School Publications</a></h3>
+			<p>10 collections</p>
+			
+			<h3><a href="/pawtucket/index.php/Gallery/789">Oral History Collections</a></h3>
+			<p>9 collections</p>
+			
+			<h3><a href="/pawtucket/index.php/Gallery/306">Thesis Collections</a></h3>
+			<p>6 collections</p>
 		</div>
 
 	<button class="accordion">Past Exhibitions</button>
