@@ -62,23 +62,22 @@
 
 <div class="welcome-text">
 	<button class="accordion"><h3 class="front-imagelabels">Research Resources</h3></button>
-	<div class="panel">
-		<p><a href="https://findingaids.archives.newschool.edu/">Collection Guides</a> The Digital Collections feature a small portion of the archival holdings. Please visit the Collection Guides for a deeper search.</p>
-		<p><a href="/pawtucket/index.php/About/Index">User Handbook</a> For assistance with searching the Digital Collections, please refer to our User Handbook.</p>
-	</div>
-</div>
+		<div class="panel">
+			<p><a href="https://findingaids.archives.newschool.edu/">Collection Guides</a> The Digital Collections feature a small portion of the archival holdings. Please visit the Collection Guides for a deeper search.</p>
+			<p><a href="/pawtucket/index.php/About/Index">User Handbook</a> For assistance with searching the Digital Collections, please refer to our User Handbook.</p>
+		</div>
 
-<button class="accordion"><h3 class="front-imagelabels">Collection Strengths</button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
+	<button class="accordion"><h3 class="front-imagelabels">Collection Strengths</button>
+		<div class="panel">
+  			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
 
-<button class="accordion"><h3 class="front-imagelabels">Past Exhibitions</button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	<button class="accordion"><h3 class="front-imagelabels">Past Exhibitions</button>
+		<div class="panel">
+ 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
 </div>
-</div>
-
+	
 <div class="row" style="margin: auto;">
   <div class="col-sm-12 col-md-10 col-md-offset-1">
     <h2 style="text-align:center; padding-bottom:20px;">Highlights from the Archives</h2>
