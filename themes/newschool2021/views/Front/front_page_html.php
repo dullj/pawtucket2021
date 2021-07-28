@@ -44,7 +44,7 @@
 
 	<button class="accordion">Collection Strengths</button>
 		<div class="panel">
-			<p><a href="/pawtucket/index.php/Gallery/169>Course Catalog collections</a></p>
+			<p><a href="/pawtucket/index.php/Gallery/169">Course Catalog collections</a></p>
 			<h3>10 Collections</h3>
 			
 		</div>
