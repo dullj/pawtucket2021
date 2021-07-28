@@ -549,7 +549,11 @@ div.browseFacetItem a {
   border:0;
 }
 
-.panel h3:hover p:hover {
+.panel h3:hover {
+	text-decoration: underline;
+}
+
+.panel p:hover {
 	text-decoration: underline;
 }
 
