@@ -47,7 +47,14 @@
 	<button class="accordion">Collection Strengths</button>
 		<div class="panel">
 			<h3><a href="/pawtucket/index.php/Gallery/169">Course Catalog collections</a></h3>
-			<p>10 collections</p>
+			<p><a href="/pawtucket/index.php/Gallery/169">10 collections</a></p>
+			<p>Collections featuring course catalogs from across New School divisions, programs and schools. Includes catalogs from Parsons and Mannes before they joined The New School.</p>
+			
+			<a href="/pawtucket/index.php/Gallery/79"><h3>Fashion Design Collections</h3>
+			<p>18 collections</p></a>
+			<p>Highlights from the New School Archives and Special Collections relating to fashion design, education, illustration and marketing.</p>
+			
+			
 		</div>
 
 	<button class="accordion">Past Exhibitions</button>
