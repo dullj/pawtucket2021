@@ -327,10 +327,10 @@ div.browseFacetItem a {
 	font-family:Neue;
 	background-color: #000000;
 	height:210px;
+	padding:0px;
 }
 .footer{
 	background-color: #000000;
-	padding:0px;
 }
 
 #footer h4 {
