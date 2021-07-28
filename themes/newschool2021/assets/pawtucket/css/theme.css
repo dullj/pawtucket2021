@@ -549,6 +549,11 @@ div.browseFacetItem a {
   border:0;
 }
 
+.panel h3:hover p:hover {
+	text-decoration: underline;
+}
+
+
 /* --------------------------------- */
 /* details */
 /* --------------------------------- */
