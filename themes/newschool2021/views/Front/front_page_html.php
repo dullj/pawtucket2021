@@ -61,28 +61,19 @@
 </div>
 
 <div class="welcome-text">
-<button class="accordion">Research Resources</button>
+	<button class="accordion"><h3 class="front-imagelabels">Research Resources</h3></button>
 	<div class="panel">
-		<div class="col-sm-3">
-			<p>COLLECTION GUIDES</p>
-        </div>
-        <div class="col-sm-9">
-			<p>The Digital Collections feature a small portion of the archival holdings. Please visit the Collection Guides for a deeper search.</p>
-       </div>
-       <div class="col-sm-3">
-    		<p>USER HANDBOOK</p>
-       </div>
-       <div class="col-sm-9">
-    		<p>For assistance with searching the Digital Collections, please refer to our User Handbook.</p>
-		</div>
+		<p><a href="https://findingaids.archives.newschool.edu/">Collection Guides</a> The Digital Collections feature a small portion of the archival holdings. Please visit the Collection Guides for a deeper search.</p>
+		<p><a href="/pawtucket/index.php/About/Index">User Handbook</a> For assistance with searching the Digital Collections, please refer to our User Handbook.</p>
+	</div>
 </div>
 
-<button class="accordion">Collection Strengths</button>
+<button class="accordion"><h3 class="front-imagelabels">Collection Strengths</button>
 <div class="panel">
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
 
-<button class="accordion">Past Exhibitions</button>
+<button class="accordion"><h3 class="front-imagelabels">Past Exhibitions</button>
 <div class="panel">
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
