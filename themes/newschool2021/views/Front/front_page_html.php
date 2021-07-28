@@ -56,16 +56,6 @@
  			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 		</div>
 </div>
-	
-<div class="row" style="margin: auto;">
-  <div class="col-sm-12 col-md-10 col-md-offset-1">
-    <h2 style="text-align:center; padding-bottom:20px;">Highlights from the Archives</h2>
-    <?php
-            print $this->render("Front/featured_set_slideshow_html.php");
-    ?>
-		<hr>
-  </div>
-</div><!-- end row -->
 
 <script>
 var acc = document.getElementsByClassName("accordion");
