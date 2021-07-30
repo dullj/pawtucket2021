@@ -537,10 +537,6 @@ div.browseFacetItem a {
   margin-left: 5px;
 }
 
-.acc-active:after {
-  content: "\2212";
-}
-
 .panel {
   padding: 0 18px;
   background-color: white;
