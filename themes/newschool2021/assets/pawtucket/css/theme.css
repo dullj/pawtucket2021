@@ -535,6 +535,9 @@ div.browseFacetItem a {
   font-weight: bold;
   float: right;
   margin-left: 5px;
+}
+
+.acc-active:after {
   content: "\2212";
 }
 
