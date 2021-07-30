@@ -56,7 +56,9 @@ print "<p>Enter your search terms in the fields below.</p>";
 	</div>
 	<div class="col-sm-4" >
 		<h1>Helpful Links</h1>
-		<p>Include some helpful info for your users here.</p>
+		<p><a href="https://archives.newschool.edu/">Archives Home</a></p>
+		<p><a href="/pawtucket/index.php/About/Index">User Guide</a></p>
+		<p><a href="https://findingaids.archives.newschool.edu/">Collection Guides</a></p>
 	</div><!-- end col -->
 </div><!-- end row -->
 
