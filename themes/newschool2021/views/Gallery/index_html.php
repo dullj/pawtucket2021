@@ -8,7 +8,11 @@
 ?>
 		<div class="container">
 			<div class="row">
-				
+				<div class='col-sm-8'>
+					<div id="gallerySetInfo">
+						set info here
+					</div><!-- end gallerySetInfo -->
+				</div><!-- end col -->
 <?php
 				if(sizeof($va_sets) > 1){
 ?>
@@ -46,7 +50,7 @@
 ?>
 						</ul></div><!-- end jcarousel -->
 <?php
-						if(sizeof($va_sets) > 4){
+						if(sizeof($va_sets) > 20){
 ?>
 							<!-- Prev/next controls -->
 							<a href="#" class="galleryPrevious"><i class="fa fa-angle-left"></i></a>
@@ -118,9 +122,4 @@
 <?php
 	}
 ?>
-	<div class='col-sm-8'>
-					<div id="gallerySetInfo">
-						set info here
-					</div><!-- end gallerySetInfo -->
-				</div><!-- end col -->
 </div><!-- end col --></div><!-- end row -->
