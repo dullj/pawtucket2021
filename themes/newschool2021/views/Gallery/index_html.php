@@ -8,7 +8,8 @@
 ?>
 		<div class="container">
 			<div class="row">
-				<?php
+				
+<?php
 				if(sizeof($va_sets) > 1){
 ?>
 				<div class='col-sm-4'>
@@ -54,13 +55,6 @@
 						}
 ?>
 					</div><!-- end jcarousel-wrapper -->
-					
-				<div class='col-sm-8'>
-					<div id="gallerySetInfo">
-						set info here
-					</div><!-- end gallerySetInfo -->
-				</div><!-- end col -->
-
 					<script type='text/javascript'>
 						jQuery(document).ready(function() {		
 							/* width of li */
@@ -124,4 +118,9 @@
 <?php
 	}
 ?>
+	<div class='col-sm-8'>
+					<div id="gallerySetInfo">
+						set info here
+					</div><!-- end gallerySetInfo -->
+				</div><!-- end col -->
 </div><!-- end col --></div><!-- end row -->
