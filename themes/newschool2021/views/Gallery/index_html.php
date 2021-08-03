@@ -8,8 +8,10 @@
 ?>
 		<div class="container">
 			<div class="row">
-				
-								<div class='col-sm-4'>
+				<?php
+				if(sizeof($va_sets) > 1){
+?>
+				<div class='col-sm-4'>
 					<div class="jcarousel-wrapper">
 						<!-- Carousel -->
 						<div class="jcarousel"><ul>
@@ -52,15 +54,12 @@
 						}
 ?>
 					</div><!-- end jcarousel-wrapper -->
-									
+					
 				<div class='col-sm-8'>
 					<div id="gallerySetInfo">
 						set info here
 					</div><!-- end gallerySetInfo -->
 				</div><!-- end col -->
-<?php
-				if(sizeof($va_sets) > 1){
-?>
 
 					<script type='text/javascript'>
 						jQuery(document).ready(function() {		
