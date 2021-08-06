@@ -13,7 +13,7 @@
 			print "<div class='row'>";
 			print "<div class='topics-container'><div class='galleryListItem'>";
 			$va_first_item = array_shift(array_shift($t_set->getFirstItemsFromSets(array($vn_set_id), array("version" => "small", "checkAccess" => $va_access_values))));
-			print "<div class='galleryListItemImg'>".$va_first_item["representation_tag"]."</div>";
+			
 			print "<H3>".$t_set->getLabelForDisplay()."</H3>";
 			print "<p class='count'>".$t_set->getItemCount(array("checkAccess" => $va_access_values))." items</p>";
 			if($vs_description = $t_set->get($o_config->get('gallery_set_description_element_code'))){
