@@ -490,6 +490,7 @@ div.browseFacetItem a {
 	transition: .5s ease;
 	backface-visibility: hidden;
 	opacity: 1;
+	border: 1px solid black;
 }
 
 #front-container:hover .responsive {
