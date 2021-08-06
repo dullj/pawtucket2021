@@ -327,6 +327,12 @@ div.browseFacetItem a {
 	font-family: neue black, neueblack;
 }
 
+.gallery .galleryListItem .galleryListItemImg {
+    width: 210px;
+    overflow: hidden;
+    margin: 0px auto 15px auto;
+}
+
 /* --------------------------------- */
 /* footer */
 /* --------------------------------- */
