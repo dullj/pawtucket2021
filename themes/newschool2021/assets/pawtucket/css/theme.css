@@ -314,6 +314,19 @@ div.browseFacetItem a {
 	padding-left: 15px;
 }
 
+.topics-container {
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 65vw;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.galleryListItem h3 {
+	font-family: neue black, neueblack;
+}
+
 /* --------------------------------- */
 /* footer */
 /* --------------------------------- */
