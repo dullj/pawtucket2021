@@ -211,6 +211,11 @@ ul.menuItems {
 	font-size:14px;
 }
 
+.dropdown-menu > li > a {
+	text-transform: uppercase;
+	line-height: 2.3;
+}
+
 /* ----------------------------------------- */
 /* navbar - browse menu */
 /* ----------------------------------------- */
