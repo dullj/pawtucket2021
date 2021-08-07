@@ -327,6 +327,8 @@ div.browseFacetItem a {
 .gallery h1 {
 	padding-top: 15px; 
 	padding-left: 15px;
+	padding-bottom:15px;
+	text-align:center;
 }
 
 .topics-container {
@@ -354,6 +356,11 @@ div.browseFacetItem a {
 
 .gallery {
     font-size: 14px;
+}
+
+.gallery .galleryDetailBottom {
+    border-bottom: 1px solid #000000;
+    padding-bottom: 15px;
 }
 
 /* --------------------------------- */
