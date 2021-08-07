@@ -324,6 +324,12 @@ div.browseFacetItem a {
 /* gallery/special projects */
 /* --------------------------------- */
 
+#gallerydetail {
+	max-width:1200px;
+	margin-right:auto;
+	margin-left:auto;
+}
+	
 .gallery h1 {
 	padding-top: 15px; 
 	padding-left: 15px;
