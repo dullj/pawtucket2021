@@ -122,7 +122,7 @@
 							{{{<ifdef code="ca_objects.pbcoreLanguage"><H6>Language</H6>^ca_objects.pbcoreLanguage<br/></ifdef>}}}
 							
 							{{{<ifcount code="ca_list_items" min="1" max="1"><H6>Related Repository</H6></ifcount>}}}
-							{{{<ifcount code="ca_list_items" min="2"><H6>Related Terms</H6></ifcount>}}}
+							{{{<ifcount code="ca_list_items" min="2"><H6>Related Repositories</H6></ifcount>}}}
 							{{{<unit relativeTo="ca_objects_x_vocabulary_terms" delimiter="<br/>"><unit relativeTo="ca_list_items"><l>^ca_list_items.preferred_labels.name_plural</l></unit>}}}
 														
 							{{{<ifdef code="ca_objects.repositories"><H6>Collection Guides</H6>^ca_objects.repositories<br/></ifdef>}}}
