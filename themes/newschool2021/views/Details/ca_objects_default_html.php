@@ -113,7 +113,8 @@
 							{{{<ifdef code="ca_objects.wtThree"><H6>Work Type</H6>^ca_objects.wtThree<br/></ifdef>}}}
 							{{{<ifdef code="ca_objects.wtOther"><H6>Work Type</H6>^ca_objects.wtOther<br/></ifdef>}}}
 							{{{<ifdef code="ca_objects.wtAudiovisual"><H6>Work Type</H6>^ca_objects.wtAudiovisual<br/></ifdef>}}}
-							{{{<ifdef code="ca_objects.wtPhysicalAudio"><H6>Work Type</H6>^ca_objects.wtPhysicalAudio<br/></ifdef>}}}
+							{{{<ifdef code="ca_objects.wt_digitalmovingimage"><H6>Work Type</H6>^ca_objects.wt_digitalmovingimage<br/></ifdef>}}}
+							
 							
 					
 							{{{<ifdef code="ca_objects.measurementSet.measurements"><H6>Measurements</H6>^ca_objects.measurementSet.measurements <ifdef code="ca_objects.measurementSet.measurementsType">(^ca_objects.measurementSet.measurementsType)</ifdef></ifdef><ifdef code="ca_objects.measurementSet.measurements"> x </ifdef><ifdef code="ca_objects.measurementSet.measurements2">^ca_objects.measurementSet.measurements2 <ifdef code="ca_objects.measurementSet.measurementsType2">(^ca_objects.measurementSet.measurementsType2)</ifdef></ifdef>}}}
