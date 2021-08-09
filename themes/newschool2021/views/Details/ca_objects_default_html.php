@@ -113,7 +113,7 @@
 							{{{<ifdef code="ca_objects.wtThree"><H6>Work Type</H6>^ca_objects.wtThree<br/></ifdef>}}}
 							{{{<ifdef code="ca_objects.wtOther"><H6>Work Type</H6>^ca_objects.wtOther<br/></ifdef>}}}
 							{{{<ifdef code="ca_objects.wtAudiovisual"><H6>Work Type</H6>^ca_objects.wtAudiovisual<br/></ifdef>}}}
-							{{{<ifdef code="ca_objects.wt_digitalmovingimage"><H6>Work Type</H6>^ca_objects.wt_digitalmovingimage<br/></ifdef>}}}
+							{{{<ifdef code="ca_objects.pbcoreFormatDigMovingImages"><H6>Work Type</H6>^ca_objects.pbcoreFormatDigMovingImages<br/></ifdef>}}}
 							
 							
 					
