@@ -654,6 +654,11 @@ text-decoration: underline;
 .detail #detailAnnotations { 
 	margin: 0px 0px 0px 0px;
 }
+
+blockquote p {
+    font-size: 14px;
+    line-height: 24px;
+}
 	
 /* --------------------------------- */
 /* collection index */
