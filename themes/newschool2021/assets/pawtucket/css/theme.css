@@ -615,7 +615,17 @@ div.browseFacetItem a {
 .detail #detailTools{
 	font-family:Neue;
 	margin-top:0px;
-	padding-top:0px;
+	padding-top:10px;
+}
+
+.detail #detailRepNav {
+    padding: 7px;
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+}
+
+#detailRepresentationThumbnails {
+    padding-top: 5px;
 }
 	
 .detail H6 a{
@@ -666,7 +676,7 @@ blockquote p {
     background-color: #FFFFFF;
     font-size: 30px;
     padding: 0px;
-    margin-bottom: 2px;
+    margin-bottom: 10px;
 }
 	
 /* --------------------------------- */
