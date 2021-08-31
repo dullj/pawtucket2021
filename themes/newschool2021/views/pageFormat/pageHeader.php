@@ -8,7 +8,7 @@
  *
  * Software by Whirl-i-Gig (http://www.whirl-i-gig.com)
  * Copyright 2014-2017 Whirl-i-Gig
- *
+ *<div class="parallelogram"></div>
  * For more information visit http://www.CollectiveAccess.org
  *
  * This program is free software; you may redistribute it and/or modify it under
@@ -56,6 +56,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"/>
 	<?php print MetaTagManager::getHTML(); ?>
 	<?php print AssetLoadManager::getLoadHTML($this->request); ?>
+	<link rel="icon" href="<?php print caGetThemeGraphicUrl($this->request, 'favicon.ico'); ?>">
+
 
 	<title><?php print (MetaTagManager::getWindowTitle()) ? MetaTagManager::getWindowTitle() : $this->request->config->get("app_display_name"); ?></title>
 	
@@ -76,6 +78,28 @@
 ?>
 </head>
 <body>
+<div class="row" style="background-color:black; padding-top:10px; padding-bottom:10px;padding-right: 15px;
+padding-left: 15px;">
+	<section id="header">
+    		<div class="col-xs-6">
+      			<div class="header-first">
+      				<ul class="clearfix-menu">
+         				<li class="menu-item" style="border-right: solid 1px #8c8c8c;"><a href="https://www.newschool.edu/" rel="noopener" target="_blank">University Home</a></li>
+          				<li class="menu-item" style="padding-left: 10px;"><a href="https://archives.newschool.edu/" rel="noopener" target="_blank">Archives Home</a></li>
+				</ul>
+      			</div>  
+    		</div>
+  
+    		<div class="col-xs-6">
+      			<div class="header-second">
+        			<ul class="clearfix-menu">
+          				<li class="menu-item" style="color:#8c8c8c;">Digital Collections</li>
+					<li class="menu-item" style="padding-left:10px;"><a href="https://findingaids.archives.newschool.edu/" rel="noopener" target="_blank">Collection Guides</a></li>
+        			</ul>
+      			</div>
+    		</div>
+ 	</section>
+</div>
 	<nav class="navbar navbar-default yamm" role="navigation">
 		<div class="container menuBar">
 			<!-- Brand and toggle get grouped for better mobile display -->
@@ -96,9 +120,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-<?php
-				print caNavLink($this->request, caGetThemeGraphic($this->request, 'Archives_Logo_RGB.png'), "navbar-brand", "", "","");
-?>
+				
 			</div>
 
 		<!-- Collect the nav links, forms, and other content for toggling -->
@@ -114,6 +136,11 @@
 <?php
 	}
 ?>
+			<div class="col-md-12">
+      				<h1 id="fullsitetitle">The New School Archives And Special Collections</h1>
+      				<h2 id="site-title"><a href="/pawtucket/index.php">Digital Collections </a></h2>
+    			</div>
+			
 			<div class="collapse navbar-collapse" id="bs-main-navbar-collapse-1">
 <?php
 	if ($vb_has_user_links) {
@@ -143,13 +170,29 @@
 						})
 					});
 				</script>
-				<ul class="nav navbar-nav navbar-right menuItems">
-					<li <?php print ($this->request->getController() == "About") ? 'class="active"' : ''; ?>><?php print caNavLink($this->request, _t("About"), "", "", "About", "Index"); ?></li>
-					<?php print $this->render("pageFormat/browseMenu.php"); ?>	
+				 
+				
+				<ul class="nav navbar-nav menuItems">
+					
+					<li class="dropdown<?php print ((strToLower($this->request->getController()) == "browse") && in_array(strToLower($this->request->getAction()), array("collections", "objects", "people", "organizations"))) ? ' active' : ''; ?>" style="position:relative;"><a href="#" class="dropdown-toggle mainhead top" data-toggle="dropdown"><?php print _t("Browse By"); ?> <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+<?php
+							print "<li>".caNavLink($this->request, _t("Collections"), "", "", "Collections", "index")."</li>";
+							print "<li>".caNavLink($this->request, _t("Objects"), '', '', 'Browse', 'objects', '')."</li>";
+							print "<li>".caNavLink($this->request, _t("People"), '', '', 'Browse', 'People', '')."</li>";
+							print "<li>".caNavLink($this->request, _t("Organizations"), '', '', 'Browse', 'Organizations', '')."</li>";
+							print "<li>".caNavLink($this->request, _t("Collection Strengths"), "", "", "Gallery", "Index")."</li>";
+
+?>
+						</ul>	
+					</li>
+					
+					
+										
+					<li <?php print ($this->request->getController() == "About") ? 'class="active"' : ''; ?>><?php print caNavLink($this->request, _t("User Guide"), "", "", "About", "Index"); ?></li>
+					
 					<li <?php print (($this->request->getController() == "Search") && ($this->request->getAction() == "advanced")) ? 'class="active"' : ''; ?>><?php print caNavLink($this->request, _t("Advanced Search"), "", "", "Search", "advanced/objects"); ?></li>
-					<li <?php print ($this->request->getController() == "Gallery") ? 'class="active"' : ''; ?>><?php print caNavLink($this->request, _t("Gallery"), "", "", "Gallery", "Index"); ?></li>
-					<li <?php print ($this->request->getController() == "Collections") ? 'class="active"' : ''; ?>><?php print caNavLink($this->request, _t("Collections"), "", "", "Collections", "index"); ?></li>					
-					<li <?php print ($this->request->getController() == "Contact") ? 'class="active"' : ''; ?>><?php print caNavLink($this->request, _t("Contact"), "", "", "Contact", "Form"); ?></li>
+
 				</ul>
 			</div><!-- /.navbar-collapse -->
 		</div><!-- end container -->
