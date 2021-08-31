@@ -8,6 +8,7 @@
 
 <div class="row" style="margin: auto;">
 	<div class="col-sm-3 col-xs-6" id="front-container">
+
 		<a href="/index.php/Collections/index"><img src="themes/newschool2021/assets/pawtucket/graphics/collections.png" class="responsive"></a>
 		<div class="centered">
 			<h3 class="front-imagelabels"><a href="/index.php/Collections/index">Collections</a></h3>
@@ -45,6 +46,7 @@
 
 	<button class="accordion">Collection Strengths</button>
 		<div class="panel">
+
 			<h3><a href="/index.php/Gallery/169">Course Catalog Collections</a></h3>
 			<p>10 collections</p>
 			

@@ -9,6 +9,7 @@
 		
 		<h2>Searching the Digital Collections</h2>
 		<p>Every item in our database holds associated metadata and PDF documents have been scanned with optical character recognition (OCR) to enable searching. You may begin your search using the top level search bar, or the <a href="/index.php/Search/advanced/objects">Advanced Search</a> page. Search results may be narrowed by using filters.</p>
+
 		
 		<h2>Use and Citation</h2>
 		<p>To learn more about how to cite materials found in the Digital Collections, please visit the Mission and Policies section of the <a href="https://archives.newschool.edu/" rel="noopener" target="_blank">Archives and Special Collections</a> main site.</p>
