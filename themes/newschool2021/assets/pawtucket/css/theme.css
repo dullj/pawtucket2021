@@ -238,6 +238,10 @@ div.browseFacetItem a {
 	
 /* search/browse results: list mode */
 
+.multisearch h3, h1 {
+    padding-left: 15px;
+}
+
 .multisearch H3 a, .multisearch H3 a:hover {
 	color: #e42a1d; 
 }
