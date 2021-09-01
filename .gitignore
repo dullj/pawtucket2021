@@ -24,3 +24,4 @@ setup.php
 /support/scripts/*.sh
 github.php
 admin
+git-deploy
