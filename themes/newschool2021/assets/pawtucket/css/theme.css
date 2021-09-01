@@ -739,6 +739,12 @@ blockquote p {
 	text-decoration:underline;
 }
 
+.divide {
+    border-top: 2px solid;
+    padding-bottom: 20px;
+}
+	
+
 
 /* --------------------------------- */
 /* COLLECTION DETAILS*/
