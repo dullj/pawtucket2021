@@ -235,9 +235,14 @@ div.browseFacetItem a {
 .navbar {
 	box-shadow: none;
 }
-	
-/* search/browse results: list mode */
 
+/* ----------------------------------------- */
+/* search/browse results: list mode */
+/* ----------------------------------------- */
+
+.bResultItem {
+    line-height: 1.5em;
+}
 
 .multisearch H3 a, .multisearch H3 a:hover {
 	color: #e42a1d; 
@@ -245,6 +250,10 @@ div.browseFacetItem a {
 
 .multisearch H3 {
     padding: 5px 0px 5px 15px;
+}
+
+.multisearch H1 {
+    padding-left: 15px;
 }
 
 .browse .btn, .sets .btn {
