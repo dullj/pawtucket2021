@@ -238,20 +238,13 @@ div.browseFacetItem a {
 	
 /* search/browse results: list mode */
 
-.multisearch h3 {
-    padding-left: 15px;
-}
-
-.multisearch h1 {
-    padding-left: 15px;
-}
 
 .multisearch H3 a, .multisearch H3 a:hover {
 	color: #e42a1d; 
 }
 
 .multisearch H3 {
-    padding: 5px 0px;
+    padding: 5px 0px 5px 15px;
 }
 
 .browse .btn, .sets .btn {
