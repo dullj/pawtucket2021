@@ -244,6 +244,10 @@ div.browseFacetItem a {
     line-height: 1.5em;
 }
 
+.multisearch .multisearchResult {
+    line-height: 1.5em;
+}	
+
 .multisearch H3 a, .multisearch H3 a:hover {
 	color: #e42a1d; 
 }
