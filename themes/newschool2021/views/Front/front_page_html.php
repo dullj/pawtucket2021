@@ -21,9 +21,9 @@
 		</div>
 	</div>
 	<div class="col-sm-3 col-xs-6" id="front-container">
-		<a href="/index.php//Browse/People"><img src="themes/newschool2021/assets/pawtucket/graphics/people.png" class="responsive"></a>
+		<a href="/index.php/Browse/People"><img src="themes/newschool2021/assets/pawtucket/graphics/people.png" class="responsive"></a>
 		<div class="centered">
-			<h3 class="front-imagelabels"><a href="/index.php//Browse/People">People</a></h3>
+			<h3 class="front-imagelabels"><a href="/index.php/Browse/People">People</a></h3>
 		</div>
 	</div>
 	<div class="col-sm-3 col-xs-6" id="front-container">
@@ -40,7 +40,7 @@
 		<div class="panel">
 			<h3><a href="https://findingaids.archives.newschool.edu/">Collection Guides</a></h3>
 			<p>The Digital Collections feature a small portion of the archival holdings. Please visit the Collection Guides for a deeper search.</p>
-			<h3><a href="/pawtucket/index.php/About/Index">User Guide</a></h3>
+			<h3><a href="/index.php/About/Index">User Guide</a></h3>
 			<p>For assistance with searching the Digital Collections, please refer to our Help section.</p>
 		</div>
 
@@ -62,10 +62,10 @@
 			<h3><a href="/index.php/Gallery/578">New School Publications</a></h3>
 			<p>10 collections</p>
 			
-			<h3><a href="/pawtucket/index.php/Gallery/789">Oral History Collections</a></h3>
+			<h3><a href="/index.php/Gallery/789">Oral History Collections</a></h3>
 			<p>9 collections</p>
 			
-			<h3><a href="/pawtucket/index.php/Gallery/306">Thesis Collections</a></h3>
+			<h3><a href="/index.php/Gallery/306">Thesis Collections</a></h3>
 			<p>6 collections</p>
 		</div>
 
