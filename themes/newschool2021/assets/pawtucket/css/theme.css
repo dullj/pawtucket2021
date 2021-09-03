@@ -240,6 +240,19 @@ div.browseFacetItem a {
 /* search/browse results: list mode */
 /* ----------------------------------------- */
 
+.multisearchFullResults a {
+    color: #e42a1d;
+}
+
+.fa fa-folder {
+	padding-left: 3px;
+}
+
+#bSortByList ul li.divide {
+    border-top: none;
+    padding-bottom: 0;
+}
+
 .bResultItem {
     line-height: 1.5em;
 }
