@@ -95,7 +95,7 @@
 			</div><!-- end row -->
 {{{<ifcount code="ca_objects" min="2">
 			<div class="row">
-				<hr class="divide" style="margin: 20px 10px 40px 10px; color: #000000;"></hr>
+				<hr class="divide" style="margin: 20px 15px 40px 15px; color: #000000;"></hr>
 				<h3 style="padding-right: 15px; padding-left: 15px;">Related Objects</h3>
 				<div id="browseResultsContainer">
 					<?php print caBusyIndicatorIcon($this->request).' '.addslashes(_t('Loading...')); ?>
