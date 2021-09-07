@@ -317,6 +317,10 @@ div.browseFacetItem a {
     color: #e42a1d;
 }
 
+.multisearchSort ul li a:hover {
+    color: #757575;
+}
+
 .multisearchSort ul li.selectedSort a {
     color: #757575;
     text-decoration: underline;
