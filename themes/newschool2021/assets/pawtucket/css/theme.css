@@ -304,7 +304,18 @@ div.browseFacetItem a {
 #bRefine a {
 	font-size:14px;
 }
+
+#bSortByList a {
+	color: #e42a1d;
+}
+
+.resultBlock {
+	padding-top: 15px;
+}
 	
+#objects_sort a {
+	color: #e42a1d;
+}
 
 /* ----------------------------------------- */
 /* filter by - search within */
