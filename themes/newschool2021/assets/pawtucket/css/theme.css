@@ -313,9 +313,15 @@ div.browseFacetItem a {
 	padding-top: 15px;
 }
 	
-span.multisearchSort a {
-	color: #e42a1d;
+.multisearchSort ul li a {
+    color: #e42a1d;
 }
+
+.multisearchSort ul li.selectedSort a {
+    color: #757575;
+    text-decoration: underline;
+}
+
 
 /* ----------------------------------------- */
 /* filter by - search within */
