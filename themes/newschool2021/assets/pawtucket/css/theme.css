@@ -235,8 +235,44 @@ div.browseFacetItem a {
 .navbar {
 	box-shadow: none;
 }
-	
+
+/* ----------------------------------------- */
 /* search/browse results: list mode */
+/* ----------------------------------------- */
+
+.multisearchFullResults a {
+    color: #e42a1d;
+}
+
+.fa fa-folder {
+	padding-left: 3px;
+}
+
+#bSortByList ul li.divide {
+    border-top: none;
+    padding-bottom: 0;
+}
+
+.bResultItem {
+    line-height: 1.5em;
+}
+
+.multisearch .multisearchResult {
+    line-height: 1.5em;
+}	
+
+.multisearch H3 a, .multisearch H3 a:hover {
+	color: #e42a1d; 
+}
+
+.multisearch H3 {
+    padding: 5px 0px 5px 15px;
+}
+
+.multisearch H1 {
+    padding-left: 15px;
+}
+
 
 .browse .btn, .sets .btn {
 	background-color:#e42a1d;
@@ -269,7 +305,28 @@ div.browseFacetItem a {
 #bRefine a {
 	font-size:14px;
 }
+
+#bSortByList a {
+	color: #e42a1d;
+}
+
+.resultBlock {
+	padding-top: 15px;
+}
 	
+.multisearchSort ul li a {
+    color: #e42a1d;
+}
+
+.multisearchSort ul li a:hover {
+    color: #757575;
+}
+
+.multisearchSort ul li.selectedSort a {
+    color: #757575;
+    text-decoration: underline;
+}
+
 
 /* ----------------------------------------- */
 /* filter by - search within */
@@ -716,6 +773,12 @@ blockquote p {
 	color: #e42a1d;
 	text-decoration:underline;
 }
+
+.divide {
+    border-top: 2px solid;
+    padding-bottom: 20px;
+}
+	
 
 
 /* --------------------------------- */

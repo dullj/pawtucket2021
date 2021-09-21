@@ -4,11 +4,11 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitd0a456687b3dab21148a043296334846
+class ComposerStaticInitf893b44b064e0ec87bc556a4718fc134
 {
     public static $files = array (
-        'e88992873b7765f9b5710cab95ba5dd7' => __DIR__ . '/..' . '/hoa/consistency/Prelude.php',
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
+        'e88992873b7765f9b5710cab95ba5dd7' => __DIR__ . '/..' . '/hoa/consistency/Prelude.php',
         '3e76f7f02b41af8cea96018933f6b7e3' => __DIR__ . '/..' . '/hoa/protocol/Wrapper.php',
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
         'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
@@ -1003,11 +1003,11 @@ class ComposerStaticInitd0a456687b3dab21148a043296334846
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitd0a456687b3dab21148a043296334846::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitd0a456687b3dab21148a043296334846::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInitd0a456687b3dab21148a043296334846::$prefixesPsr0;
-            $loader->fallbackDirsPsr0 = ComposerStaticInitd0a456687b3dab21148a043296334846::$fallbackDirsPsr0;
-            $loader->classMap = ComposerStaticInitd0a456687b3dab21148a043296334846::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitf893b44b064e0ec87bc556a4718fc134::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitf893b44b064e0ec87bc556a4718fc134::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInitf893b44b064e0ec87bc556a4718fc134::$prefixesPsr0;
+            $loader->fallbackDirsPsr0 = ComposerStaticInitf893b44b064e0ec87bc556a4718fc134::$fallbackDirsPsr0;
+            $loader->classMap = ComposerStaticInitf893b44b064e0ec87bc556a4718fc134::$classMap;
 
         }, null, ClassLoader::class);
     }
