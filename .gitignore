@@ -1,4 +1,3 @@
-media
 /nbproject/*
 /app/tmp/*
 app/conf/local/*
@@ -23,5 +22,4 @@ setup.php
 /support/scripts/*.php
 /support/scripts/*.sh
 github.php
-admin-old
 git-deploy
