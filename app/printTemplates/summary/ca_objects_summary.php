@@ -68,8 +68,7 @@
 	}
 ?>
 	</div>
-	<div class='tombstone'>
-		{{{<ifdef code="ca_objects.idno"><div class='unit'><h6>Identifier</h6>^ca_objects.idno</div></ifdef>}}}
+	<div>
 		
 		{{{<ifcount min="1" code="ca_objects.dates.dates_value"><div class='unit'><h6>Date</h6><unit delimiter="<br/>">^ca_objects.dates.dates_value</unit></div></ifcount>}}}
 		
