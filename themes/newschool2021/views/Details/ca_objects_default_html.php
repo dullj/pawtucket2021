@@ -149,7 +149,6 @@
 							<div class="row"><div class="col-sm-12"><H6>Related Objects</H6><div class="row rowSmallPadding"><unit relativeTo="ca_objects.related" delimiter=" "><div class="col-xs-4 col-md-2 smallpadding"><div class="detailRelObject"><l>^ca_object_representations.media.icon</l></div><!--end detailRelObject--></div><!--end col--></unit></div><!-- end row --></div><!-- end col --></div><!-- end row -->
 							</ifcount>}}}
 							
-							{{{<ifdef code="ca_objects.pdf_download"><H6>Direction for PDFs</H6>^ca_objects.pdf_download<br/></ifdef>}}}
 															
 							<hr></hr>
 							<div class="row">
