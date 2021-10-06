@@ -69,7 +69,7 @@
 ?>
 	</div>
 	<div class='tombstone'>
-		<H6>Related Collection: {{{<unit relativeTo="ca_collections" delimiter=" ➔ "><l>^ca_collections.preferred_labels.name</l></unit><ifcount min="1" code="ca_collections"></ifcount>}}}</H4>
+		<H3>Related Collection</h3> {{{<unit relativeTo="ca_collections" delimiter=" ➔ "><l>^ca_collections.preferred_labels.name</l></unit><ifcount min="1" code="ca_collections"></ifcount>}}}
 		
 		{{{<ifcount min="1" code="ca_objects.dates.dates_value"><div class='unit'><h3>Date</h3><unit delimiter="<br/>">^ca_objects.dates.dates_value</unit></div></ifcount>}}}
 		
