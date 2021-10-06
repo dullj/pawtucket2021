@@ -68,7 +68,7 @@
 						print '<div class="detailTool"><span class="glyphicon glyphicon-share-alt"></span>'.$this->getVar("shareLink").'</div><!-- end detailTool -->';
 					}
 					if ($vn_pdf_enabled) {
-						print "<div class='detailTool' style='margin-bottom:20px;'><span class='glyphicon glyphicon-file'></span>".caDetailLink($this->request, "Download as PDF", "faDownload", "ca_objects",  $vn_id, array('view' => 'pdf', 'export_format' => '_pdf_ca_objects_summary'))."</div>";
+						print "<div class='detailTool' style='margin-bottom:20px;'><span class='glyphicon glyphicon-file'></span>".caDetailLink($this->request, "Download Catalog Record", "faDownload", "ca_objects",  $vn_id, array('view' => 'pdf', 'export_format' => '_pdf_ca_objects_summary'))."</div>";
 					}
 					print '</div><!-- end detailTools -->';
 				}				
@@ -79,6 +79,7 @@
 			
 			<div class='col-sm-6 col-md-6 col-lg-5'>
 				<H4>{{{<unit relativeTo="ca_collections" delimiter=" ➔ "><l>^ca_collections.preferred_labels.name</l></unit><ifcount min="1" code="ca_collections"> ➔ </ifcount>}}}{{{ca_objects.preferred_labels.name}}}</H4>
+
 				
 				<H6>{{{<unit>^ca_objects.type_id</unit>}}}</H6>
 				
@@ -129,8 +130,13 @@
 							{{{<ifdef code="ca_objects.pbcoreLanguage"><H6>Language</H6>^ca_objects.pbcoreLanguage<br/></ifdef>}}}
 							
 							{{{<ifcount code="ca_list_items" min="1" max="1"><H6>Related Repository</H6></ifcount>}}}
-							{{{<ifcount code="ca_list_items" min="2"><H6>Related Repositories</H6></ifcount>}}}
-							{{{<unit relativeTo="ca_objects_x_vocabulary_terms" delimiter="<br/>"><unit relativeTo="ca_list_items"><l>^ca_list_items.preferred_labels.name_plural</l></unit>}}}
+<?php
+    if (is_array($terms = $t_object->get('ca_list_items.preferred_labels.name_plural', ['returnAsArray' => true])) && sizeof($terms)) {
+        foreach($terms as $term) {
+            print caNavLink($this->request, $term, '', '', 'Search', 'objects', ['search' => $term])."<br/>\n";
+        }
+    }
+?>
 														
 							{{{<ifdef code="ca_objects.repositories"><H6>Collection Guides</H6>^ca_objects.repositories<br/></ifdef>}}}
 														
@@ -144,7 +150,6 @@
 							<div class="row"><div class="col-sm-12"><H6>Related Objects</H6><div class="row rowSmallPadding"><unit relativeTo="ca_objects.related" delimiter=" "><div class="col-xs-4 col-md-2 smallpadding"><div class="detailRelObject"><l>^ca_object_representations.media.icon</l></div><!--end detailRelObject--></div><!--end col--></unit></div><!-- end row --></div><!-- end col --></div><!-- end row -->
 							</ifcount>}}}
 							
-							{{{<ifdef code="ca_objects.pdf_download"><H6>Direction for PDFs</H6>^ca_objects.pdf_download<br/></ifdef>}}}
 															
 							<hr></hr>
 							<div class="row">

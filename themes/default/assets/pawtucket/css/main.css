@@ -822,11 +822,12 @@ a.browseRemoveFacet img {
 	color: #737373;
 	line-height:2.2em;
 	position:absolute;
+	bottom:0;
 	width:100%;
+	height:80px;
 	padding: 0px 15px 0px 15px;
 	font-family:lato;
 	background-color:#FFF;
-	bottom:0;
 }
 @media (min-width: 768px) {
 	#footer {

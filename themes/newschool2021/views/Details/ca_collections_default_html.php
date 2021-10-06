@@ -33,7 +33,7 @@
 					{{{<ifdef code="ca_collections.parent_id"><H6>Part of: <unit relativeTo="ca_collections.hierarchy" delimiter=" &gt; "><l>^ca_collections.preferred_labels.name</l></unit></H6></ifdef>}}}
 <?php					
 					if ($vn_pdf_enabled) {
-						print "<div class='exportCollection'><span class='glyphicon glyphicon-file'></span> ".caDetailLink($this->request, "Download Collection Details as PDF", "", "ca_collections",  $vn_top_level_collection_id, array('view' => 'pdf', 'export_format' => '_pdf_ca_collections_summary'))."</div>";
+						print "<div class='exportCollection'><span class='glyphicon glyphicon-file'></span> ".caDetailLink($this->request, "Download Collection Record", "", "ca_collections",  $vn_top_level_collection_id, array('view' => 'pdf', 'export_format' => '_pdf_ca_collections_summary'))."</div>";
 					}
 ?>
 				</div><!-- end col -->
@@ -99,7 +99,8 @@
 
 				<hr class="divide" style="margin: 20px 15px 40px 15px; color: #000000;"></hr>
 
-				<h3 style="padding-right: 15px; padding-left: 15px;">Related Objects</h3>
+				<h3 style="padding-right: 15px; padding-left: 15px;">Related Objects <?php print caNavLink($this->request, _t('(View with filters)'), '', '', 'Browse', 'objects', array('facet' => 'collection_facet', 'id' => "^ca_collections.collection_id"), null, array('dontURLEncodeParameters' => true)); ?></h3>
+			
 				<div id="browseResultsContainer">
 					<?php print caBusyIndicatorIcon($this->request).' '.addslashes(_t('Loading...')); ?>
 				</div><!-- end browseResultsContainer -->

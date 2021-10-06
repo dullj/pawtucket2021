@@ -56,6 +56,25 @@ a, a:active, a:focus {
 /* ----------------------------------------- */
 /* custom navbar - styles override bootstrap styles */
 /* ----------------------------------------- */
+#headerSearchButton { 
+	color: black; 
+}
+
+.navbar .formOutline {
+    border: 2px solid #000000; 
+}
+
+.navbar .form-control {
+    text-transform: uppercase;
+}
+
+.navbar-form .form-group {
+    width: 200px;
+}
+
+.collectionsContainer small {
+    padding: 5px;
+}
 
 .parallelogram {
   width: 40px;
@@ -799,6 +818,10 @@ blockquote p {
 
 .label {
 	font-weight: normal;
+}
+
+.detail .exportCollection .fa, .detail .exportCollection .glyphicon, .detail .exportCollection a {
+    color: #e42a1d !important;
 }
 
 /* --------------------------------- */

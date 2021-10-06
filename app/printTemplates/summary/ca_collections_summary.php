@@ -52,22 +52,26 @@
 		<h1 class="title"><?php print $t_item->getLabelForDisplay();?></h1>
 	</div>
 		
-	<div class="unit"><H6>{{{^ca_collections.type_id}}}{{{<ifdef code="ca_collections.idno">, ^ca_collections.idno</ifdef>}}}</H6></div>
+	<div class="unit"><H3>{{{^ca_collections.type_id}}}{{{<ifdef code="ca_collections.idno">, ^ca_collections.idno</ifdef>}}}</H3></div>
 	<div class="unit">
-	{{{<ifdef code="ca_collections.parent_id"><div class="unit"><H6>Part of: <unit relativeTo="ca_collections.hierarchy" delimiter=" &gt; ">^ca_collections.preferred_labels.name</unit></H6></ifdef>}}}
+	{{{<ifdef code="ca_collections.parent_id"><div class="unit"><H3>Part of: <unit relativeTo="ca_collections.hierarchy" delimiter=" &gt; ">^ca_collections.preferred_labels.name</unit></H3></ifdef>}}}
 	{{{<ifdef code="ca_collections.label">^ca_collections.label<br/></ifdev>}}}
 	</div>
 	<div class="unit">
-	{{{<ifcount code="ca_collections.related" min="1" max="1"><br/><H6>Related collection</H6></ifcount>}}}
-	{{{<ifcount code="ca_collections.related" min="2"><br/><H6>Related collections</H6></ifcount>}}}
+	{{{<ifcount code="ca_collections.related" min="1" max="1"><br/><H3>Related collection</H3></ifcount>}}}
+	{{{<ifcount code="ca_collections.related" min="2"><br/><H3>Related collections</H3></ifcount>}}}
 	{{{<unit relativeTo="ca_collections_x_collections"><unit relativeTo="ca_collections" delimiter="<br/>">^ca_collections.related.preferred_labels.name</unit> (^relationship_typename)</unit>}}}
 	
-	{{{<ifcount code="ca_entities" min="1" max="1"><br/><H6>Related person</H6></ifcount>}}}
-	{{{<ifcount code="ca_entities" min="2"><br/><H6>Related people</H6></ifcount>}}}
+	{{{<ifdef code="ca_collections.CollectionNote.NoteContent%[NoteType=abstract]"><H3>About</H3>^ca_collections.CollectionNote.NoteContent%[NoteType=abstract]<br/></ifdef>}}}
+		
+	{{{<ifdef code="ca_collections.findaid"><H3>Collection Guide</H3><a href="^ca_collections.findaid">Guide to the ^ca_collections.preferred_labels.name</a><br/>There’s more! What you see here is only what is viewable online; in most cases it is only a small portion of what is available. Please visit the collection guide to find out more.</ifdef>}}}
+		
+	{{{<ifcount code="ca_entities" min="1" max="1"><br/><H3>Related person/organization</H3></ifcount>}}}
+	{{{<ifcount code="ca_entities" min="2"><br/><H3>Related people/organizations</H3></ifcount>}}}
 	{{{<unit relativeTo="ca_entities_x_collections"><unit relativeTo="ca_entities" delimiter="<br/>">^ca_entities.preferred_labels.displayname</unit> (^relationship_typename)</unit>}}}
 	
-	{{{<ifcount code="ca_occurrences" min="1" max="1"><br/><H6>Related occurrence</H6></ifcount>}}}
-	{{{<ifcount code="ca_occurrences" min="2"><br/><H6>Related occurrences</H6></ifcount>}}}
+	{{{<ifcount code="ca_occurrences" min="1" max="1"><br/><H3>Related occurrence</H3></ifcount>}}}
+	{{{<ifcount code="ca_occurrences" min="2"><br/><H3>Related occurrences</H3></ifcount>}}}
 	{{{<unit relativeTo="ca_occurrences_x_collections"><unit relativeTo="ca_occurrences" delimiter="<br/>">^ca_occurrences.preferred_labels.name</unit> (^relationship_typename)</unit>}}}
 
 	</div>
