@@ -820,6 +820,10 @@ blockquote p {
 	font-weight: normal;
 }
 
+.detail .exportCollection .fa, .detail .exportCollection .glyphicon, .detail .exportCollection a {
+    color: #e42a1d !important;
+}
+
 /* --------------------------------- */
 /* multi-search */
 /* --------------------------------- */
