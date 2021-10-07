@@ -99,7 +99,8 @@
 
 				<hr class="divide" style="margin: 20px 15px 40px 15px; color: #000000;"></hr>
 
-				<h3 style="padding-right: 15px; padding-left: 15px;">Related Objects <?php print caNavLink($this->request, _t('(View with filters)'), '', '', 'Browse', 'objects', array('facet' => 'collection_facet', 'id' => "^ca_collections.collection_id"), null, array('dontURLEncodeParameters' => true)); ?></h3>
+				<h3 style="padding-right: 15px; padding-left: 15px;">Related Objects</h3>
+				<H3> <?php print caNavLink($this->request, _t('View with filters'), '', '', 'Browse', 'objects', array('facet' => 'collection_facet', 'id' => "^ca_collections.collection_id"), null, array('dontURLEncodeParameters' => true)); ?></H3>
 			
 				<div id="browseResultsContainer">
 					<?php print caBusyIndicatorIcon($this->request).' '.addslashes(_t('Loading...')); ?>
