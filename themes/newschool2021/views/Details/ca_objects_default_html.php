@@ -78,12 +78,8 @@
 			</div><!-- end col -->
 			
 			<div class='col-sm-6 col-md-6 col-lg-5'>
-				<H4>{{{<unit relativeTo="ca_collections" delimiter=" ➔ "><l>^ca_collections.preferred_labels.name</l></unit><ifcount min="1" code="ca_collections.parent_id"> ➔ </ifcount>}}}{{{ca_objects.preferred_labels.name}}}</H4>
-				
-				{{{<ifdef code="ca_collections.parent_id"><H6>Part of: <unit relativeTo="ca_collections.hierarchy" delimiter=" &gt; "><l>^ca_collections.preferred_labels.name</l></unit></H6></ifdef>}}}
+				<H4>{{{<unit relativeTo="ca_collections.parent_id" delimiter=" ➔ "><l>^ca_collections.preferred_labels.name</l></unit><ifcount min="1" code="ca_collections"> ➔ </ifcount>}}}{{{ca_objects.preferred_labels.name}}}</H4>
 
-
-				
 				<H6>{{{<unit>^ca_objects.type_id</unit>}}}</H6>
 				
 				<hr></hr>
