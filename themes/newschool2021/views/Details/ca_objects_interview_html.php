@@ -61,6 +61,7 @@
 				</div><!-- end col -->
 				<div class='col-sm-6 col-md-6 col-lg-6'>
 					<H4>{{{<unit relativeTo="ca_collections" delimiter="<br/>"><l>^ca_collections.preferred_labels.name</l></unit><ifcount min="1" code="ca_collections"> ➔ </ifcount>}}}{{{ca_objects.preferred_labels.name}}}</H4>
+										
 					<H6>{{{<unit>^ca_objects.type_id</unit>}}}</H6>
 					<HR>
 					
