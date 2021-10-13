@@ -5,6 +5,3 @@
 
 {{{<ifdef code="ca_collections.CollectionNote.NoteContent%[NoteType=abstract]"><H3 style="padding-top:10px;">Description of Related Collection</H3>^ca_collections.CollectionNote.NoteContent%[NoteType=abstract]<br/></ifdef>}}}
 
-<?php print caDetailLink($this->request, _t("VIEW RELATED OBJECT"), '', $this->getVar("table"),  $this->getVar("row_id")); ?>
-
-
