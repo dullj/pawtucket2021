@@ -453,6 +453,11 @@ div.browseFacetItem a {
 	color: #e42a1d;
 }
 
+.gallery .setDescription {
+    font-size: 14px;
+    font-weight: normal;
+}
+
 /* --------------------------------- */
 /* footer */
 /* --------------------------------- */
