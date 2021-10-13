@@ -445,6 +445,14 @@ div.browseFacetItem a {
     padding-bottom: 15px;
 }
 
+.gallery H4, .gallery H4 a {
+	text-transform: none;
+}
+
+.gallery H4 a {
+	color: #e42a1d;
+}
+
 /* --------------------------------- */
 /* footer */
 /* --------------------------------- */
