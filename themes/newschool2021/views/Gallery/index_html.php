@@ -14,7 +14,7 @@
 			print "<div class='topics-container'><div class='galleryListItem'>";
 			$va_first_item = array_shift(array_shift($t_set->getFirstItemsFromSets(array($vn_set_id), array("version" => "small", "checkAccess" => $va_access_values))));
 			
-			print "<H3>".$t_set->getLabelForDisplay()."</H3>";
+			print "<H2>".$t_set->getLabelForDisplay()."</H2>";
 			print "<p class='count'>".$t_set->getItemCount(array("checkAccess" => $va_access_values))." items</p>";
 			if($vs_description = $t_set->get($o_config->get('gallery_set_description_element_code'))){
 				print "<p class='gallery-text'>".$vs_description."</p>";
