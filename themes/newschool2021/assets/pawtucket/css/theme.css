@@ -168,6 +168,22 @@ span#collectionguides a:hover {
 /* navbar - styles override bootstrap styles */
 /* ----------------------------------------- */
 
+
+#archives-nav-header {
+	background-color:black; 
+	padding-top:10px; 
+	padding-bottom:10px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+@media screen and (max-width: 767px)
+#archives-nav-header {
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+
 .nav > li > a, .nav > li > a:hover, .nav > li > a:focus {
 	color: #e42a1d;
     	font-family: neuedisplayblack, neue display black;
