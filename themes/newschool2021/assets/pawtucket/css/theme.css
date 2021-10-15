@@ -168,6 +168,50 @@ span#collectionguides a:hover {
 /* navbar - styles override bootstrap styles */
 /* ----------------------------------------- */
 
+
+#archives-nav-header {
+	background-color:black; 
+	padding-top:10px; 
+	padding-bottom:10px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+@media screen and (max-width: 767px) {
+#archives-nav-header {
+	padding-right: 0px;
+	padding-left: 0px;
+ }
+}
+
+@media screen and (max-width: 767px) {
+.container.menuBar {
+	padding-right: 0px;
+	padding-left: 0px;
+ }
+}
+
+
+@media screen and (max-width: 767px) {
+.clearfix-menu {
+	font-size: 10px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+#fullsitetitle {
+	font-size: 20px;
+	}
+}
+	
+
+@media screen and (max-width: 767px) {
+#site-title {
+	font-size: 20px;
+ }
+}
+
+
 .nav > li > a, .nav > li > a:hover, .nav > li > a:focus {
 	color: #e42a1d;
     	font-family: neuedisplayblack, neue display black;
@@ -303,6 +347,12 @@ div.browseFacetItem a {
 
 .collections.landing {
 	padding-left:15px;
+}
+
+@media screen and (max-width: 767px) {
+.collections.landing {
+	padding-left:0px;
+  }
 }
 
 .ca_entities.people.browse.results {
@@ -445,6 +495,19 @@ div.browseFacetItem a {
     padding-bottom: 15px;
 }
 
+.gallery H4, .gallery H4 a {
+	text-transform: none;
+}
+
+.gallery H4 a {
+	color: #e42a1d;
+}
+
+.gallery .setDescription {
+    font-size: 14px;
+    font-weight: normal;
+}
+
 /* --------------------------------- */
 /* footer */
 /* --------------------------------- */
@@ -541,7 +604,7 @@ div.browseFacetItem a {
 /* If the screen size is 600px wide or less, set the font-size to 13px */
 @media screen and (max-width: 600px) {
   .front-imagelabels {
-    font-size: 13px;
+    font-size: 12px;
   }
 }
 
@@ -555,7 +618,15 @@ div.browseFacetItem a {
 /* If the screen size is 600px wide or less, set the max-width to 75vw */
 @media screen and (max-width: 600px) {
 .welcome-text {
-    width:75vw;
+    width:85vw;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the max-width to 75vw */
+@media screen and (max-width: 600px) {
+.front .heroSearch {
+    font-size: 15px;
+    line-height: 25px;
   }
 }
 

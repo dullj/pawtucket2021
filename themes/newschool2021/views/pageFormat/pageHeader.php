@@ -87,8 +87,7 @@
 ?>
 </head>
 <body>
-<div class="row" style="background-color:black; padding-top:10px; padding-bottom:10px;padding-right: 15px;
-padding-left: 15px;">
+<div class="row" id="archives-nav-header">
 	<section id="header">
     		<div class="col-xs-6">
       			<div class="header-first">
