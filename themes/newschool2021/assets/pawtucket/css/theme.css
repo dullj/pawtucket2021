@@ -185,6 +185,14 @@ span#collectionguides a:hover {
 }
 
 @media screen and (max-width: 767px) {
+.container.menuBar {
+	padding-right: 0px;
+	padding-left: 0px;
+ }
+}
+
+
+@media screen and (max-width: 767px) {
 .clearfix-menu {
 	font-size: 10px;
 	}
