@@ -349,6 +349,12 @@ div.browseFacetItem a {
 	padding-left:15px;
 }
 
+@media screen and (max-width: 767px) {
+.collections.landing {
+	padding-left:0px;
+  }
+}
+
 .ca_entities.people.browse.results {
 	padding-left:15px;
 }
