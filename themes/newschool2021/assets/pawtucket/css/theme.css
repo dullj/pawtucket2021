@@ -177,10 +177,30 @@ span#collectionguides a:hover {
 	padding-left: 15px;
 }
 
-@media screen and (max-width: 767px)
+@media screen and (max-width: 767px) {
 #archives-nav-header {
 	padding-right: 0px;
 	padding-left: 0px;
+ }
+}
+
+@media screen and (max-width: 767px) {
+.clearfix-menu {
+	font-size: 10px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+#fullsitetitle {
+	font-size: 20px;
+	}
+}
+	
+
+@media screen and (max-width: 767px) {
+#site-title {
+	font-size: 20px;
+ }
 }
 
 
@@ -570,7 +590,7 @@ div.browseFacetItem a {
 /* If the screen size is 600px wide or less, set the font-size to 13px */
 @media screen and (max-width: 600px) {
   .front-imagelabels {
-    font-size: 13px;
+    font-size: 12px;
   }
 }
 
@@ -584,7 +604,15 @@ div.browseFacetItem a {
 /* If the screen size is 600px wide or less, set the max-width to 75vw */
 @media screen and (max-width: 600px) {
 .welcome-text {
-    width:75vw;
+    width:85vw;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the max-width to 75vw */
+@media screen and (max-width: 600px) {
+.front .heroSearch {
+    font-size: 15px;
+    line-height: 25px;
   }
 }
 
