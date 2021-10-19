@@ -937,4 +937,10 @@ blockquote p {
 	font-family:Neue;	
 }
 
+/* --------------------------------- */
+/* representation viewer */
+/* --------------------------------- */
 
+.objectInfo {
+	display: none;
+}
