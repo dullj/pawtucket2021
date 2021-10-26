@@ -481,10 +481,7 @@ class WLPlugMediaGmagick Extends BaseMediaPlugin Implements IWLPlugMedia {
 				// force all images to true color (takes care of GIF transparency for one thing...)
 				$this->handle->setimagetype(Gmagick::IMGTYPE_TRUECOLOR);
 
-				if (!$this->handle->setimagecolorspace(Gmagick::COLORSPACE_RGB)) {
-					$this->postError(1610, _t("Error during RGB colorspace transformation operation"), "WLPlugGmagick->read()");
-					return false;
-				}
+				
 
 				$this->properties["mimetype"] = $this->_getMagickImageMimeType($this->handle);
 				$this->properties["typename"] = $this->handle->getimageformat();
