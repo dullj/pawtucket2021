@@ -87,8 +87,11 @@
 				<h6>Related Collection</h6>
 				<H4>{{{<unit relativeTo="ca_collections"><l>^ca_collections.preferred_labels.name</l></unit>}}}</H4>
 					
-				<h6>Related Collection</h6>
+				<h6>Related series</h6>
 				<H4>{{{<unit relativeTo="ca_collections.series"><l>^ca_collections.series.preferred_labels.name</l></unit>}}}</H4>
+				
+				<h4>{{{<unit delimiter=" ➔ " relativeTo="ca_collections"><unit relativeTo="ca_collections.hierarchy"><l>^ca_collections.preferred_labels.name</l></unit></unit><ifcount min="1" code="ca_collections"></ifcount>}}}</H4>
+
 
 				<H6>{{{<unit>^ca_objects.type_id</unit>}}}</H6>
 				
