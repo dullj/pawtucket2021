@@ -88,7 +88,7 @@
 				<H4>{{{<unit relativeTo="ca_collections.parent_collection_id"><l>^ca_collections.preferred_labels.name</l></unit>}}}</H4>
 					
 				<h6>Related series</h6>
-				{{{<ifdef code="ca_collections.parent_id"><H6>Part of: <unit relativeTo="ca_collections.hierarchy" delimiter=" &gt; "><l>^ca_collections.preferred_labels.name</l></unit></H6></ifdef>}}}
+				{{{<ifdef code="ca_collections.parent_collection_id"><H6>Part of: <unit relativeTo="ca_collections.hierarchy" delimiter=" &gt; "><l>^ca_collections.preferred_labels.name</l></unit></H6></ifdef>}}}
 
 
 				<H6>{{{<unit>^ca_objects.type_id</unit>}}}</H6>
