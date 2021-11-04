@@ -77,17 +77,13 @@
 			</div><!-- end col -->
 			
 			<div class='col-sm-6 col-md-6 col-lg-5'>
-				<H4>{{{<unit relativeTo="ca_collections" delimiter=" ➔ "><l>^ca_collections.preferred_labels.name</l></unit><ifcount min="1" code="ca_collections"> ➔ </ifcount>}}}{{{ca_objects.preferred_labels.name}}}</H4>
-				
 				
 				<h6>Object Title</h6>
 				<h4>{{{<ifdef code="ca_objects.preferred_labels.name">^ca_objects.preferred_labels.name<br/></ifdef>}}}
-				
 
 				{{{<ifcount code="ca_collections" unique="1"  min="1" max="1"><H6>Related Collection</H6></ifcount>}}}
 				{{{<ifcount code="ca_collections" unique="1"  min="2"><H6>Related Collections</H6></ifcount>}}}
 				{{{<unit unique="1" relativeTo="ca_collections" delimiter="<br/>"><l>^ca_collections.preferred_labels.name</l></unit>}}}
-
 
 				<H6>{{{<unit>^ca_objects.type_id</unit>}}}</H6>
 				
