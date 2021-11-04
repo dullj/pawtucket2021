@@ -84,11 +84,9 @@
 				<h4>{{{<ifdef code="ca_objects.preferred_labels.name">^ca_objects.preferred_labels.name<br/></ifdef>}}}
 				
 
-				<h6>Related Collection</h6>
-				<H4>{{{<unit relativeTo="ca_collections.parent_collection_id"><l>^ca_collections.preferred_labels.name</l></unit>}}}</H4>
-					
-				<h6>Related series</h6>
-				{{{<ifdef code="ca_collections.parent_collection_id"><H6>Part of: <unit relativeTo="ca_collections.hierarchy" delimiter=" &gt; "><l>^ca_collections.preferred_labels.name</l></unit></H6></ifdef>}}}
+				{{{<ifcount code="ca_collections" unique="1"  min="1" max="1"><H6>Related Collection</H6></ifcount>}}}
+				{{{<ifcount code="ca_collections" unique="1"  min="2"><H6>Related Collections</H6></ifcount>}}}
+				{{{<unit unique="1" relativeTo="ca_collections" delimiter="<br/>"><l>^ca_collections.preferred_labels.name</l></unit>}}}
 
 
 				<H6>{{{<unit>^ca_objects.type_id</unit>}}}</H6>
