@@ -82,7 +82,7 @@
 				<h4>{{{<ifdef code="ca_objects.preferred_labels.name">^ca_objects.preferred_labels.name<br/></ifdef>}}}
 
 				<H6>Part of</H6>
-				<h4>{{{<unit unique="1" relativeTo="ca_collections" delimiter=" ➔ "><l>^ca_collections.preferred_labels.name</l></unit>}}}</h4>
+				<h4>Collection: {{{<unit unique="1" relativeTo="ca_collections" delimiter=" ➔ Series: "><l>^ca_collections.preferred_labels.name</l></unit>}}}</h4>
 
 				
 				<hr></hr>
