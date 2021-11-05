@@ -83,17 +83,16 @@
 				<h6>Object Title</h6>
 				<h4>{{{<ifdef code="ca_objects.preferred_labels.name">^ca_objects.preferred_labels.name<br/></ifdef>}}}
 
-				{{{<ifcount code="ca_collections" unique="1"  min="1" max="1"><H6>Part of</H6></ifcount>}}}
-				{{{<ifcount code="ca_collections" unique="1"  min="2"><H6>Part of</H6></ifcount>}}}
-				{{{<unit unique="1" relativeTo="ca_collections" delimiter="<br/>"><l>^ca_collections.preferred_labels.name</l></unit>}}}
+				<H6>Part of</H6>
+				<h4>{{{<unit unique="1" relativeTo="ca_collections" delimiter=" ➔ "><l>^ca_collections.preferred_labels.name</l></unit>}}}</h4>
 
-				<h6>Type of Work</h6>
-				{{{<unit>^ca_objects.type_id</unit>}}}
 				
 				<hr></hr>
 					<div class="row" id="object-headers">
 						<div class="col-sm-12">	
-
+							<h6>Type of Work</h6>
+							{{{<unit>^ca_objects.type_id</unit>}}}
+							
 							{{{<ifdef code="ca_objects.descriptionSet.descriptionText"><H6>Description</H6>^ca_objects.descriptionSet.descriptionText<br/></ifdef>}}}
 							{{{<ifdef code="ca_objects.pbcoreDescription.pBdescription_text"><H6>Description</H6>^ca_objects.pbcoreDescription.pBdescription_text<br/></ifdef>}}}
 							{{{<ifdef code="ca_objects.pbcoreDescription.pBdescription_text%[pbcore_description_types=abstract]"><H6>Abstract</H6>^ca_objects.pbcoreDescription.pBdescription_text%[pbcore_description_types=abstract]<br/></ifdef>}}}
