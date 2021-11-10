@@ -143,6 +143,8 @@
         }
     }
 ?>
+							
+							{{{<ifdef code="ca_objects.LcshTopical"><H6>Subjects</H6>^ca_objects.LcshTopical<br/></ifdef>}}}
 														
 							{{{<ifdef code="ca_objects.repositories"><H6>Collection Guides</H6>^ca_objects.repositories<br/></ifdef>}}}
 														
