@@ -825,6 +825,11 @@ blockquote p {
     padding: 0px;
     margin-bottom: 10px;
 }
+
+.detail HR {
+    margin: 20px 0px 10px 0px;
+    color: black !important;
+}
 	
 /* --------------------------------- */
 /* collection index */

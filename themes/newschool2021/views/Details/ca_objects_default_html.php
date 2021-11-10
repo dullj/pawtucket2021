@@ -76,15 +76,21 @@
 
 			</div><!-- end col -->
 			
-			<div class='col-sm-6 col-md-6 col-lg-5'>
-				<H4>{{{<unit relativeTo="ca_collections" delimiter=" ➔ "><l>^ca_collections.preferred_labels.name</l></unit><ifcount min="1" code="ca_collections"> ➔ </ifcount>}}}{{{ca_objects.preferred_labels.name}}}</H4>
+			<div class='col-sm-6 col-md-6 col-lg-5' id="object-headers">
+				
+				<h6>Object Title</h6>
+				<h4>{{{<ifdef code="ca_objects.preferred_labels.name">^ca_objects.preferred_labels.name<br/></ifdef>}}}
 
-				<H6>{{{<unit>^ca_objects.type_id</unit>}}}</H6>
+				<H6>Part of</H6>
+				<h4>Collection: {{{<unit unique="1" relativeTo="ca_collections" delimiter=" ➔ Series: "><l>^ca_collections.preferred_labels.name</l></unit>}}}</h4>
+
 				
 				<hr></hr>
 					<div class="row" id="object-headers">
 						<div class="col-sm-12">	
-
+							<h6>Type of Work</h6>
+							{{{<unit>^ca_objects.type_id</unit>}}}
+							
 							{{{<ifdef code="ca_objects.descriptionSet.descriptionText"><H6>Description</H6>^ca_objects.descriptionSet.descriptionText<br/></ifdef>}}}
 							{{{<ifdef code="ca_objects.pbcoreDescription.pBdescription_text"><H6>Description</H6>^ca_objects.pbcoreDescription.pBdescription_text<br/></ifdef>}}}
 							{{{<ifdef code="ca_objects.pbcoreDescription.pBdescription_text%[pbcore_description_types=abstract]"><H6>Abstract</H6>^ca_objects.pbcoreDescription.pBdescription_text%[pbcore_description_types=abstract]<br/></ifdef>}}}
@@ -128,6 +134,8 @@
 							{{{<ifdef code="ca_objects.pbcoreLanguage"><H6>Language</H6>^ca_objects.pbcoreLanguage<br/></ifdef>}}}
 							
 							{{{<ifcount code="ca_list_items" min="1" max="1"><H6>Related Repository</H6></ifcount>}}}
+														
+							
 <?php
     if (is_array($terms = $t_object->get('ca_list_items.preferred_labels.name_plural', ['returnAsArray' => true])) && sizeof($terms)) {
         foreach($terms as $term) {
@@ -135,8 +143,32 @@
         }
     }
 ?>
+							
+<?php
+				$va_list_items = $t_object->get("ca_list_items", array("returnWithStructure" => true));
+				if(is_array($va_list_items) && sizeof($va_list_items)){
+					$va_terms = array();
+					foreach($va_list_items as $va_list_item){
+						$va_terms[] = caNavLink($this->request, $va_list_item["name_singular"], "", "", "Browse", "objects", array("facet" => "term_facet", "id" => $va_list_item["item_id"]));
+					}
+					print "<div class='unit'><H6>Subject test".((sizeof($va_terms) > 1) ? "s" : "")."</H6>".join($va_terms, ", ")."</div>";	
+				}
+?>
+							
+				
+				{{{<ifcount code="ca_objects.LcshTopical" min="1" max="5"><H6>Related Subjects</H6></ifcount>}}}
 														
-							{{{<ifdef code="ca_objects.repositories"><H6>Collection Guides</H6>^ca_objects.repositories<br/></ifdef>}}}
+							
+<?php
+    if (is_array($terms = $t_object->get('ca_objects.LcshTopical', ['returnAsArray' => true])) && sizeof($terms)) {
+        foreach($terms as $term) {
+            print caNavLink($this->request, $term, '', '', 'Search', 'objects', ['search' => $term])."<br/>\n";
+        }
+    }
+?>
+							
+							{{{<ifdef code="ca_objects.LcshTopical"><H6>Subjects</H6>^ca_objects.LcshTopical<br/></ifdef>}}}
+														
 														
 							{{{<h6>Use Restrictions</h6><ifcount code="ca_collections" min="1" max="2"><unit relativeTo="ca_collections">^ca_collections.CollectionNote.NoteContent%[NoteType=conditions_governing_use]</unit></ifcount>}}}
 							
