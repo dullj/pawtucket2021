@@ -145,11 +145,19 @@
 ?>
 							
 				
-				{{{<ifcount code="ca_objects.LcshTopical" min="1" max="5"><H6>Related Subjects</H6></ifcount>}}}
-														
+				{{{<ifcount code="ca_objects.LcshTopical" min="1" max="5"><H6>Related Subjects</H6></ifcount>}}}												
 							
 <?php
-    if (is_array($terms = $t_object->get('ca_objects.LcshTopical', ['returnAsArray' => true])) && sizeof($terms)) {
+    if (is_array($terms = $t_object->get('ca_list_items.preferred_labels.name_plural', ['returnAsArray' => true])) && sizeof($terms)) {
+        foreach($terms as $term) {
+            print caNavLink($this->request, $term, '', '', 'Search', 'objects', ['search' => $term])."<br/>\n";
+        }
+    }
+?>
+				{{{<ifcount code="ca_objects.associated_concepts" min="1" max="5"><H6>Related Subjects</H6></ifcount>}}}												
+							
+<?php
+    if (is_array($terms = $t_object->get('ca_list_items.preferred_labels.name_plural', ['returnAsArray' => true])) && sizeof($terms)) {
         foreach($terms as $term) {
             print caNavLink($this->request, $term, '', '', 'Search', 'objects', ['search' => $term])."<br/>\n";
         }
