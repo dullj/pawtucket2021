@@ -135,9 +135,6 @@
 							
 							{{{<ifcount code="ca_list_items" min="1" max="1"><H6>Related Repository</H6></ifcount>}}}
 							
-							{{{<ifcount code="ca_objects.object_genres" min="1" max="1"><H6>Related Subject</H6></ifcount>}}}
-							
-							{{{<ifdef code="ca_objects.object_genres"><H6>Subject (Genres)</H6>^ca_objects.object_genres<br/></ifdef>}}}
 							
 <?php
     if (is_array($terms = $t_object->get('ca_list_items.preferred_labels.name_plural', ['returnAsArray' => true])) && sizeof($terms)) {
