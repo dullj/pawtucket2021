@@ -133,19 +133,8 @@
 					
 							{{{<ifdef code="ca_objects.pbcoreLanguage"><H6>Language</H6>^ca_objects.pbcoreLanguage<br/></ifdef>}}}
 							
-							{{{<ifcount code="ca_objects.repositories" min="1" max="1"><H6>Related Repository</H6></ifcount>}}}
+							{{{<ifcount code="ca_list_items" min="1" max="1"><H6>Related Repository</H6></ifcount>}}}
 														
-							
-<?php
-    if (is_array($terms = $t_object->get('ca_objects.repositories', ['returnAsArray' => true])) && sizeof($terms)) {
-        foreach($terms as $term) {
-            print caNavLink($this->request, $term, '', '', 'Search', 'objects', ['search' => $term])."<br/>\n";
-        }
-    }
-?>
-							
-				
-				{{{<ifcount code="ca_objects.LcshTopical" min="1" max="5"><H6>Related Subjects</H6></ifcount>}}}												
 							
 <?php
     if (is_array($terms = $t_object->get('ca_list_items.preferred_labels.name_plural', ['returnAsArray' => true])) && sizeof($terms)) {
@@ -154,9 +143,7 @@
         }
     }
 ?>
-							
-							{{{<ifdef code="ca_objects.LcshTopical"><H6>Subjects</H6>^ca_objects.LcshTopical<br/></ifdef>}}}
-														
+																					
 														
 							{{{<h6>Use Restrictions</h6><ifcount code="ca_collections" min="1" max="2"><unit relativeTo="ca_collections">^ca_collections.CollectionNote.NoteContent%[NoteType=conditions_governing_use]</unit></ifcount>}}}
 							
