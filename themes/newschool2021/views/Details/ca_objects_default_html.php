@@ -133,16 +133,6 @@
 					
 							{{{<ifdef code="ca_objects.pbcoreLanguage"><H6>Language</H6>^ca_objects.pbcoreLanguage<br/></ifdef>}}}
 							
-							{{{<ifcount code="ca_list_items" min="1" max="1"><H6>Related Repository</H6></ifcount>}}}
-														
-							
-<?php
-    if (is_array($terms = $t_object->get('ca_list_items.preferred_labels.name_plural', ['returnAsArray' => true])) && sizeof($terms)) {
-        foreach($terms as $term) {
-            print caNavLink($this->request, $term, '', '', 'Search', 'objects', ['search' => $term])."<br/>\n";
-        }
-    }
-?>
 							
 <?php
 				$va_list_items = $t_object->get("ca_list_items", array("returnWithStructure" => true));
@@ -151,7 +141,7 @@
 					foreach($va_list_items as $va_list_item){
 						$va_terms[] = caNavLink($this->request, $va_list_item["name_singular"], "", "", "Browse", "objects", array("facet" => "repository_facet", "id" => $va_list_item["item_id"]));
 					}
-					print "<div class='unit'><H6>Subject test".((sizeof($va_terms) > 1) ? "s" : "")."</H6>".join($va_terms, ", ")."</div>";	
+					print "<div class='unit'><H6>Related Repository".((sizeof($va_terms) > 1) ? "s" : "")."</H6>".join($va_terms, ", ")."</div>";	
 				}
 ?>
 																					
