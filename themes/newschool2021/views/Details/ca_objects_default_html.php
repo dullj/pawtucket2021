@@ -144,17 +144,19 @@
     }
 ?>
 							
+<?php
 				$va_list_items = $t_object->get("ca_list_items", array("returnWithStructure" => true));
 				if(is_array($va_list_items) && sizeof($va_list_items)){
 					$va_terms = array();
 					foreach($va_list_items as $va_list_item){
 						$va_terms[] = caNavLink($this->request, $va_list_item["name_singular"], "", "", "Browse", "objects", array("facet" => "term_facet", "id" => $va_list_item["item_id"]));
 					}
-					print "<div class='unit'><H6>Subject Test".((sizeof($va_terms) > 1) ? "s" : "")."</H6>".join($va_terms, ", ")."</div>";	
+					print "<div class='unit'><H6>Subject test".((sizeof($va_terms) > 1) ? "s" : "")."</H6>".join($va_terms, ", ")."</div>";	
 				}
+?>
 							
-							
-							{{{<ifcount code="ca_objects.LcshTopical" min="1" max="5"><H6>Related Subjects</H6></ifcount>}}}
+				
+				{{{<ifcount code="ca_objects.LcshTopical" min="1" max="5"><H6>Related Subjects</H6></ifcount>}}}
 														
 							
 <?php
