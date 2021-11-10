@@ -145,7 +145,7 @@
 ?>
 							
 <?php
-				$va_list_items = $t_object->get("ca_list_items.preferred_labels", array("returnWithStructure" => true));
+				$va_list_items = $t_object->get("ca_list_items.preferred_labels.name_plural", array("returnWithStructure" => true));
 				if(is_array($va_list_items) && sizeof($va_list_items)){
 					$va_terms = array();
 					foreach($va_list_items as $va_list_item){
