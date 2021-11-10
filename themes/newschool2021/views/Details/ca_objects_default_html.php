@@ -133,7 +133,7 @@
 					
 							{{{<ifdef code="ca_objects.pbcoreLanguage"><H6>Language</H6>^ca_objects.pbcoreLanguage<br/></ifdef>}}}
 							
-							{{{<ifcount code="ca_list_items" min="1" max="1"><H6>Related Repository</H6></ifcount>}}}
+							{{{<ifcount code="ca_objects.repositories" min="1" max="1"><H6>Related Repository</H6></ifcount>}}}
 														
 							
 <?php
