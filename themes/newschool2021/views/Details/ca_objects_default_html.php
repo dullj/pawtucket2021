@@ -144,8 +144,6 @@
 					print "<div class='unit'><H6>Related Repository".((sizeof($va_terms) > 1) ? "s" : "")."</H6>".join($va_terms, ", ")."</div>";	
 				}
 ?>
-							
-							<h4>Repository: {{{<unit unique="1" relativeTo="ca_list_items"><l>^ca_list_items.repositories</l></unit>}}}</h4>
 																					
 														
 							{{{<h6>Use Restrictions</h6><ifcount code="ca_collections" min="1" max="2"><unit relativeTo="ca_collections">^ca_collections.CollectionNote.NoteContent%[NoteType=conditions_governing_use]</unit></ifcount>}}}
