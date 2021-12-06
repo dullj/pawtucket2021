@@ -23,14 +23,8 @@ print "<p>Enter your search terms in the fields below.</p>";
 		</div>
 	</div>
 	<div class='row'>
-		<div class="advancedSearchField col-sm-12">
-			<span class='formLabel' data-toggle="popover" data-trigger="hover" data-content="Search records of a particular date or date range.">Date range <i>(e.g. 1970-1979)</i></span>
-			{{{ca_objects.dateSet.setDisplayValue%width=200px&height=40&useDatePicker=0&select=1}}}
-		</div>
-	</div>
-	<div class='row'>
-		<div class="advancedSearchField col-sm-6">
-			<span class='formLabel' data-toggle="popover" data-trigger="hover" data-content="Search object identifiers.">Object Identifier</span>
+	<div class="advancedSearchField col-sm-6">
+			<span class='formLabel' data-toggle="popover" data-trigger="hover" data-content="Search object identifiers.">Accession number</span>
 			{{{ca_objects.idno%width=210px}}}
 		</div>
 		<div class="advancedSearchField col-sm-6">
@@ -40,8 +34,14 @@ print "<p>Enter your search terms in the fields below.</p>";
 	</div>
 	<div class='row'>
 		<div class="advancedSearchField col-sm-12">
+			<span class='formLabel' data-toggle="popover" data-trigger="hover" data-content="Search records of a particular date or date range.">Date range <i>(e.g. 1970-1979)</i></span>
+			{{{ca_objects.dateSet.setDisplayValue%width=200px&height=40px&useDatePicker=0}}}
+		</div>
+	</div>
+	<div class='row'>
+		<div class="advancedSearchField col-sm-12">
 			<span class='formLabel' data-toggle="popover" data-trigger="hover" data-content="Search records within a particular collection.">Collection </span>
-			{{{ca_collections.preferred_labels%restrictToTypes=collection%width=200px&height=40px&select=1}}}
+			{{{ca_collections.preferred_labels%restrictToTypes=collection%width=200px&height=40px}}}
 		</div>
 	</div>
 	<br style="clear: both;"/>
@@ -56,10 +56,7 @@ print "<p>Enter your search terms in the fields below.</p>";
 	</div>
 	<div class="col-sm-4" >
 		<h1>Helpful Links</h1>
-		<p><a href="https://archives.newschool.edu/">Archives Home</a></p>
-		<p><a href="/index.php/About/Index">User Guide</a></p>
-
-		<p><a href="https://findingaids.archives.newschool.edu/">Collection Guides</a></p>
+		<p>Include some helpful info for your users here.</p>
 	</div><!-- end col -->
 </div><!-- end row -->
 
