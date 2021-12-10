@@ -144,6 +144,15 @@
 				}
 ?>
 							
+$va_lcsh = $t_object->get("ca_objects.LcshTopical", array('returnAsArray' => 1, 'returnAllLocales' => false));
+if(sizeof($va_lcsh) > 0){
+print "<div class='unit'><h2>"._t("Library of Congress Heading").((sizeof($va_lcsh) > 1) ? "s" : "")."</h2>";
+foreach($va_lcsh as $va_lcsh_info){
+$lcsh_term=explode(" [",$va_lcsh_info['LcshTopical']);
+print "<div>".caNavLink($this->request, $LcshTopical[0], '', '', 'Search', 'Index', array('search' => 'ca_objects.LcshTopical:"'.trim($LcshTopical['0']).'"'))."</div>";
+}
+print "</div><!-- end unit -->";
+}
 
 																					
 														
