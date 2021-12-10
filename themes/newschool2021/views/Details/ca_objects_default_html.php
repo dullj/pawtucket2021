@@ -83,9 +83,6 @@
 
 				<H6>Part of</H6>
 				<h4>Collection: {{{<unit unique="1" relativeTo="ca_collections" delimiter=" ➔ Series: "><l>^ca_collections.preferred_labels.name</l></unit>}}}</h4>
-					
-				<h4>{{{<ifdef code="ca_objects.lcshtopical">^ca_objects.lcshtopical<br/></ifdef>}}}
-
 				
 				<hr></hr>
 					<div class="row" id="object-headers">
