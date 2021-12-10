@@ -143,18 +143,43 @@
 					print "<div class='unit'><H6>Subject".((sizeof($va_terms) > 1) ? "s" : "")."</H6>".join($va_terms, ", ")."</div>";	
 				}
 ?>
-
+							
 <?php
-				$va_lcsh = $t_object->get("ca_objects.LcshTopical", array('returnAsArray' => 1, 'returnAllLocales' => false));
-				if(sizeof($va_lcsh) > 0){
-					print "<div class='unit'><h2>"._t("Library of Congress Heading").((sizeof($va_lcsh) > 1) ? "s" : "")."</h2>";
-					foreach($va_lcsh as $va_lcsh_info){
-						$lcsh_term=explode(" [",$va_lcsh_info['LcshTopical']);
+				$va_lcshTopical = $t_object->get("ca_objects.lcshTopical", array("returnWithStructure" => true));
+				if(is_array($va_lcshTopical) && sizeof($va_lcshTopical)){
+					$va_terms = array();
+					foreach($va_lcshTopical as $va_lcshTopical){
+						$va_terms[] = caNavLink($this->request, $va_lcshTopical["name_singular"], "", "", "Browse", "objects", array("facet" => "term_facet", "id" => $va_lcshTopical["item_id"]));
+					}
+					print "<div class='unit'><H6>Subject".((sizeof($va_terms) > 1) ? "s" : "")."</H6>".join($va_terms, ", ")."</div>";	
+				}
+?>
+							
+<?php
+				$va_lcshTopical = $t_object->get("ca_objects.LcshTopical", array('returnAsArray' => 1, 'returnAllLocales' => false));
+				if(sizeof($va_lcshTopical) > 0){
+					print "<div class='unit'><h2>"._t("Library of Congress Heading").((sizeof($va_lcshTopical) > 1) ? "s" : "")."</h2>";
+					foreach($va_lcshTopical as $va_lcshTopical_info){
+						$lcshTopical=explode(" [",$va_lcsh_info['LcshTopical']);
 					print "<div>".caNavLink($this->request, $LcshTopical[0], '', '', 'Search', 'Index', array('search' => 'ca_objects.LcshTopical:"'.trim($LcshTopical['0']).'"'))."</div>";
 }
 					print "</div><!-- end unit -->";
 				}
 ?>
+							
+							
+<?php
+$va_lcsh = $t_object->get("ca_objects.LcshTopical", array('returnAsArray' => 1, 'returnAllLocales' => false));
+if(sizeof($va_lcsh) > 0){
+print "<div class='unit'><h2>"._t("Library of Congress Heading").((sizeof($va_lcsh) > 1) ? "s" : "")."</h2>";
+foreach($va_lcsh as $va_lcsh_info){
+$LcshTopical=explode(" [",$va_lcsh_info['LcshTopical']);
+print "<div>".caNavLink($this->request, $LcshTopical[0], '', '', 'Search', 'Index', array('search' => 'ca_objects.LcshTopical:"'.trim($LcshTopical['0']).'"'))."</div>";
+}
+print "</div><!-- end unit -->";
+}
+							
+?>							
 
 																					
 														
