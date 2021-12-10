@@ -83,6 +83,8 @@
 
 				<H6>Part of</H6>
 				<h4>Collection: {{{<unit unique="1" relativeTo="ca_collections" delimiter=" ➔ Series: "><l>^ca_collections.preferred_labels.name</l></unit>}}}</h4>
+					
+				<h4>{{{<ifdef code="ca_objects.lcshtopical">^ca_objects.lcshtopical<br/></ifdef>}}}
 
 				
 				<hr></hr>
@@ -144,6 +146,8 @@
 					print "<div class='unit'><H6>Subject".((sizeof($va_terms) > 1) ? "s" : "")."</H6>".join($va_terms, ", ")."</div>";	
 				}
 ?>
+							
+
 																					
 														
 							{{{<h6>Use Restrictions</h6><ifcount code="ca_collections" min="1" max="2"><unit relativeTo="ca_collections">^ca_collections.CollectionNote.NoteContent%[NoteType=conditions_governing_use]</unit></ifcount>}}}
