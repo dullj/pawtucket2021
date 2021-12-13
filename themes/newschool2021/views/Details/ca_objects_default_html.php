@@ -144,16 +144,20 @@
 					print "<div class='unit'><H6>Related Repository".((sizeof($va_terms) > 1) ? "s" : "")."</H6>".join($va_terms, ", ")."</div>";	
 				}
 				
-				$va_lcshTopical = $t_object->get("ca_objects.lcshTopical", array("returnAsArray" => true));
- 				if(sizeof($va_lcshTopical)){
- 					$va_terms = array();
- 					foreach($va_lcshTopical as $vs_lcshTopical){
- 						$vn_chop = stripos($vs_lcshTopical, "[");
-						$va_terms[] = caNavLink($this->request, ($vn_chop) ? substr($vs_lcshTopical, 0, $vn_chop) : $vs_lcshTopical, "", "", "Browse", "objects", array("facet" => "lcsh_facet", "id" => urlencode($vs_lcshTopical)));
- 						#$va_terms[] = ($vn_chop) ? substr($vs_lcshTopical, 0, $vn_chop) : $vs_lcshTopical;
- 					}
- 					print "<div class='unit'><H6>Library of Congress Subjects".((sizeof($va_terms) > 1) ? "s" : "")."</H6>".join($va_terms, ", ")."</div>";
- 				}
+				$va_lcsh_terms = $t_object->get("ca_objects.lcshTopical", array("returnWithStructure" => true));
+					if(is_array($va_lcsh_terms) && sizeof($va_lcsh_terms)){
+					$va_lcsh_terms = array_pop($va_lcsh_terms);
+					foreach($va_lcsh_terms as $vn_term_id => $va_lcsh_term){
+					$vs_tmp = substr($va_lcsh_term["ca_objects.lcshTopical"], 0, strpos($va_lcsh_term["ca_objects.lcshTopical"], " ["));
+					$va_terms[] = caNavLink($this->request, $vs_tmp, "", "", "Browse", "projects", array("facet" => "lcsh_facet", "id" => urlencode($va_lcsh_term["ca_objects.lcshTopical"])));
+					}
+				}
+
+
+				print join($va_terms, "<br/>");
+					}else{
+						print "N/A";
+					}
 ?>
 							
 						
