@@ -144,14 +144,14 @@
 					print join($va_terms, "<br/>");
 				}
 
-				// $va_lcsh_terms = $t_object->get("ca_objects.lcsh_terms", array("returnAsArray" => true));
-// 				if(sizeof($va_lcsh_terms)){
+				// $va_lcshTopical = $t_object->get("ca_objects.lcshTopical", array("returnAsArray" => true));
+// 				if(sizeof($va_lcshTopical)){
 // 					print "<H6>Library of Congress Subjects</H6>";
 // 					$va_terms = array();
-// 					foreach($va_lcsh_terms as $vs_lcsh_term){
-// 						$vn_chop = stripos($vs_lcsh_term, "[");
-// 						#$va_terms[] = caNavLink($this->request, ($vn_chop) ? substr($vs_lcsh_term, 0, $vn_chop) : $vs_lcsh_term, "", "", "Browse", "objects", array("facet" => "lcsh_facet", "id" => urlencode($vs_lcsh_term)));
-// 						$va_terms[] = ($vn_chop) ? substr($vs_lcsh_term, 0, $vn_chop) : $vs_lcsh_term;
+// 					foreach($va_lcshTopical as $vs_lcshTopical){
+// 						$vn_chop = stripos($vs_lcshTopical, "[");
+// 						#$va_terms[] = caNavLink($this->request, ($vn_chop) ? substr($vs_lcshTopical, 0, $vn_chop) : $vs_lcshTopical, "", "", "Browse", "objects", array("facet" => "lcsh_facet", "id" => urlencode($vs_lcshTopical)));
+// 						$va_terms[] = ($vn_chop) ? substr($vs_lcshTopical, 0, $vn_chop) : $vs_lcshTopical;
 // 					}
 // 					print join($va_terms, "<br/>");
 // 				}
