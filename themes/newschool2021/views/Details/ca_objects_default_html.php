@@ -134,17 +134,15 @@
 							
 							
 <?php
-
 				$va_list_items = $t_object->get("ca_list_items", array("returnWithStructure" => true));
-				if(sizeof($va_list_items)){
-					print "<H6>Related Repository".((sizeof($va_list_items) > 1) ? "s" : "")."</H6>";
+				if(is_array($va_list_items) && sizeof($va_list_items)){
 					$va_terms = array();
 					foreach($va_list_items as $va_list_item){
-						$va_terms[] = caNavLink($this->request, $va_list_item["name_singular"], "", "", "Browse", "objects", array("facet" =>  "term_facet", "id" => urlencode($va_list_item["item_id"])));
+						$va_terms[] = caNavLink($this->request, $va_list_item["name_singular"], "", "", "Browse", "objects", array("facet" => "repository_facet", "id" => $va_list_item["item_id"]));
 					}
-					print join($va_terms, "<br/>");
+					print "<div class='unit'><H6>Related Repository".((sizeof($va_terms) > 1) ? "s" : "")."</H6>".join($va_terms, ", ")."</div>";	
 				}
-		?>
+?>
 							
 						
 							
