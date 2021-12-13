@@ -144,6 +144,15 @@
 				}
 ?>
 							
+<?php
+				$va_lcsh = $t_object->get("ca_objects.lcshTopical", array("returnAsArray" => 1, 'checkAccess' => $va_access_values));
+if(sizeof($va_lcsh) > 0){
+print "<div class='unit'><h2>"._t("Library of Congress Heading").((sizeof($va_lcsh) > 1) ? "s" : "")."</h2>";
+foreach($va_lcsh as $va_lcsh_info){
+print "<div>".caNavLink($this->request, $va_lcsh_info['lcshTopical'], '', '', 'Search', 'Index', array('search' => 'ca_objects.lcshTopical:"'.trim($va_lcsh_info['lcshTopical']).'"'))."</div>";
+
+}
+?>							
 							
 							
 												
