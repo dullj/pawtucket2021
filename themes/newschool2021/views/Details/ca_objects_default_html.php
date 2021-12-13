@@ -136,7 +136,7 @@
 <?php
 				$va_list_items = $t_object->get("ca_list_items", array("returnWithStructure" => true));
 				if(sizeof($va_list_items)){
-					print "<H6>Related Subject".((sizeof($va_list_items) > 1) ? "s" : "")."</H6>";
+					print "<H6>Related Repository".((sizeof($va_list_items) > 1) ? "s" : "")."</H6>";
 					$va_terms = array();
 					foreach($va_list_items as $va_list_item){
 						$va_terms[] = caNavLink($this->request, $va_list_item["name_singular"], "", "", "Browse", "objects", array("facet" =>  "term_facet", "id" => urlencode($va_list_item["item_id"])));
@@ -144,7 +144,7 @@
 					print join($va_terms, "<br/>");
 				}
 
-				 $va_lcshTopical = $t_object->get("ca_objects.lcshTopical", array("returnAsArray" => true));
+				 $va_lcshTopical = $t_object->get("ca_objects.lcshTopical", array("returnWithStructure" => true));
  				if(sizeof($va_lcshTopical)){
  					print "<H6>Library of Congress Subjects</H6>";
  					$va_terms = array();
