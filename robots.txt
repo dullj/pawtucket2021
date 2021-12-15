@@ -1,4 +1,5 @@
 User-agent: *
+Disallow: /admin
 Disallow: /index.php/Detail/Download*
 Disallow: /index.php/Detail/*/Download*
 Disallow: /index.php/Detail/GetRepresentationInfo*
