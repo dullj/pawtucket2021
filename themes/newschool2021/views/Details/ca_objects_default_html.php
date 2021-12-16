@@ -131,8 +131,7 @@
 {{{<unit relativeTo="ca_objects" delimiter="<br/>">^ca_objects.inscriptionSet.inscriptionText (^ca_objects.inscriptionSet.inscriptionType)</unit>}}}
 					
 							{{{<ifdef code="ca_objects.pbcoreLanguage"><H6>Language</H6>^ca_objects.pbcoreLanguage<br/></ifdef>}}}
-							
-							
+
 <?php
 
 				$va_list_items = $t_object->get("ca_list_items", array("returnWithStructure" => true));
@@ -144,16 +143,26 @@
 					print "<div class='unit'><H6>Related Repository".((sizeof($va_terms) > 1) ? "s" : "")."</H6>".join($va_terms, ", ")."</div>";	
 				}
 				
-				$va_lcshTopical = $t_object->get("ca_objects.lcshTopical", array("returnAsArray" => true));
- 				if(sizeof($va_lcshTopical)){
- 					$va_terms = array();
- 					foreach($va_lcshTopical as $vs_lcshTopical){
- 						$vn_chop = stripos($vs_lcshTopical, "[");
- 						$va_terms[] = caNavLink($this->request, ($vn_chop) ? substr($vs_lcshTopical, 0, $vn_chop) : $vs_lcshTopical, "", "", "Browse", "objects", array("facet" => "lcsh_facet", "id" => urlencode($vs_lcshTopical)));
- 						#$va_terms[] = ($vn_chop) ? substr($vs_lcshTopical, 0, $vn_chop) : $vs_lcshTopical;
- 					}
- 					print "<div class='unit'><H6>Library of Congress Subjects".((sizeof($va_terms) > 1) ? "s" : "")."</H6>".join($va_terms, ", ")."</div>";
- 				}
+				$va_all_subjects = array();
+				
+					foreach(array("lcshNames", "lcshTopical", "lcshGeo") as $vs_field){
+						$va_lc = $t_object->get("ca_objects.".$vs_field, array("returnAsArray" => true));
+						$va_lc_names_processed = array();
+						if(is_array($va_lc) && sizeof($va_lc)){
+							foreach($va_lc as $vs_lc_terms){
+								if($vs_lc_terms){
+									$vs_lc_term = "";
+									if($vs_lc_terms && (strpos($vs_lc_terms, " [") !== false)){
+										$vs_lc_term = mb_substr($vs_lc_terms, 0, strpos($vs_lc_terms, " ["));
+									}
+									$va_all_subjects[] = caNavLink($this->request, $vs_lc_term, "", "", "Search", "objects", array("search" => "ca_objects.".$vs_field.": ".$vs_lc_term));
+								}
+							}
+						}
+					}
+					if(is_array($va_all_subjects) && sizeof($va_all_subjects)){
+						print "<div class='unit'><label>Subjects</label>".join(", ", $va_all_subjects)."</div>";
+					}
 							
 ?>
 							
