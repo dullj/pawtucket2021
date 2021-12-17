@@ -92,7 +92,7 @@
 					{{{<unit relativeTo="ca_collections.related" delimiter="<br/>"><l>^ca_collections.preferred_labels.name</l></unit>}}}
 					
 <?php
-					if ($va_lcsh = $t_item->get('ca_collections.lcshTopical', array('delimiter' => '<br/>'))) {
+					if ($va_lcsh = $t_item->get('ca_collections.lcsh_terms', array('delimiter' => '<br/>'))) {
 						print "<div class='unit'><h6>Library of Congress Subject Headings</H6>".$va_lcsh."</div>"; 
 					}																									
 ?>
