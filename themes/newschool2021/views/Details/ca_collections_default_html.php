@@ -91,9 +91,9 @@
 					{{{<ifcount code="ca_collections.related" min="2"><h3>Related collections</h3></ifcount>}}}
 					{{{<unit relativeTo="ca_collections.related" delimiter="<br/>"><l>^ca_collections.preferred_labels.name</l></unit>}}}
 					
-					{{{<ifcount code="ca_collections.lcshTopical" min="1" max="1"><h3>Related Subjects</h3></ifcount>}}}
-					{{{<ifcount code="ca_collections.lcshTopical" min="2"><h3>Related Subjects</h3></ifcount>}}}
-					{{{<unit relativeTo="ca_collections.lcshTopical" delimiter="<br/>"><l>^ca_collections.lcshTopical</l></unit>}}}
+					{{{<ifcount code="ca_collections.lcshTopicaltext" min="1" max="1"><h3>Related Subjects</h3></ifcount>}}}
+					{{{<ifcount code="ca_collections.lcshTopicaltext" min="2"><h3>Related Subjects</h3></ifcount>}}}
+					{{{<unit relativeTo="ca_collections.lcshTopicaltext" delimiter="<br/>"><l>^ca_collections.lcshTopicaltext</l></unit>}}}
 				</div><!-- end col -->
 				
 			</div><!-- end row -->
