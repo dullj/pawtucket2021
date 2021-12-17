@@ -94,6 +94,31 @@
 					{{{<ifcount code="ca_collections.lcshTopical" min="1" max="1"><h3>Related Subjects</h3></ifcount>}}}
 					{{{<ifcount code="ca_collections.lcshTopical" min="2"><h3>Related Subjects</h3></ifcount>}}}
 					{{{<unit relativeTo="ca_collections.lcshTopical" delimiter="<br/>"><l>^ca_collections.lcshTopical</l></unit>}}}
+					
+<?php
+
+				$va_all_subjects = array();
+				
+					foreach(array("lcshNames", "lcshTopical", "lcshGeo") as $vs_field){
+						$va_lc = $t_object->get("ca_objects.".$vs_field, array("returnAsArray" => true));
+						$va_lc_names_processed = array();
+						if(is_array($va_lc) && sizeof($va_lc)){
+							foreach($va_lc as $vs_lc_terms){
+								if($vs_lc_terms){
+									$vs_lc_term = "";
+									if($vs_lc_terms && (strpos($vs_lc_terms, " [") !== false)){
+										$vs_lc_term = mb_substr($vs_lc_terms, 0, strpos($vs_lc_terms, " ["));
+									}
+									$va_all_subjects[] = caNavLink($this->request, $vs_lc_term, "", "", "Search", "objects", array("search" => "ca_objects.".$vs_field.": ".$vs_lc_term));
+								}
+							}
+						}
+					}
+					if(is_array($va_all_subjects) && sizeof($va_all_subjects)){
+						print "<div class='unit'><label>Subjects</label>".join(", ", $va_all_subjects)."</div>";
+					}
+							
+?>
 							
 				
 				</div><!-- end col -->
