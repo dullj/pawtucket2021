@@ -96,7 +96,7 @@
 				$va_all_subjects = array();
 				
 					foreach(array("lcshNames", "lcshTopical", "lcshGeo") as $vs_field){
-						$va_lc = $t_collection->get("ca_collections.".$vs_field, array("returnAsArray" => true));
+						$va_lc = $t_object->get("ca_collections.".$vs_field, array("returnAsArray" => true));
 						$va_lc_names_processed = array();
 						if(is_array($va_lc) && sizeof($va_lc)){
 							foreach($va_lc as $vs_lc_terms){
