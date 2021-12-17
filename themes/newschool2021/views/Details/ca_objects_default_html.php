@@ -83,7 +83,6 @@
 
 				<H6>Part of</H6>
 				<h4>Collection: {{{<unit unique="1" relativeTo="ca_collections" delimiter=" ➔ Series: "><l>^ca_collections.preferred_labels.name</l></unit>}}}</h4>
-
 				
 				<hr></hr>
 					<div class="row" id="object-headers">
@@ -132,9 +131,9 @@
 {{{<unit relativeTo="ca_objects" delimiter="<br/>">^ca_objects.inscriptionSet.inscriptionText (^ca_objects.inscriptionSet.inscriptionType)</unit>}}}
 					
 							{{{<ifdef code="ca_objects.pbcoreLanguage"><H6>Language</H6>^ca_objects.pbcoreLanguage<br/></ifdef>}}}
-							
-							
+
 <?php
+
 				$va_list_items = $t_object->get("ca_list_items", array("returnWithStructure" => true));
 				if(is_array($va_list_items) && sizeof($va_list_items)){
 					$va_terms = array();
@@ -143,7 +142,34 @@
 					}
 					print "<div class='unit'><H6>Related Repository".((sizeof($va_terms) > 1) ? "s" : "")."</H6>".join($va_terms, ", ")."</div>";	
 				}
+				
+				$va_all_subjects = array();
+				
+					foreach(array("lcshNames", "lcshTopical", "lcshGeo") as $vs_field){
+						$va_lc = $t_object->get("ca_objects.".$vs_field, array("returnAsArray" => true));
+						$va_lc_names_processed = array();
+						if(is_array($va_lc) && sizeof($va_lc)){
+							foreach($va_lc as $vs_lc_terms){
+								if($vs_lc_terms){
+									$vs_lc_term = "";
+									if($vs_lc_terms && (strpos($vs_lc_terms, " [") !== false)){
+										$vs_lc_term = mb_substr($vs_lc_terms, 0, strpos($vs_lc_terms, " ["));
+									}
+									$va_all_subjects[] = caNavLink($this->request, $vs_lc_term, "", "", "Search", "objects", array("search" => "ca_objects.".$vs_field.": ".$vs_lc_term));
+								}
+							}
+						}
+					}
+					if(is_array($va_all_subjects) && sizeof($va_all_subjects)){
+						print "<div class='unit'><label>Subjects</label>".join(", ", $va_all_subjects)."</div>";
+					}
+							
 ?>
+							
+						
+							
+												
+
 																					
 														
 							{{{<h6>Use Restrictions</h6><ifcount code="ca_collections" min="1" max="2"><unit relativeTo="ca_collections">^ca_collections.CollectionNote.NoteContent%[NoteType=conditions_governing_use]</unit></ifcount>}}}

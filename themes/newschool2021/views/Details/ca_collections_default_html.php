@@ -90,9 +90,10 @@
 					{{{<ifcount code="ca_collections.related" min="1" max="1"><h3>Related collection</h3></ifcount>}}}
 					{{{<ifcount code="ca_collections.related" min="2"><h3>Related collections</h3></ifcount>}}}
 					{{{<unit relativeTo="ca_collections.related" delimiter="<br/>"><l>^ca_collections.preferred_labels.name</l></unit>}}}
-					
-
+							
+				
 				</div><!-- end col -->
+				
 			</div><!-- end row -->
 {{{<ifcount code="ca_objects" min="2">
 			<div class="row">
