@@ -92,15 +92,28 @@
 					{{{<unit relativeTo="ca_collections.related" delimiter="<br/>"><l>^ca_collections.preferred_labels.name</l></unit>}}}
 					
 <?php
-					if($va_lcsh = $t_item->get("ca_collections.lcshtopical", array("returnAsArray" => true))){
-						if(is_array($va_lcsh) && sizeof($va_lcsh)){
-							print "<H6>Topics, Library of Congress Authority</H6>";
-							foreach($va_lcsh as $vs_lcsh){
-								$va_tmp = explode(" [", $vs_lcsh);
-								print $va_tmp[0]."<br/>";
+				
+				$va_all_subjects = array();
+				
+					foreach(array("lcshNames", "lcshTopical", "lcshGeo") as $vs_field){
+						$va_lc = $t_collection->get("ca_collections.".$vs_field, array("returnAsArray" => true));
+						$va_lc_names_processed = array();
+						if(is_array($va_lc) && sizeof($va_lc)){
+							foreach($va_lc as $vs_lc_terms){
+								if($vs_lc_terms){
+									$vs_lc_term = "";
+									if($vs_lc_terms && (strpos($vs_lc_terms, " [") !== false)){
+										$vs_lc_term = mb_substr($vs_lc_terms, 0, strpos($vs_lc_terms, " ["));
+									}
+									$va_all_subjects[] = caNavLink($this->request, $vs_lc_term, "", "", "Search", "collections", array("search" => "ca_collections.".$vs_field.": ".$vs_lc_term));
+								}
 							}
 						}
 					}
+					if(is_array($va_all_subjects) && sizeof($va_all_subjects)){
+						print "<div class='unit'><label>Subjects</label>".join(", ", $va_all_subjects)."</div>";
+					}
+							
 ?>
 				</div><!-- end col -->
 				
