@@ -90,19 +90,11 @@
 					{{{<ifcount code="ca_collections.related" min="1" max="1"><h3>Related collection</h3></ifcount>}}}
 					{{{<ifcount code="ca_collections.related" min="2"><h3>Related collections</h3></ifcount>}}}
 					{{{<unit relativeTo="ca_collections.related" delimiter="<br/>"><l>^ca_collections.preferred_labels.name</l></unit>}}}
-
+					
+					{{{<ifcount code="ca_collections.lcshTopical" min="1" max="1"><h3>Related Subjects</h3></ifcount>}}}
+					{{{<ifcount code="ca_collections.lcshTopical" min="2"><h3>Related Subjects</h3></ifcount>}}}
+					{{{<unit relativeTo="ca_collections.lcshTopical" delimiter="<br/>"><l>^ca_collections.lcshTopical</l></unit>}}}
 				</div><!-- end col -->
-<?php
-					if($va_lcsh = $t_item->get("ca_collections.lcshTopical", array("returnAsArray" => true))){
-						if(is_array($va_lcsh) && sizeof($va_lcsh)){
-							print "<H3>Topics, Library of Congress Authority</H3>";
-							foreach($va_lcsh as $vs_lcsh){
-								$va_tmp = explode(" [", $vs_lcsh);
-								print $va_tmp[0]."<br/>";
-							}
-						}
-					}
-?>
 				
 			</div><!-- end row -->
 {{{<ifcount code="ca_objects" min="2">
