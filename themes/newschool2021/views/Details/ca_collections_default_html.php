@@ -95,7 +95,11 @@
 					{{{<ifcount code="ca_collections.lcshTopical" min="2"><h3>Related Subjects</h3></ifcount>}}}
 					{{{<unit relativeTo="ca_collections" delimiter="<br/>"><l>^ca_collections.lcshTopical</l></unit>}}}
 					
-					<h3>Subjects{{{<unit unique="1" relativeTo="ca_collections" delimiter="<br/>"><l>^ca_collections.lcshTopical</l></unit>}}}</h3>
+					{{{<ifcount code="ca_collections.lcshtopical" min="1" max="1"><H6>Related subject</H6></ifcount>}}}
+					{{{<ifcount code="ca_collections.lcshtopical" min="2"><H6>Related subject</H6></ifcount>}}}
+					{{{<unit relativeTo="ca_collections_x_lcshtopical" delimiter="<br/>"><unit relativeTo="ca_collections"><l>^ca_collections.lcshtopical</l></unit>}}}
+							
+				
 				</div><!-- end col -->
 				
 			</div><!-- end row -->
