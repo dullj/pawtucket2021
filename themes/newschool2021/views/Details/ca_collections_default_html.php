@@ -91,7 +91,18 @@
 					{{{<ifcount code="ca_collections.related" min="2"><h3>Related collections</h3></ifcount>}}}
 					{{{<unit relativeTo="ca_collections.related" delimiter="<br/>"><l>^ca_collections.preferred_labels.name</l></unit>}}}
 							
-				
+<?php
+					if($va_lcsh = $t_item->get("ca_collections.lcsh_topical", array("returnAsArray" => true))){
+						if(is_array($va_lcsh) && sizeof($va_lcsh)){
+							print "<H6>Topics, Library of Congress Authority</H6>";
+							foreach($va_lcsh as $vs_lcsh){
+								$va_tmp = explode(" [", $vs_lcsh);
+								print $va_tmp[0]."<br/>";
+							}
+						}
+					}
+?>
+					
 				</div><!-- end col -->
 				
 			</div><!-- end row -->
