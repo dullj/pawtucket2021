@@ -100,25 +100,12 @@
 							if($vs_LcshSubjects && (strpos($vs_LcshSubjects, " [") !== false)){
 								$vs_LcshSubjects = mb_substr($vs_LcshSubjects, 0, strpos($vs_LcshSubjects, " ["));
 							}
-							$va_LcshSubjects_processed[] = caNavLink($this->request, $vs_LcshSubjects, "", "", "Search", "collections", array("search" => "ca_collections.lcshTopical: ".$vs_lc_term));
+							$va_LcshSubjects_processed[] = caNavLink($this->request, $vs_LcshSubjects, "", "", "Search", "collections", array("search" => "ca_collections.lcshTopical: ".$vs_LcshSubjects));
 						
 						}
 						$vs_LcshSubjects = join("<br/>", $va_LcshSubjects_processed);
 					}
 					
-					$t_list_item = new ca_list_items;
-					if($va_keywords = $t_item->get("ca_collections.internal_keywords", array("returnAsArray" => true))){
-						$va_keyword_links = array();
-						foreach($va_keywords as $vn_kw_id){
-							$t_list_item->load($vn_kw_id);
-							$va_keyword_links[] = caNavLink($this->request, $t_list_item->get("ca_list_item_labels.name_singular"), "", "", "Browse", "collections", array("facet" => "keyword_facet", "id" => $vn_kw_id));
-						}
-						$vs_keyword_links = join("<br/>", $va_keyword_links);
-					}
-					
-					if($vs_LcshSubjects || $vs_keyword_links){
-						print "<div class='unit'><h3>Subjects</h3>".$vs_LcshSubjects.(($vs_LcshSubjects && $vs_keyword_links) ? "<br/>" : "").$vs_keyword_links."</div>";	
-					}
 
 ?>
 					
