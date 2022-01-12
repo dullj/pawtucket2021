@@ -111,7 +111,7 @@
 							if($vs_LcshSubjects && (strpos($vs_LcshSubjects, " [") !== false)){
 								$vs_LcshSubjects = mb_substr($vs_LcshSubjects, 0, strpos($vs_LcshSubjects, " ["));
 							}
-							$va_LcshSubjects_processed[] = caNavLink($this->request, $vs_LcshSubjects, "", "", "Search", "objects", array("search" => "ca_objects.lcsh_terms: ".$vs_LcshSubjects));
+							$va_LcshSubjects_processed[] = caNavLink($this->request, $vs_LcshSubjects, "", "", "Search", "objects", array("search" => "ca_objects.lcshTopical: ".$vs_LcshSubjects));
 						
 						}
 						$vs_LcshSubjects = join("<br/>", $va_LcshSubjects_processed);
@@ -128,7 +128,7 @@
 					}
 					
 					if($vs_LcshSubjects || $vs_keyword_links){
-						print "<div class='unit'><label>Subjects/Keywords</label>".$vs_LcshSubjects.(($vs_LcshSubjects && $vs_keyword_links) ? "<br/>" : "").$vs_keyword_links."</div>";	
+						print "<div class='unit'><h3>Library of Congress Subjects</h3>".$vs_LcshSubjects.(($vs_LcshSubjects && $vs_keyword_links) ? "<br/>" : "").$vs_keyword_links."</div>";	
 					}
 
 ?>
