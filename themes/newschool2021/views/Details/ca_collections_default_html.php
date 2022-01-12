@@ -92,17 +92,6 @@
 					{{{<unit relativeTo="ca_collections.related" delimiter="<br/>"><l>^ca_collections.preferred_labels.name</l></unit>}}}
 							
 <?php
-					if($va_lcsh = $t_item->get("ca_collections.lcshtopical", array("returnAsArray" => true))){
-						if(is_array($va_lcsh) && sizeof($va_lcsh)){
-							print "<H3>Topics, Library of Congress Authority</H3>";
-							foreach($va_lcsh as $vs_lcsh){
-								$va_tmp = explode(" [", $vs_lcsh);
-								print $va_tmp[0]."<br/>";
-							}
-						}
-					}
-?>
-<?php
 					$va_LcshSubjects = $t_item->get("ca_collections.lcshtopical", array("returnAsArray" => true));
 					$va_LcshSubjects_processed = array();
 					if(is_array($va_LcshSubjects) && sizeof($va_LcshSubjects)){
@@ -111,7 +100,7 @@
 							if($vs_LcshSubjects && (strpos($vs_LcshSubjects, " [") !== false)){
 								$vs_LcshSubjects = mb_substr($vs_LcshSubjects, 0, strpos($vs_LcshSubjects, " ["));
 							}
-							$va_LcshSubjects_processed[] = caNavLink($this->request, $vs_LcshSubjects, "", "", "Search", "collections", array("search" => "ca_collections.lcshTopical: ".$vs_LcshSubjects));
+							$va_LcshSubjects_processed[] = caNavLink($this->request, $vs_LcshSubjects, "", "", "Search", "collections", array("search" => "ca_collections.".$vs_field.": ".$vs_lc_term));
 						
 						}
 						$vs_LcshSubjects = join("<br/>", $va_LcshSubjects_processed);
@@ -128,7 +117,7 @@
 					}
 					
 					if($vs_LcshSubjects || $vs_keyword_links){
-						print "<div class='unit'><h3>Library of Congress Subjects</h3>".$vs_LcshSubjects.(($vs_LcshSubjects && $vs_keyword_links) ? "<br/>" : "").$vs_keyword_links."</div>";	
+						print "<div class='unit'><h3>Subjects</h3>".$vs_LcshSubjects.(($vs_LcshSubjects && $vs_keyword_links) ? "<br/>" : "").$vs_keyword_links."</div>";	
 					}
 
 ?>
