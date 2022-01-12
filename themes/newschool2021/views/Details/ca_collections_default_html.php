@@ -100,7 +100,7 @@
 							if($vs_LcshSubjects && (strpos($vs_LcshSubjects, " [") !== false)){
 								$vs_LcshSubjects = mb_substr($vs_LcshSubjects, 0, strpos($vs_LcshSubjects, " ["));
 							}
-							$va_LcshSubjects_processed[] = caNavLink($this->request, $vs_LcshSubjects, "", "", "Search", "collections", array("search" => "ca_collections.".$vs_field.": ".$vs_lc_term));
+							$va_LcshSubjects_processed[] = caNavLink($this->request, $vs_LcshSubjects, "", "", "Search", "collections", array("search" => "ca_collections.lcshTopical: ".$vs_lc_term));
 						
 						}
 						$vs_LcshSubjects = join("<br/>", $va_LcshSubjects_processed);
