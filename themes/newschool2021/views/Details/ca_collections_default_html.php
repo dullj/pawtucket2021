@@ -102,28 +102,35 @@
 						}
 					}
 ?>
-<?php					
-				$va_all_subjects = array();
-				
-					foreach(array("lcshNames", "lcshTopical", "lcshGeo") as $vs_field){
-						$va_lc = $t_item->get("ca_collections.".$vs_field, array("returnAsArray" => true));
-						$va_lc_names_processed = array();
-						if(is_array($va_lc) && sizeof($va_lc)){
-							foreach($va_lc as $vs_lc_terms){
-								if($vs_lc_terms){
-									$vs_lc_term = "";
-									if($vs_lc_terms && (strpos($vs_lc_terms, " [") !== false)){
-										$vs_lc_term = mb_substr($vs_lc_terms, 0, strpos($vs_lc_terms, " ["));
-									}
-									$va_all_subjects[] = caNavLink($this->request, $vs_lc_term, "", "", "Search", "collections", array("search" => "ca_collections.".$vs_field.": ".$vs_lc_term));
-								}
+<?php
+					$va_LcshSubjects = $t_item->get("ca_collections.lcshtopical", array("returnAsArray" => true));
+					$va_LcshSubjects_processed = array();
+					if(is_array($va_LcshSubjects) && sizeof($va_LcshSubjects)){
+						foreach($va_LcshSubjects as $vs_LcshSubjects){
+							$vs_lcsh_subject = "";
+							if($vs_LcshSubjects && (strpos($vs_LcshSubjects, " [") !== false)){
+								$vs_LcshSubjects = mb_substr($vs_LcshSubjects, 0, strpos($vs_LcshSubjects, " ["));
 							}
+							$va_LcshSubjects_processed[] = caNavLink($this->request, $vs_LcshSubjects, "", "", "Search", "objects", array("search" => "ca_objects.lcsh_terms: ".$vs_LcshSubjects));
+						
 						}
+						$vs_LcshSubjects = join("<br/>", $va_LcshSubjects_processed);
 					}
-					if(is_array($va_all_subjects) && sizeof($va_all_subjects)){
-						print "<div class='unit'><label>Subjects</label>".join(", ", $va_all_subjects)."</div>";
+					
+					$t_list_item = new ca_list_items;
+					if($va_keywords = $t_item->get("ca_collections.internal_keywords", array("returnAsArray" => true))){
+						$va_keyword_links = array();
+						foreach($va_keywords as $vn_kw_id){
+							$t_list_item->load($vn_kw_id);
+							$va_keyword_links[] = caNavLink($this->request, $t_list_item->get("ca_list_item_labels.name_singular"), "", "", "Browse", "objects", array("facet" => "keyword_facet", "id" => $vn_kw_id));
+						}
+						$vs_keyword_links = join("<br/>", $va_keyword_links);
 					}
-							
+					
+					if($vs_LcshSubjects || $vs_keyword_links){
+						print "<div class='unit'><label>Subjects/Keywords</label>".$vs_LcshSubjects.(($vs_LcshSubjects && $vs_keyword_links) ? "<br/>" : "").$vs_keyword_links."</div>";	
+					}
+
 ?>
 					
 				</div><!-- end col -->
