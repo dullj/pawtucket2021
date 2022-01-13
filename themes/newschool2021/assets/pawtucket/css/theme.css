@@ -570,6 +570,17 @@ div.browseFacetItem a {
   color: #ffffff;
 }
 
+@media screen and (max-width: 767px) {
+.footer-links-list {
+	padding-right: 10px;
+ }
+}
+@media screen and (max-width: 767px) {
+.footer-links-list h5 {
+	line-height: 1.5;
+ }
+}
+
 .footer-links-list a {
   color: #ffffff;
 }
