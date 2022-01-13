@@ -28,11 +28,11 @@
  
 	$t_object = 			$this->getVar("item");
 	$va_comments = 			$this->getVar("comments");
-	$va_tags = 				$this->getVar("tags_array");
-	$vn_comments_enabled = 	$this->getVar("commentsEnabled");
-	$vn_share_enabled = 	$this->getVar("shareEnabled");
+	$va_tags = 			$this->getVar("tags_array");
+	$vn_comments_enabled = 		$this->getVar("commentsEnabled");
+	$vn_share_enabled = 		$this->getVar("shareEnabled");
 	$vn_pdf_enabled = 		$this->getVar("pdfEnabled");
-	$vn_id =				$t_object->get('ca_objects.object_id');
+	$vn_id =			$t_object->get('ca_objects.object_id');
 ?>
 <div class="row">
 	<div class='col-xs-12 navTop'><!--- only shown at small screen size -->
@@ -130,11 +130,11 @@
 							{{{<ifdef code="ca_objects.inscriptionSet.inscriptionText"><H6>Inscription</H6></ifdef>}}}
 {{{<unit relativeTo="ca_objects" delimiter="<br/>">^ca_objects.inscriptionSet.inscriptionText (^ca_objects.inscriptionSet.inscriptionType)</unit>}}}
 							
-							{{{<ifdef code="ca_item_tags"><H6>tags</H6></ifdef>}}}
-{{{<unit relativeTo="ca_item_tags" delimiter="<br/>">^ca_item_tags</unit>}}}
+							{{{<ifdef code="ca_item_tags.tag"><H6>tags</H6></ifdef>}}}
+{{{<unit relativeTo="ca_item_tags" delimiter="<br/>">^ca_item_tags.tag</unit>}}}
 							
-							{{{<ifdef code="ca_objects.tags"><H6>tags 2</H6></ifdef>}}}
-{{{<unit relativeTo="ca_objects" delimiter="<br/>">^ca_objects.tags</unit>}}}
+							{{{<ifdef code="ca_objects.tag"><H6>tags 2</H6></ifdef>}}}
+{{{<unit relativeTo="ca_objects" delimiter="<br/>">^ca_objects.tag</unit>}}}
 					
 							{{{<ifdef code="ca_objects.pbcoreLanguage"><H6>Language</H6>^ca_objects.pbcoreLanguage<br/></ifdef>}}}
 
