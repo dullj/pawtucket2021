@@ -131,7 +131,8 @@
 {{{<unit relativeTo="ca_objects" delimiter="<br/>">^ca_objects.inscriptionSet.inscriptionText (^ca_objects.inscriptionSet.inscriptionType)</unit>}}}
 							
 							{{{<ifdef code="ca_item_tags.tag"><H6>tags</H6></ifdef>}}}
-{{{<unit relativeTo="ca_item" delimiter="<br/>">^ca_item_tags.tag</unit>}}}
+{{{<unit relativeTo="ca_item_tags" delimiter="<br/>">^ca_item_tags.tag</unit>}}}
+							
 					
 							{{{<ifdef code="ca_objects.pbcoreLanguage"><H6>Language</H6>^ca_objects.pbcoreLanguage<br/></ifdef>}}}
 
