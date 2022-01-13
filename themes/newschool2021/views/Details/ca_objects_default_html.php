@@ -130,9 +130,11 @@
 							{{{<ifdef code="ca_objects.inscriptionSet.inscriptionText"><H6>Inscription</H6></ifdef>}}}
 {{{<unit relativeTo="ca_objects" delimiter="<br/>">^ca_objects.inscriptionSet.inscriptionText (^ca_objects.inscriptionSet.inscriptionType)</unit>}}}
 							
-							{{{<ifdef code="ca_item_tags.tag"><H6>tags</H6></ifdef>}}}
-{{{<unit relativeTo="ca_item_tags" delimiter="<br/>">^ca_item_tags.tag</unit>}}}
+							{{{<ifdef code="ca_item_tags"><H6>tags</H6></ifdef>}}}
+{{{<unit relativeTo="ca_item_tags" delimiter="<br/>">^ca_item_tags</unit>}}}
 							
+							{{{<ifdef code="ca_objects.tags"><H6>tags 2</H6></ifdef>}}}
+{{{<unit relativeTo="ca_objects" delimiter="<br/>">^ca_objects.tags</unit>}}}
 					
 							{{{<ifdef code="ca_objects.pbcoreLanguage"><H6>Language</H6>^ca_objects.pbcoreLanguage<br/></ifdef>}}}
 
