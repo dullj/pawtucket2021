@@ -200,7 +200,8 @@ span#collectionguides a:hover {
 
 @media screen and (max-width: 767px) {
 .menu-item {
-    padding-left: 0px;
+    padding-left: 0px !important;
+    border-right: none !important;
 	}
 }
 
