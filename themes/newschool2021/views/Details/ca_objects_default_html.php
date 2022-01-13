@@ -133,6 +133,16 @@
 {{{<unit relativeTo="ca_objects" delimiter="<br/>">^ca_objects.inscriptionSet.inscriptionText (^ca_objects.inscriptionSet.inscriptionType)</unit>}}}
 					
 							{{{<ifdef code="ca_objects.pbcoreLanguage"><H6>Language</H6>^ca_objects.pbcoreLanguage<br/></ifdef>}}}
+<?php
+
+				$va_list_items = $t_object->get("ca_list_items", array("returnWithStructure" => true));
+				if(is_array($va_list_items) && sizeof($va_list_items)){
+					$va_terms = array();
+					foreach($va_list_items as $va_list_item){
+						$va_terms[] = caNavLink($this->request, $va_list_item["name_singular"], "", "", "Browse", "objects", array("facet" => "tags"));
+					}
+					print "<div class='unit'><H6>User Tags".((sizeof($va_terms) > 1) ? "s" : "")."</H6>".join($va_terms, ", ")."</div>";	
+				}
 
 							
 <?php
