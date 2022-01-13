@@ -132,6 +132,8 @@
 					
 							{{{<ifdef code="ca_objects.pbcoreLanguage"><H6>Language</H6>^ca_objects.pbcoreLanguage<br/></ifdef>}}}
 
+				<h4>User Tags {{{<unit unique="1" relativeTo="ca_objects" delimiter="; "><l>^ca_item_tags.tag</l></unit>}}}</h4>
+							
 <?php
 
 				$va_list_items = $t_object->get("ca_list_items", array("returnWithStructure" => true));
