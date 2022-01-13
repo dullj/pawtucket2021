@@ -95,6 +95,8 @@
 							{{{<ifdef code="ca_objects.pbcoreDescription.pBdescription_text%[pbcore_description_types=abstract]"><H6>Abstract</H6>^ca_objects.pbcoreDescription.pBdescription_text%[pbcore_description_types=abstract]<br/></ifdef>}}}
 							
 							{{{<ifdef code="ca_objects.dateSet.setDisplayValue"><H6>Date</H6>^ca_objects.dateSet.setDisplayValue<br/></ifdef>}}}
+							
+							{{{<ifdef code="ca_item_tags.tag"><H6>User Tags</H6>^ca_item_tags.tag<br/></ifdef>}}}
 
 							{{{<ifcount code="ca_entities" min="1" max="1"><H6>Related person</H6></ifcount>}}}
 							{{{<ifcount code="ca_entities" min="2"><H6>Related people</H6></ifcount>}}}
@@ -132,7 +134,6 @@
 					
 							{{{<ifdef code="ca_objects.pbcoreLanguage"><H6>Language</H6>^ca_objects.pbcoreLanguage<br/></ifdef>}}}
 
-				<h4>User Tags {{{<unit unique="1" relativeTo="ca_objects" delimiter="; "><l>^ca_item_tags.tag</l></unit>}}}</h4>
 							
 <?php
 
