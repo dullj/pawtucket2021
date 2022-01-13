@@ -96,8 +96,6 @@
 							
 							{{{<ifdef code="ca_objects.dateSet.setDisplayValue"><H6>Date</H6>^ca_objects.dateSet.setDisplayValue<br/></ifdef>}}}
 							
-							{{{<ifdef code="ca_item_tags.tag"><H6>User Tags</H6>^ca_item_tags.tag<br/></ifdef>}}}
-
 							{{{<ifcount code="ca_entities" min="1" max="1"><H6>Related person</H6></ifcount>}}}
 							{{{<ifcount code="ca_entities" min="2"><H6>Related people</H6></ifcount>}}}
 							{{{<unit relativeTo="ca_objects_x_entities" delimiter="<br/>"><unit relativeTo="ca_entities"><l>^ca_entities.preferred_labels</l></unit> (^relationship_typename)</unit>}}}
@@ -143,7 +141,7 @@
 					}
 					print "<div class='unit'><H6>User Tags".((sizeof($va_terms) > 1) ? "s" : "")."</H6>".join($va_terms, ", ")."</div>";	
 				}
-
+?>
 							
 <?php
 
