@@ -132,13 +132,13 @@
 							
 							{{{<ifdef code="ca_item_tags.tag"><H6>tags</H6></ifdef>}}}
 {{{<unit relativeTo="ca_item_tags" delimiter="<br/>">^ca_item_tags.tag</unit>}}}
-							
-							{{{<ifdef code="ca_item_tags.tag"><H6>tags by user</H6>^ca_item_tags.tag<br/></ifdef>}}}
-
 					
 							{{{<ifdef code="ca_objects.pbcoreLanguage"><H6>Language</H6>^ca_objects.pbcoreLanguage<br/></ifdef>}}}
 
-							
+							{{{<ifdef code="ca_item_tags.tag"><H6>tags by user</H6>^ca_item_tags.tag<br/></ifdef>}}}
+
+							{{{<ifdef code="ca_item_tags.tags"><H6>tags by user</H6>^ca_item_tags.tags<br/></ifdef>}}}
+
 <?php
 
 				$va_list_items = $t_object->get("ca_list_items", array("returnWithStructure" => true));
