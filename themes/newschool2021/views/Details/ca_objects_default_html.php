@@ -28,11 +28,11 @@
  
 	$t_object = 			$this->getVar("item");
 	$va_comments = 			$this->getVar("comments");
-	$va_tags = 				$this->getVar("tags_array");
-	$vn_comments_enabled = 	$this->getVar("commentsEnabled");
-	$vn_share_enabled = 	$this->getVar("shareEnabled");
+	$va_tags = 			$this->getVar("tags_array");
+	$vn_comments_enabled = 		$this->getVar("commentsEnabled");
+	$vn_share_enabled = 		$this->getVar("shareEnabled");
 	$vn_pdf_enabled = 		$this->getVar("pdfEnabled");
-	$vn_id =				$t_object->get('ca_objects.object_id');
+	$vn_id =			$t_object->get('ca_objects.object_id');
 ?>
 <div class="row">
 	<div class='col-xs-12 navTop'><!--- only shown at small screen size -->
@@ -95,7 +95,7 @@
 							{{{<ifdef code="ca_objects.pbcoreDescription.pBdescription_text%[pbcore_description_types=abstract]"><H6>Abstract</H6>^ca_objects.pbcoreDescription.pBdescription_text%[pbcore_description_types=abstract]<br/></ifdef>}}}
 							
 							{{{<ifdef code="ca_objects.dateSet.setDisplayValue"><H6>Date</H6>^ca_objects.dateSet.setDisplayValue<br/></ifdef>}}}
-
+							
 							{{{<ifcount code="ca_entities" min="1" max="1"><H6>Related person</H6></ifcount>}}}
 							{{{<ifcount code="ca_entities" min="2"><H6>Related people</H6></ifcount>}}}
 							{{{<unit relativeTo="ca_objects_x_entities" delimiter="<br/>"><unit relativeTo="ca_entities"><l>^ca_entities.preferred_labels</l></unit> (^relationship_typename)</unit>}}}
@@ -129,8 +129,15 @@
 							
 							{{{<ifdef code="ca_objects.inscriptionSet.inscriptionText"><H6>Inscription</H6></ifdef>}}}
 {{{<unit relativeTo="ca_objects" delimiter="<br/>">^ca_objects.inscriptionSet.inscriptionText (^ca_objects.inscriptionSet.inscriptionType)</unit>}}}
+							
+							{{{<ifdef code="ca_item_tags.tag"><H6>tags</H6></ifdef>}}}
+{{{<unit relativeTo="ca_item_tags" delimiter="<br/>">^ca_item_tags.tag</unit>}}}
 					
 							{{{<ifdef code="ca_objects.pbcoreLanguage"><H6>Language</H6>^ca_objects.pbcoreLanguage<br/></ifdef>}}}
+
+							{{{<ifdef code="ca_item_tags.tag"><H6>tags by user</H6>^ca_item_tags.tag<br/></ifdef>}}}
+
+							{{{<ifdef code="ca_item_tags.tags"><H6>tags by user</H6>^ca_item_tags.tags<br/></ifdef>}}}
 
 <?php
 

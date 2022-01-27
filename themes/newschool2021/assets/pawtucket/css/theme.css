@@ -199,6 +199,13 @@ span#collectionguides a:hover {
 }
 
 @media screen and (max-width: 767px) {
+.menu-item {
+    padding-left: 0px !important;
+    border-right: none !important;
+	}
+}
+
+@media screen and (max-width: 767px) {
 #fullsitetitle {
 	font-size: 20px;
 	}
@@ -207,7 +214,7 @@ span#collectionguides a:hover {
 
 @media screen and (max-width: 767px) {
 #site-title {
-	font-size: 20px;
+	font-size: 25px;
  }
 }
 
@@ -563,6 +570,17 @@ div.browseFacetItem a {
   color: #ffffff;
 }
 
+@media screen and (max-width: 767px) {
+.footer-links-list {
+	padding-right: 10px;
+ }
+}
+@media screen and (max-width: 767px) {
+.footer-links-list h5 {
+	line-height: 1.5;
+ }
+}
+
 .footer-links-list a {
   color: #ffffff;
 }
@@ -716,7 +734,8 @@ div.browseFacetItem a {
 .accordion {
   background-color: #ffffff;
   cursor: pointer;
-  padding: 18px;
+  padding-bottom: 18px;
+  padding-top: 18px;
   width: 100%;
   border: none;
   text-align: left;
