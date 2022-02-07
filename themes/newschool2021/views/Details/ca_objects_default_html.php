@@ -108,11 +108,11 @@
 							{{{<ifdef code="ca_objects.wtThree"><H6>Material Category</H6>^ca_objects.wtThree<br/></ifdef>}}}
 							{{{<ifdef code="ca_objects.wtOther"><H6>Material Category</H6>^ca_objects.wtOther<br/></ifdef>}}}
 							{{{<ifdef code="ca_objects.wtDigitalaudio"><H6>Material Category</H6>^ca_objects.wtDigitalaudio<br/></ifdef>}}}
-							{{{<ifdef code="ca_objects.wtDigitalaudio"><H6>Material Category</H6>^ca_objects.wt_digitalmovingimage<br/></ifdef>}}}
-							{{{<ifdef code="ca_objects.wtDigitalaudio"><H6>Material Category</H6>^ca_objects.wt_physicalaudio<br/></ifdef>}}}
-							{{{<ifdef code="ca_objects.wtDigitalaudio"><H6>Material Category</H6>^ca_objects.wt_physicalfilm<br/></ifdef>}}}
-							{{{<ifdef code="ca_objects.wtDigitalaudio"><H6>Material Category</H6>^ca_objects.wt_physicalvideo<br/></ifdef>}}}
-							{{{<ifdef code="ca_objects.wtDigitalaudio"><H6>Material Category</H6>^ca_objects.wt_digitalaudio<br/></ifdef>}}}
+							{{{<ifdef code="ca_objects.wt_digitalmovingimage"><H6>Material Category</H6>^ca_objects.wt_digitalmovingimage<br/></ifdef>}}}
+							{{{<ifdef code="ca_objects.wtPhysFilm"><H6>Material Category</H6>^ca_objects.wtPhysFilm<br/></ifdef>}}}
+							{{{<ifdef code="ca_objects.wt_physicalaudio"><H6>Material Category</H6>^ca_objects.wt_physicalaudio<br/></ifdef>}}}
+							{{{<ifdef code="ca_objects.wt_physicalvideo"><H6>Material Category</H6>^ca_objects.wt_physicalvideo<br/></ifdef>}}}
+							
 							
 							
 							{{{<ifdef code="ca_objects.descriptionSet.descriptionText"><H6>Description</H6>^ca_objects.descriptionSet.descriptionText<br/></ifdef>}}}
@@ -125,11 +125,6 @@
 							{{{<ifcount code="ca_entities" min="2"><H6>Related people</H6></ifcount>}}}
 							{{{<unit relativeTo="ca_objects_x_entities" delimiter="<br/>"><unit relativeTo="ca_entities"><l>^ca_entities.preferred_labels</l></unit> (^relationship_typename)</unit>}}}
 							
-							
-							{{{<ifdef code="ca_objects.wt_digitalmovingimage"><H6>Material Category</H6>^ca_objects.wt_digitalmovingimage<br/></ifdef>}}}
-							{{{<ifdef code="ca_objects.wtPhysFilm"><H6>Material Category</H6>^ca_objects.wtPhysFilm<br/></ifdef>}}}
-							{{{<ifdef code="ca_objects.wt_physicalaudio"><H6>Material Category</H6>^ca_objects.wt_physicalaudio<br/></ifdef>}}}
-							{{{<ifdef code="ca_objects.wt_physicalvideo"><H6>Material Category</H6>^ca_objects.wt_physicalvideo<br/></ifdef>}}}
 							
 							
 					
