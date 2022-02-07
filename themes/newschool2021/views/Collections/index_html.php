@@ -4,7 +4,7 @@
 ?>
 	<div class="row">
 		<div class='col-md-12 col-lg-12 collectionsList'>
-			<h1><?php print $this->getVar("section_name"); ?></h1>
+			<h1><?php print $this->getVar("section_name"); ?><a href="/index.php/Browse/collections">(View with Filters)</a></h1>
 			<p><?php print $o_collections_config->get("collections_intro_text"); ?></p>
 <?php	
 	$vn_i = 0;
