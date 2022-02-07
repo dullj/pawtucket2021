@@ -108,7 +108,11 @@
 							{{{<ifdef code="ca_objects.wtThree"><H6>Material Category</H6>^ca_objects.wtThree<br/></ifdef>}}}
 							{{{<ifdef code="ca_objects.wtOther"><H6>Material Category</H6>^ca_objects.wtOther<br/></ifdef>}}}
 							{{{<ifdef code="ca_objects.wtDigitalaudio"><H6>Material Category</H6>^ca_objects.wtDigitalaudio<br/></ifdef>}}}
-							
+							{{{<ifdef code="ca_objects.wtDigitalaudio"><H6>Material Category</H6>^ca_objects.wt_digitalmovingimage<br/></ifdef>}}}
+							{{{<ifdef code="ca_objects.wtDigitalaudio"><H6>Material Category</H6>^ca_objects.wt_physicalaudio<br/></ifdef>}}}
+							{{{<ifdef code="ca_objects.wtDigitalaudio"><H6>Material Category</H6>^ca_objects.wt_physicalfilm<br/></ifdef>}}}
+							{{{<ifdef code="ca_objects.wtDigitalaudio"><H6>Material Category</H6>^ca_objects.wt_physicalvideo<br/></ifdef>}}}
+							{{{<ifdef code="ca_objects.wtDigitalaudio"><H6>Material Category</H6>^ca_objects.wt_digitalaudio<br/></ifdef>}}}
 							
 							
 							{{{<ifdef code="ca_objects.descriptionSet.descriptionText"><H6>Description</H6>^ca_objects.descriptionSet.descriptionText<br/></ifdef>}}}
