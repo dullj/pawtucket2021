@@ -660,7 +660,8 @@ div.browseFacetItem a {
 /* If the screen size is 600px wide or less, set the max-width to 75vw */
 @media screen and (max-width: 600px) {
 .front .heroSearch {
-    font-size: 15px;
+    font-size: 16px !important;
+    padding-top: 0px !important;
     line-height: 25px;
   }
 }
