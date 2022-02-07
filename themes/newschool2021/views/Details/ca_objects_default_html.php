@@ -90,6 +90,27 @@
 							<h6>Type of Work</h6>
 							{{{<unit>^ca_objects.type_id</unit>}}}
 							
+							{{{<ifdef code="ca_objects.wtDrawings"><H6>Material Category</H6>^ca_objects.wtDrawings<br/></ifdef>}}}
+							{{{<ifdef code="ca_objects.wtPhotographic"><H6>Material Category</H6>^ca_objects.wtPhotographic<br/></ifdef>}}}
+							{{{<ifdef code="ca_objects.wtPosters"><H6>Material Category</H6>^ca_objects.wtPosters<br/></ifdef>}}}
+							{{{<ifdef code="ca_objects.wtClippings"><H6>Material Category</H6>^ca_objects.wtClippings<br/></ifdef>}}}
+							{{{<ifdef code="ca_objects.wtPlans"><H6>Material Category</H6>^ca_objects.wtPlans<br/></ifdef>}}}
+							{{{<ifdef code="ca_objects.wtCourse"><H6>Material Category</H6>^ca_objects.wtCourse<br/></ifdef>}}}
+							{{{<ifdef code="ca_objects.wtExhibition"><H6>Material Category</H6>^ca_objects.wtExhibition<br/></ifdef>}}}
+							{{{<ifdef code="ca_objects.wtBooks"><H6>Material Category</H6>^ca_objects.wtBooks<br/></ifdef>}}}
+							{{{<ifdef code="ca_objects.wtPeriodicals"><H6>Material Category</H6>^ca_objects.wtPeriodicals<br/></ifdef>}}}
+							{{{<ifdef code="ca_objects.wtScores "><H6>Material Category</H6>^ca_objects.wtScores<br/></ifdef>}}}
+							{{{<ifdef code="ca_objects.wtScrapbooks"><H6>Material Category</H6>^ca_objects.wtScrapbooks<br/></ifdef>}}}
+							{{{<ifdef code="ca_objects.wtPhotoAlbums"><H6>Material Category</H6>^ca_objects.wtPhotoAlbums<br/></ifdef>}}}
+							{{{<ifdef code="ca_objects.wtSketchbooks"><H6>Material Category</H6>^ca_objects.wtSketchbooks<br/></ifdef>}}}
+							{{{<ifdef code="ca_objects.wtTextual"><H6>Material Category</H6>^ca_objects.wtTextual<br/></ifdef>}}}
+							{{{<ifdef code="ca_objects.wtProofs"><H6>Material Category</H6>^ca_objects.wtProofs<br/></ifdef>}}}
+							{{{<ifdef code="ca_objects.wtThree"><H6>Material Category</H6>^ca_objects.wtThree<br/></ifdef>}}}
+							{{{<ifdef code="ca_objects.wtOther"><H6>Material Category</H6>^ca_objects.wtOther<br/></ifdef>}}}
+							{{{<ifdef code="ca_objects.wtDigitalaudio"><H6>Material Category</H6>^ca_objects.wtDigitalaudio<br/></ifdef>}}}
+							
+							
+							
 							{{{<ifdef code="ca_objects.descriptionSet.descriptionText"><H6>Description</H6>^ca_objects.descriptionSet.descriptionText<br/></ifdef>}}}
 							{{{<ifdef code="ca_objects.pbcoreDescription.pBdescription_text"><H6>Description</H6>^ca_objects.pbcoreDescription.pBdescription_text<br/></ifdef>}}}
 							{{{<ifdef code="ca_objects.pbcoreDescription.pBdescription_text%[pbcore_description_types=abstract]"><H6>Abstract</H6>^ca_objects.pbcoreDescription.pBdescription_text%[pbcore_description_types=abstract]<br/></ifdef>}}}
@@ -100,28 +121,11 @@
 							{{{<ifcount code="ca_entities" min="2"><H6>Related people</H6></ifcount>}}}
 							{{{<unit relativeTo="ca_objects_x_entities" delimiter="<br/>"><unit relativeTo="ca_entities"><l>^ca_entities.preferred_labels</l></unit> (^relationship_typename)</unit>}}}
 							
-							{{{<ifdef code="ca_objects.wtDrawings"><H6>Work Type</H6>^ca_objects.wtDrawings<br/></ifdef>}}}
-							{{{<ifdef code="ca_objects.wtPhotographic"><H6>Work Type</H6>^ca_objects.wtPhotographic<br/></ifdef>}}}
-							{{{<ifdef code="ca_objects.wtPosters"><H6>Work Type</H6>^ca_objects.wtPosters<br/></ifdef>}}}
-							{{{<ifdef code="ca_objects.wtClippings"><H6>Work Type</H6>^ca_objects.wtClippings<br/></ifdef>}}}
-							{{{<ifdef code="ca_objects.wtPlans"><H6>Work Type</H6>^ca_objects.wtPlans<br/></ifdef>}}}
-							{{{<ifdef code="ca_objects.wtCourse"><H6>Work Type</H6>^ca_objects.wtCourse<br/></ifdef>}}}
-							{{{<ifdef code="ca_objects.wtExhibition"><H6>Work Type</H6>^ca_objects.wtExhibition<br/></ifdef>}}}
-							{{{<ifdef code="ca_objects.wtBooks"><H6>Work Type</H6>^ca_objects.wtBooks<br/></ifdef>}}}
-							{{{<ifdef code="ca_objects.wtPeriodicals"><H6>Work Type</H6>^ca_objects.wtPeriodicals<br/></ifdef>}}}
-							{{{<ifdef code="ca_objects.wtScores "><H6>Work Type</H6>^ca_objects.wtScores<br/></ifdef>}}}
-							{{{<ifdef code="ca_objects.wtScrapbooks"><H6>Work Type</H6>^ca_objects.wtScrapbooks<br/></ifdef>}}}
-							{{{<ifdef code="ca_objects.wtPhotoAlbums"><H6>Work Type</H6>^ca_objects.wtPhotoAlbums<br/></ifdef>}}}
-							{{{<ifdef code="ca_objects.wtSketchbooks"><H6>Work Type</H6>^ca_objects.wtSketchbooks<br/></ifdef>}}}
-							{{{<ifdef code="ca_objects.wtTextual"><H6>Work Type</H6>^ca_objects.wtTextual<br/></ifdef>}}}
-							{{{<ifdef code="ca_objects.wtProofs"><H6>Work Type</H6>^ca_objects.wtProofs<br/></ifdef>}}}
-							{{{<ifdef code="ca_objects.wtThree"><H6>Work Type</H6>^ca_objects.wtThree<br/></ifdef>}}}
-							{{{<ifdef code="ca_objects.wtOther"><H6>Work Type</H6>^ca_objects.wtOther<br/></ifdef>}}}
-							{{{<ifdef code="ca_objects.wtDigitalaudio"><H6>Work Type</H6>^ca_objects.wtDigitalaudio<br/></ifdef>}}}
-							{{{<ifdef code="ca_objects.wt_digitalmovingimage"><H6>Work Type</H6>^ca_objects.wt_digitalmovingimage<br/></ifdef>}}}
-							{{{<ifdef code="ca_objects.wtPhysFilm"><H6>Work Type</H6>^ca_objects.wtPhysFilm<br/></ifdef>}}}
-							{{{<ifdef code="ca_objects.wt_physicalaudio"><H6>Work Type</H6>^ca_objects.wt_physicalaudio<br/></ifdef>}}}
-							{{{<ifdef code="ca_objects.wt_physicalvideo"><H6>Work Type</H6>^ca_objects.wt_physicalvideo<br/></ifdef>}}}
+							
+							{{{<ifdef code="ca_objects.wt_digitalmovingimage"><H6>Material Category</H6>^ca_objects.wt_digitalmovingimage<br/></ifdef>}}}
+							{{{<ifdef code="ca_objects.wtPhysFilm"><H6>Material Category</H6>^ca_objects.wtPhysFilm<br/></ifdef>}}}
+							{{{<ifdef code="ca_objects.wt_physicalaudio"><H6>Material Category</H6>^ca_objects.wt_physicalaudio<br/></ifdef>}}}
+							{{{<ifdef code="ca_objects.wt_physicalvideo"><H6>Material Category</H6>^ca_objects.wt_physicalvideo<br/></ifdef>}}}
 							
 							
 					
