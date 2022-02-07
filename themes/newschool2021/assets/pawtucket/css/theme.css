@@ -208,6 +208,7 @@ span#collectionguides a:hover {
 @media screen and (max-width: 767px) {
 #fullsitetitle {
 	font-size: 20px;
+	margin-top: 25px;
 	}
 }
 	
@@ -573,6 +574,7 @@ div.browseFacetItem a {
 @media screen and (max-width: 767px) {
 .footer-links-list {
 	padding-right: 10px;
+	width:275px;
  }
 }
 @media screen and (max-width: 767px) {
@@ -602,6 +604,21 @@ div.browseFacetItem a {
 @media (min-width: 768px) {
 	.front H1 {
 		font-family:Neue;
+	}
+}
+
+/* If the screen size is 600px wide or less, set the max-width to 75vw */
+@media screen and (max-width: 600px) {
+	.heroSearch {
+		padding-top: 0px;
+	}
+}
+
+/* If the screen size is 600px wide or less, set the max-width to 75vw */
+@media screen and (max-width: 600px) {
+	#front-container {
+  		padding-left: 0px;
+		padding-right: 5px;
 	}
 }
 
@@ -745,6 +762,12 @@ div.browseFacetItem a {
   border-bottom:1px solid #eeeeee;
   font-family: neue display wide, neuedisplaywide, neuedisplayblack;
   font-size: 18px;
+}
+
+@media screen and (max-width: 767px) {
+.accordion {
+	font-size: 14px;
+	}
 }
 
 .active, .accordion:hover {
