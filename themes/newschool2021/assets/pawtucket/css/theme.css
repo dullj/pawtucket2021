@@ -53,11 +53,6 @@ a, a:active, a:focus {
 	color: #e42a1d;
 }
 
-.welcome-text p {
-	font-size: 18px;
-	line-height: 30px; 
-}
-
 /* ----------------------------------------- */
 /* custom navbar - styles override bootstrap styles */
 /* ----------------------------------------- */
