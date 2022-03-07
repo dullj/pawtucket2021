@@ -137,8 +137,7 @@
 ?>
 			<div class="col-md-12">
       				<h1 id="fullsitetitle">The New School Archives And Special Collections</h1>
-      				<h2 id="site-title"><a href="/index.php">Digital Archives </a> 
-				<a href="https://findingaids.archives.newschool.edu/" rel="noopener" target="_blank" id="findingaids">/ Finding Aids</a></span></h2>
+      				<h2 id="site-title"><a href="/index.php">Digital Archives </a> </h2>
     			</div>
 			
 			<div class="collapse navbar-collapse" id="bs-main-navbar-collapse-1">
