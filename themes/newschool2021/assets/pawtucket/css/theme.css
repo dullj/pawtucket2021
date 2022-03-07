@@ -89,7 +89,7 @@ a, a:active, a:focus {
 
 #site-title {
   font-size: 34px;
-  font-family: neuebold;
+  font-family: neue;
   margin-bottom: 10px;
   margin-top: 25px;
 }
@@ -102,15 +102,6 @@ a, a:active, a:focus {
 #site-title a:hover {
   color: #e42a1d; 
   text-decoration: none;
-}
-
-#findingaids {
-	color: #d9d9d9;
-	text-decoration: none;
-}
-
-#findingaids a:hover{
-	text-decoration:underline;
 }
 
 span#collectionguides a{
