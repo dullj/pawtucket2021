@@ -774,7 +774,7 @@ div.browseFacetItem a {
 }
 
 .active, .accordion:hover {
-  background-color: #ccc;
+  background-color: #f2f2f2;
 }
 
 .accordion:after {
