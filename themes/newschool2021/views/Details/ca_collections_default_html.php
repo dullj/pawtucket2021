@@ -81,7 +81,11 @@
 					
 				</div><!-- end col -->
 				<div class='col-md-6 col-lg-6'>
-					{{{<ifdef code="ca_collections.findaid"><H3>Request Materials</H3><a href="^ca_collections.findaid">^ca_collections.preferred_labels.name Finding Aid</a><p>There’s more! Not all items in this collection are digitally available. What you see here is only what is viewable online; in most cases it is only a small portion of the collection. Please visit the finding aid to learn more.</p></ifdef>}}}
+					{{{<ifdef code="ca_collections.findaid"><H3>Finding Aid</H3><a href="^ca_collections.findaid">Finding Aid for ^ca_collections.preferred_labels.name</a><p>A Finding Aid is a guide to the collection with a comprehensive description of all items. </p>
+					<p> 
+					What you see here may only be what is viewable online; in most cases it is a small portion of the collection. If not all items are digitally available, the guide to the collection will describe all contents so that researchers may request digitization or an on-site visit. 
+					</p>
+					</ifdef>}}}
 					
 					{{{<ifcount code="ca_entities" min="1" max="1"><H3>Related person/organization</H3></ifcount>}}}
 					{{{<ifcount code="ca_entities" min="2"><H3>Related people/organizations</H3></ifcount>}}}
