@@ -185,6 +185,8 @@
 							{{{<h6>Use Restrictions</h6><ifcount code="ca_collections" min="1" max="2"><unit relativeTo="ca_collections">^ca_collections.CollectionNote.NoteContent%[NoteType=conditions_governing_use]</unit></ifcount>}}}
 							
 							{{{<ifdef code="ca_objects.containerID"><H6>Location</H6>^ca_objects.containerID<br/></ifdef>}}}
+							{{{<ifdef code="ca_collections.findaid"><H3>Finding Aid</H3><a href="^ca_collections.findaid">Guide to the  ^ca_collections.preferred_labels.name</a>
+					</ifdef>}}}
 
 							{{{<ifdef code="ca_objects.idno"><H6>Identifier</H6>^ca_objects.idno<br/></ifdef>}}}
 							
