@@ -126,7 +126,7 @@
 				</div><!-- end col -->
 				
 			</div><!-- end row -->
-{{{<ifcount code="ca_objects" min="2">
+{{{<ifcount code="ca_objects" min="1">
 			<div class="row">
 
 				<hr class="divide" style="margin: 20px 15px 40px 15px; color: #000000;"></hr>
