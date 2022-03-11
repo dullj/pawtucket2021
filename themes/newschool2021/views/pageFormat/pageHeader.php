@@ -93,7 +93,7 @@
     		<div class="col-xs-6">
       			<div class="header-second">
         			<ul class="clearfix-menu">
-          				<li class="menu-item" style="color:#8c8c8c;">Digital Archives</li>
+          				<li class="menu-item" style="color:#8c8c8c;">Digital Collections</li>
 					<li class="menu-item" style="padding-left:10px;"><a href="https://findingaids.archives.newschool.edu/" rel="noopener" target="_blank">Finding Aids</a></li>
         			</ul>
       			</div>
