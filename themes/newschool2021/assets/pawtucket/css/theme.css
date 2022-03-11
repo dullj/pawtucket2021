@@ -754,6 +754,8 @@ div.browseFacetItem a {
   cursor: pointer;
   padding-bottom: 18px;
   padding-top: 18px;
+  padding-right: 18px;
+  padding-left:18px;
   width: 100%;
   border: none;
   text-align: left;
