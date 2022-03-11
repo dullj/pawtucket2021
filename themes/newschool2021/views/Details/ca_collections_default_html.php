@@ -81,7 +81,7 @@
 					
 				</div><!-- end col -->
 				<div class='col-md-6 col-lg-6'>
-					{{{<ifdef code="ca_collections.findaid"><H3>Finding Aid</H3><a href="^ca_collections.findaid">Guide to the  ^ca_collections.preferred_labels.name</a><p>A Finding Aid is a guide to the collection with a comprehensive description of all items. </p>
+					{{{<ifdef code="ca_collections.findaid"><H3>Finding Aid</H3><a href="^ca_collections.findaid">Guide to the  ^ca_collections.preferred_labels.name</a><p>This finding aid provides a comprehensive description of all items. </p>
 					<p> 
 					What you see here may only be what is viewable online; in most cases it is a small portion of the collection. If not all items are digitally available, the guide to the collection will describe all contents so that researchers may request digitization or an on-site visit. 
 					</p>
