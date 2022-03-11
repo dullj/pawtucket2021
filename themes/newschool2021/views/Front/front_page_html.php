@@ -38,8 +38,8 @@
 <div class="welcome-text" style="margin-top:20px;">
 	<button class="accordion">Research Resources</button>
 		<div class="panel">
-			<h3><a href="https://findingaids.archives.newschool.edu/">Collection Guides</a></h3>
-			<p>The Digital Collections feature a small portion of the archival holdings. Please visit the Collection Guides for a deeper search.</p>
+			<h3><a href="https://findingaids.archives.newschool.edu/">Finding Aids</a></h3>
+			<p>The Digital Collections feature a small portion of the archival holdings. Please visit the Finding Aids for a deeper search.</p>
 			<h3><a href="/index.php/About/Index">User Guide</a></h3>
 			<p>For assistance with searching the Digital Collections, please refer to our Help section.</p>
 		</div>
