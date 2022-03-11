@@ -81,7 +81,7 @@
 					
 				</div><!-- end col -->
 				<div class='col-md-6 col-lg-6'>
-					{{{<ifdef code="ca_collections.findaid"><H3>Finding Aid</H3><a href="^ca_collections.findaid">Guide to the  ^ca_collections.preferred_labels.name</a><p>What you see here is only what is viewable online; in most cases it is only a small portion of what is available. Please visit the finding aid for access to physical materials that are not accessible in digital form.</p>
+					{{{<ifdef code="ca_collections.findaid"><H3>Finding Aid</H3><a href="^ca_collections.findaid">Guide to  ^ca_collections.preferred_labels.name</a><p>What you see here is only what is viewable online; in most cases it is only a small portion of what is available. Please visit the finding aid for access to physical materials that are not accessible in digital form.</p>
 					</ifdef>}}}
 					
 					{{{<ifcount code="ca_entities" min="1" max="1"><H3>Related person/organization</H3></ifcount>}}}
