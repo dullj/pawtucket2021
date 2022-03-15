@@ -185,6 +185,10 @@
 							{{{<h6>Use Restrictions</h6><ifcount code="ca_collections" min="1" max="2"><unit relativeTo="ca_collections">^ca_collections.CollectionNote.NoteContent%[NoteType=conditions_governing_use]</unit></ifcount>}}}
 							
 							{{{<ifdef code="ca_objects.containerID"><H6>Location</H6>^ca_objects.containerID<br/></ifdef>}}}
+							
+							
+							<h6>Finding Aid: {{{<unit unique="1" relativeTo="ca_collections.findaid"><l>^ca_collections.findaid</l></unit>}}}</h6>
+							
 							{{{<ifdef code="ca_collections.findaid"><H6>Finding Aid</H6><a href="^ca_collections.findaid">Guide to the  ^ca_collections.preferred_labels.name</a>
 							<p>What you see here may only be what is viewable online; in most cases it is a small portion of the collection. The finding aid enables access to physical materials that are not available in digital form.  </p>
 					</ifdef>}}}
