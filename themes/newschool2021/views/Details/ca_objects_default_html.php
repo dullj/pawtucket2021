@@ -197,7 +197,7 @@
 							<hr></hr>
 							<div class="row">
 							<div class="col-sm-12">	
-								<p>There’s more! What you see on this site is only what is viewable online. Please visit <a href="https://archives.newschool.edu/">archives.newschool.edu</a> to find out more about what’s in the archives. </p>
+								<p>There’s more! What you see on this site is only what is viewable online. Please visit <a href="https://archives.newschool.edu/" rel="noopener" target="_blank">archives.newschool.edu</a> to find out more about what’s in the archives. </p>
 							</div>
 					</div><!-- end row -->
 							
