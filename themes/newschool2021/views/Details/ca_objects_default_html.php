@@ -187,11 +187,6 @@
 							{{{<ifdef code="ca_objects.containerID"><H6>Location</H6>^ca_objects.containerID<br/></ifdef>}}}
 							
 							
-							<h6>Finding Aid: {{{<unit unique="1" relativeTo="ca_collections.findaid"><l>^ca_collections.findaid</l></unit>}}}</h6>
-							
-							{{{<ifdef code="ca_collections.findaid"><H6>Finding Aid</H6><a href="^ca_collections.findaid">Guide to the  ^ca_collections.preferred_labels.name</a>
-							<p>What you see here may only be what is viewable online; in most cases it is a small portion of the collection. The finding aid enables access to physical materials that are not available in digital form.  </p>
-					</ifdef>}}}
 
 							{{{<ifdef code="ca_objects.idno"><H6>Identifier</H6>^ca_objects.idno<br/></ifdef>}}}
 							
@@ -199,13 +194,20 @@
 							<div class="row"><div class="col-sm-12"><H6>Related Objects</H6><div class="row rowSmallPadding"><unit relativeTo="ca_objects.related" delimiter=" "><div class="col-xs-4 col-md-2 smallpadding"><div class="detailRelObject"><l>^ca_object_representations.media.icon</l></div><!--end detailRelObject--></div><!--end col--></unit></div><!-- end row --></div><!-- end col --></div><!-- end row -->
 							</ifcount>}}}
 							
+							<hr></hr>
+							<div class="row">
+							<div class="col-sm-12">	
+								<p>There’s more! What you see on this site is only what is viewable online. Please visit <a href="https://archives.newschool.edu/">archives.newschool.edu</a> to find out more about what’s in the archives. </p>
+							</div>
+					</div><!-- end row -->
 							
 							
 						</div><!-- end col -->				
 						<div class="col-sm-6 colBorderLeft">
 							{{{map}}}
 						</div>
-					</div><!-- end row -->
+				
+				</div><!-- end row -->
 						
 			</div><!-- end col -->
 		</div><!-- end row --></div><!-- end container -->
