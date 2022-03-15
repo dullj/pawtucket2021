@@ -998,3 +998,7 @@ blockquote p {
 .searchOptions {
     position: unset;
 }
+
+div.caMediaOverlayControls .repNav {
+    width: 26%;
+}
