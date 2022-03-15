@@ -2,7 +2,7 @@
 	<div class="col-sm-7"><H1>User Guide</H1></div>
 	<div class="col-sm-7">
 		<h2>Welcome</h2>
-		<p>The Digital Collections contain a selection of digitized and born-digital archival material from The New School Archives. To perform a deeper search, please visit the <a href="https://findingaids.archives.newschool.edu/" rel="noopener" target="_blank">Collection Guides</a> (also called finding aids) where you can find descriptions of every archival collection.</p>
+		<p>The Digital Collections contain a selection of digitized and born-digital archival material from The New School Archives. To perform a deeper search, please visit the <a href="https://findingaids.archives.newschool.edu/" rel="noopener" target="_blank">Finding Aids</a>  where you can find descriptions of every archival collection.</p>
 		
 		<h2>Defining Archival Collections</h2>
 		<p>Archival collections are groups of primary source materials created by a person, group of people, or organization in the course of their everyday work or activities. Collections can range in size from a single document to hundreds of boxes or gigabytes of digital files. They can contain a range of materials, including documents, drawings, photographs, websites, and audiovisual records. Unlike published materials, archival collections are usually unique and exist only in the collection where a researcher finds them.</p>

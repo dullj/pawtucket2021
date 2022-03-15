@@ -62,7 +62,6 @@
   			gtag('js', new Date());
 		  	gtag('config', 'G-G444HDG4HT');
 		</script>
-        
 	<?php print MetaTagManager::getHTML(); ?>
 	<?php print AssetLoadManager::getLoadHTML($this->request); ?>
 	<link rel="icon" href="<?php print caGetThemeGraphicUrl($this->request, 'favicon.ico'); ?>">
@@ -102,7 +101,7 @@
       			<div class="header-second">
         			<ul class="clearfix-menu">
           				<li class="menu-item" style="color:#8c8c8c;">Digital Collections</li>
-					<li class="menu-item" style="padding-left:10px;"><a href="https://findingaids.archives.newschool.edu/" rel="noopener" target="_blank">Collection Guides</a></li>
+					<li class="menu-item" style="padding-left:10px;"><a href="https://findingaids.archives.newschool.edu/" rel="noopener" target="_blank">Finding Aids</a></li>
         			</ul>
       			</div>
     		</div>
@@ -146,7 +145,7 @@
 ?>
 			<div class="col-md-12">
       				<h1 id="fullsitetitle">The New School Archives And Special Collections</h1>
-      				<h2 id="site-title"><a href="/index.php">Digital Collections </a></h2>
+      				<h2 id="site-title"><a href="/index.php">Digital Collections </a> </h2>
     			</div>
 			
 			<div class="collapse navbar-collapse" id="bs-main-navbar-collapse-1">

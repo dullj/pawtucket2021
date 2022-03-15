@@ -60,7 +60,7 @@
 					
 					{{{<ifdef code="ca_collections.idno"><H3>Collection Identifier</H3>^ca_collections.idno</ifdef>}}}
 					
-					{{{<ifcount code="ca_objects" min="1" max="1"><div class='unit'><unit relativeTo="ca_objects" delimiter=" "><l>^ca_object_representations.media.large</l><div class='caption'>Related Object: <l>^ca_objects.preferred_labels.name</l></div></unit></div></ifcount>}}}
+					
 <?php
 				# Comment and Share Tools
 				if ($vn_comments_enabled | $vn_share_enabled) {
@@ -81,7 +81,8 @@
 					
 				</div><!-- end col -->
 				<div class='col-md-6 col-lg-6'>
-					{{{<ifdef code="ca_collections.findaid"><H3>Collection Guide</H3><a href="^ca_collections.findaid">Guide to the ^ca_collections.preferred_labels.name</a><p>There’s more! What you see here is only what is viewable online; in most cases it is only a small portion of what is available. Please visit the collection guide to find out more.</p></ifdef>}}}
+					{{{<ifdef code="ca_collections.findaid"><H3>Finding Aid</H3><a href="^ca_collections.findaid" rel="noopener" target="_blank">Guide to  the Collection</a><p>What you see here is only what is viewable online; in most cases it is only a small portion of what is available. Please visit the finding aid to access a detailed description of the collection.</p>
+					</ifdef>}}}
 					
 					{{{<ifcount code="ca_entities" min="1" max="1"><H3>Related person/organization</H3></ifcount>}}}
 					{{{<ifcount code="ca_entities" min="2"><H3>Related people/organizations</H3></ifcount>}}}
@@ -125,7 +126,7 @@
 				</div><!-- end col -->
 				
 			</div><!-- end row -->
-{{{<ifcount code="ca_objects" min="2">
+{{{<ifcount code="ca_objects" min="1">
 			<div class="row">
 
 				<hr class="divide" style="margin: 20px 15px 40px 15px; color: #000000;"></hr>

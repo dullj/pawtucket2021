@@ -185,6 +185,8 @@
 							{{{<h6>Use Restrictions</h6><ifcount code="ca_collections" min="1" max="2"><unit relativeTo="ca_collections">^ca_collections.CollectionNote.NoteContent%[NoteType=conditions_governing_use]</unit></ifcount>}}}
 							
 							{{{<ifdef code="ca_objects.containerID"><H6>Location</H6>^ca_objects.containerID<br/></ifdef>}}}
+							
+							
 
 							{{{<ifdef code="ca_objects.idno"><H6>Identifier</H6>^ca_objects.idno<br/></ifdef>}}}
 							
@@ -192,19 +194,20 @@
 							<div class="row"><div class="col-sm-12"><H6>Related Objects</H6><div class="row rowSmallPadding"><unit relativeTo="ca_objects.related" delimiter=" "><div class="col-xs-4 col-md-2 smallpadding"><div class="detailRelObject"><l>^ca_object_representations.media.icon</l></div><!--end detailRelObject--></div><!--end col--></unit></div><!-- end row --></div><!-- end col --></div><!-- end row -->
 							</ifcount>}}}
 							
-															
 							<hr></hr>
 							<div class="row">
 							<div class="col-sm-12">	
-								<p>There’s more! What you see on this site is only what is viewable online. Please visit <a href="https://archives.newschool.edu/">our website</a> to find out more about what’s in the archives. </p>
+								<p>There’s more! What you see on this site is only what is viewable online. Please visit <a href="https://archives.newschool.edu/" rel="noopener" target="_blank">archives.newschool.edu</a> to find out more about what’s in the archives. </p>
 							</div>
 					</div><!-- end row -->
+							
 							
 						</div><!-- end col -->				
 						<div class="col-sm-6 colBorderLeft">
 							{{{map}}}
 						</div>
-					</div><!-- end row -->
+				
+				</div><!-- end row -->
 						
 			</div><!-- end col -->
 		</div><!-- end row --></div><!-- end container -->
