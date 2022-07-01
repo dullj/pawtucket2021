@@ -2344,7 +2344,7 @@ function caFileIsIncludable($ps_file) {
 		if (!is_array($pa_array)) { return array(); }
 
 		if (!(($o_purifier = caGetOption('purifier', $pa_options, null)) instanceof HTMLPurifier)) {
-			$o_purifier = new HTMLPurifier();
+			$o_purifier = caGetHTMLPurifier();
 		}
 
 		if (!is_array($pa_array)) { return $o_purifier->purify($pa_array); }
@@ -3611,17 +3611,18 @@ function caFileIsIncludable($ps_file) {
 	 * Validate CSRF token using current session
 	 *
 	 * @param RequestHTTP $po_request Current request
-	 * @param string $ps_token CSRF token to validate. If omitted token in the "crsfToken" parameter is extracted from current request.
+	 * @param string $ps_token CSRF token to validate. If omitted token in the "csrfToken" parameter is extracted from current request.
 	 * @param array $pa_options Options include:
-	 *      remove = remove validated token from active token list. [Default is true]
-	 *      exceptions = throw exception if token is invalid. [Default is true]
+	 *      remove = remove validated token from active token list. [Default is false]
+	 *      exceptions = throw exception if token is invalid. [Default is false]
+	 *      notifications = post notification if token is invalid. [Default is false]
 	 * @return bool
 	 * @throws ApplicationException
 	 */
 	function caValidateCSRFToken($po_request, $ps_token=null, $pa_options=null){
 		$session_id = $po_request ? $po_request->getSessionID() : 'none';
 		
-	    if(!$ps_token) { $ps_token = $po_request->getParameter('crsfToken', pString); }
+	    if(!$ps_token) { $ps_token = $po_request->getParameter('csrfToken', pString); }
 	    if (!is_array($va_tokens = PersistentCache::fetch("csrf_tokens_{$session_id}", "csrf_tokens"))) { $va_tokens = []; }
 	    
 	    if (isset($va_tokens[$ps_token])) { 
@@ -4022,7 +4023,7 @@ function caFileIsIncludable($ps_file) {
 		$o_purifier = null;
 		if($pb_purify = caGetOption('purify', $pa_options, false)) {
 			if (!(($o_purifier = caGetOption('purifier', $pa_options, null)) instanceof HTMLPurifier)) {
-				$o_purifier = new HTMLPurifier();
+				$o_purifier = caGetHTMLPurifier();
 			}
 		}
 
@@ -4474,7 +4475,9 @@ function caFileIsIncludable($ps_file) {
 			);
 	}
 	# ----------------------------------------
-
+	/**
+	 *
+	 */
 	function caReturnValueInBytes($vs_val) {
 		$vs_val = trim($vs_val);
 		$vs_last = strtolower($vs_val[strlen($vs_val)-1]);
@@ -4490,3 +4493,13 @@ function caFileIsIncludable($ps_file) {
 		}
 		return $vs_val;
 	}
+	# ----------------------------------------
+	/**
+	 *
+	 */
+	function caGetHTMLPurifier(?array $options=null) : HTMLPurifier {
+		$config = HTMLPurifier_Config::createDefault();
+		$config->set('URI.DisableExternalResources', !Configuration::load()->get('purify_allow_external_references'));
+		return new HTMLPurifier($config); 
+	}
+	# ----------------------------------------

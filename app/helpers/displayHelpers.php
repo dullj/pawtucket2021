@@ -1023,9 +1023,9 @@ require_once(__CA_LIB_DIR__.'/Media/MediaInfoCoder.php');
 							break;
 					}
 				}
-			
-				
-				$vs_buf .= "<div class='recordTitle {$vs_table_name}' style='width:190px; overflow:hidden;'>{$vs_label}".(($vb_show_idno) ? "<a title='$vs_idno'>".($vs_idno ? " ({$vs_idno})" : '') : "")."</a></div>";
+
+				$vs_buf .= "<div class='recordTitle {$vs_table_name}' style='width:190px; overflow:hidden;'>{$vs_label}".(($vb_show_idno) ? ($vs_idno ? " ({$vs_idno})" : '') : '')."</div>";
+
 				if (($vs_table_name === 'ca_object_lots') && $t_item->getPrimaryKey()) {
 					$vs_buf .= "<div id='inspectorLotMediaDownload'><strong>".((($vn_num_objects = $t_item->numObjects(null, ['excludeChildObjects' => $po_view->request->config->get("exclude_child_objects_in_inspector_log_count")])) == 1) ? _t('Lot contains %1 object', $vn_num_objects) : _t('Lot contains %1 objects', $vn_num_objects))."</strong>\n";
 				}
@@ -1145,7 +1145,7 @@ require_once(__CA_LIB_DIR__.'/Media/MediaInfoCoder.php');
 		function caToggleItemWatch() {
 			var url = '".caNavUrl($po_view->request, $po_view->request->getModulePath(), $po_view->request->getController(), 'toggleWatch', array($t_item->primaryKey() => $vn_item_id))."';
 			
-			jQuery.getJSON(url, {}, function(data, status) {
+			jQuery.getJSON(url, {'csrfToken': ".json_encode(caGenerateCSRFToken($po_view->request))."}, function(data, status) {
 				if (data['status'] == 'ok') {
 					jQuery('#caWatchItemButton').html((data['state'] == 'watched') ? '".addslashes(caNavIcon(__CA_NAV_ICON_UNWATCH__, '20px'))."' : '".addslashes(caNavIcon(__CA_NAV_ICON_WATCH__, '20px'))."');
 				} else {
@@ -1204,7 +1204,7 @@ require_once(__CA_LIB_DIR__.'/Media/MediaInfoCoder.php');
 			if($po_view->request->user->canDoAction('can_duplicate_'.$vs_table_name) && $t_item->getPrimaryKey()) {
 				$vs_buf .= '<div id="caDuplicateItemButton">';
 			
-				$vs_buf .= caFormTag($po_view->request, 'Edit', 'DuplicateItemForm', $po_view->request->getModulePath().'/'.$po_view->request->getController(), 'post', 'multipart/form-data', '_top', array('noCSRFToken' => true, 'disableUnsavedChangesWarning' => true, 'noTimestamp' => true));
+				$vs_buf .= caFormTag($po_view->request, 'Edit', 'DuplicateItemForm', $po_view->request->getModulePath().'/'.$po_view->request->getController(), 'post', 'multipart/form-data', '_top', array('noCSRFToken' => false, 'disableUnsavedChangesWarning' => true, 'noTimestamp' => true));
 				$vs_buf .= "<div>".caFormSubmitLink($po_view->request, caNavIcon(__CA_NAV_ICON_DUPLICATE__, '20px'), '', 'DuplicateItemForm')."</div>";
 				
 				$vs_buf .= caHTMLHiddenInput($t_item->primaryKey(), array('value' => $t_item->getPrimaryKey()));
@@ -1511,7 +1511,7 @@ require_once(__CA_LIB_DIR__.'/Media/MediaInfoCoder.php');
 
 					if(!(bool)$po_view->request->config->get('ca_sets_disable_duplication_of_items') && $po_view->request->user->canDoAction('can_duplicate_items_in_sets') && $po_view->request->user->canDoAction('can_duplicate_' . $vs_set_table_name)) {
 						$vs_buf .= '<div style="border-top: 1px solid #aaaaaa; margin-top: 5px; font-size: 10px; text-align: right;" ></div>';
-						$vs_buf .= caFormTag($po_view->request, 'DuplicateItems', 'caDupeSetItemsForm', 'manage/sets/SetEditor', 'post', 'multipart/form-data', '_top', array('noCSRFToken' => true, 'disableUnsavedChangesWarning' => true));
+						$vs_buf .= caFormTag($po_view->request, 'DuplicateItems', 'caDupeSetItemsForm', 'manage/sets/SetEditor', 'post', 'multipart/form-data', '_top', array('noCSRFToken' => false, 'disableUnsavedChangesWarning' => true));
 						$vs_buf .= _t("Duplicate items in this set and add to") . " ";
 						$vs_buf .= caHTMLSelect('setForDupes', array(
 							_t('current set') => 'current',
@@ -1605,7 +1605,7 @@ require_once(__CA_LIB_DIR__.'/Media/MediaInfoCoder.php');
 					
 					if ($vs_type_list) {
 						$vs_buf .= '<div style="border-top: 1px solid #aaaaaa; margin-top: 5px; font-size: 10px;">';
-						$vs_buf .= caFormTag($po_view->request, 'Edit', 'NewChildForm', 'administrate/setup/list_item_editor/ListItemEditor', 'post', 'multipart/form-data', '_top', array('noCSRFToken' => true, 'disableUnsavedChangesWarning' => true));
+						$vs_buf .= caFormTag($po_view->request, 'Edit', 'NewChildForm', 'administrate/setup/list_item_editor/ListItemEditor', 'post', 'multipart/form-data', '_top', array('noCSRFToken' => false, 'disableUnsavedChangesWarning' => true));
 						$vs_buf .= _t('Add a %1 to this list', $vs_type_list).caHTMLHiddenInput($t_list_item->primaryKey(), array('value' => '0')).caHTMLHiddenInput('parent_id', array('value' => $t_list_item->getPrimaryKey()));
 						$vs_buf .= caFormSubmitLink($po_view->request, caNavIcon(__CA_NAV_ICON_ADD__, '18px'), '', 'NewChildForm');
 						$vs_buf .= "</form></div>\n";
@@ -4621,5 +4621,133 @@ require_once(__CA_LIB_DIR__.'/Media/MediaInfoCoder.php');
 			return $g_blank_label_text = _t($label_text);
 		}
 		return $g_blank_label_text = _t('BLANK');
+	}
+	# ------------------------------------------------------------------
+	/**
+	 *
+	 */
+	function caGetDisplayLabelForBundle($bundle) {
+		$tmp = explode('.', $bundle);
+		if (!($t = Datamodel::getInstance($tmp[0], true))) { return null; }
+
+		return $t->getDisplayLabel($bundle);
+	}
+	# ------------------------------------------------------------------
+	/**
+	 * Returns concatenated first name and surname, with a default in case
+	 * both values are null.
+	 *
+	 * In case any of the names is missing, no additional (left or right)
+	 * whitespace is included.
+	 *
+	 * @param      $fname
+	 * @param      $lname
+	 * @param null $default
+	 *
+	 * @return mixed|string
+	 */
+	function caFormatPersonName($fname, $lname, $default=null){
+		$names = [];
+		$fname ? ( $names[] = $fname ) : null ;
+		$lname ? ( $names[] = $lname ) : null ;
+
+		if ($fname || $lname){
+			return join( ' ', $names );
+		}
+		return _t($default);
+	}
+	# ------------------------------------------------------------------
+	/**
+	 * Generate name for downloaded representation media file based upon app.conf 
+	 * downloaded_file_naming directive.
+	 *
+	 * @param string $table Table name of primary record (Eg. ca_objects when downloaded representations related to an object).
+	 * @param array $data Media download data. Keys include:
+	 *		idno = identifer of primary record.
+	 *		index = index of download when multiple names are present. May be omitted if not applicable.
+	 *		version = version of media being downloaded.
+	 *		extension = file extension of media being downloaded.
+	 *		original_filename = original filename of media being downloaded.
+	 *		representation_id = Representation_id of media being downloaded.
+	 * @param array $options Options include:
+	 *		mode = Naming mode. Can be idno, idno_and_version, idno_and_rep_id_and_version, original_name. If not set defaults to value in <table>_downloaded_file_naming or _downloaded_file_naming app.conf directive.
+	 *
+	 * @return string File name
+	 */
+	function caGetRepresentationDownloadFileName(string $table, array $data, ?array $options=null) : string {
+		$config = Configuration::load();
+		switch($mode = caGetOption('mode', $options, $config->get(["{$table}_downloaded_file_naming", 'downloaded_file_naming']))) {
+			case 'idno':
+				$filename = $data['idno'].(strlen($data['index']) ? '_'.$data['index'] : '').'.'.$data['extension'];
+				break;
+			case 'idno_and_version':
+				$filename = $data['idno'].'_'.$data['version'].'_'.(strlen($data['index']) ? '_'.$data['index'] : '').'.'.$data['extension'];
+				break;
+			case 'idno_and_rep_id_and_version':
+				$filename = $data['idno'].'_representation_'.$data['representation_id'].'_'.$data['version'].'.'.$data['extension'];
+				break;
+			case 'original_name':
+			default:
+				if (strpos($mode, "^") !== false) { // template
+				   $filename = preg_replace('!\.[A-Za-z]{1}[A-Za-z0-9]{1,3}$!', '', caProcessTemplateForIDs($mode, 'ca_object_representations', [$data['representation_id']]));
+				   
+				} elseif ($data['original_filename']) {
+					$tmp = explode('.', $data['original_filename']);
+					if (sizeof($tmp) > 1) { 
+						if (strlen($ext = array_pop($tmp)) < 3) {
+							$tmp[] = $ext;
+						}
+					}
+					$filename = join('_', $tmp); 					
+				} else {
+					$filename = $data['idno'].'_representation_'.$data['representation_id'].'_'.$data['version'];
+				}
+
+				if (isset($va_file_names[$filename.'.'.$data['extension']])) {
+					$filename.= "_".$data['index'];
+				}
+
+				if(!preg_match("!{$data['extension']}$!i", $filename)) {
+					$filename .= '.'.$data['extension'];
+				}
+				break;
+		} 
+		$filename = html_entity_decode($filename);
+		return preg_replace("![^A-Za-z0-9_\-\.&]+!", "_", $filename);
+	}
+	# ------------------------------------------------------------------
+	/**
+	 * Generate name for downloaded ZIP file containing multiple representation media files based upon app.conf 
+	 * downloaded_file_naming directive.
+	 *
+	 * @param string $table Table name of primary record (Eg. ca_objects when downloaded representations related to an object).
+	 * @param int $id
+	 * @param array $options Options include:
+	 *		extension = 
+	 *
+	 * @return string File name
+	 */
+	function caGetMediaDownloadArchiveName($table, $id, $options=null) {
+		$config = Configuration::load();
+		switch($mode = $config->get(["{$table}_downloaded_media_archive_file_naming", 'downloaded_media_archive_file_naming', "{$table}_downloaded_file_naming", 'downloaded_file_naming'])) {
+			case 'idno':
+				// Noop - fall through	
+			default:
+				if (strpos($mode, "^") === false) { // use default template
+					$mode = "^{$table}.idno";
+				}
+				if (!($filename = caProcessTemplateForIDs($mode, $table, [$id]))) {
+					$filename = 'export';
+				}
+				$ext = caGetOption('extension', $options, 'zip');
+
+				if(!preg_match("!\.{$ext}$!i", $filename)) {
+					$filename .= ".{$ext}";
+				}
+				break;
+		} 
+
+		$filename = html_entity_decode($filename);
+		return preg_replace("![^A-Za-z0-9_\-\.&]+!", "_", $filename);
 	}
 	# ------------------------------------------------------------------
